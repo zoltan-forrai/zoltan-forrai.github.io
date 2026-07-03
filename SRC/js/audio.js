@@ -47,8 +47,9 @@ function playMuteClick(muting) {
   major.forEach((ratio, i) => {
     const freq = root * ratio;
     const delay = i * 0.03;
-    const peakGain = muting
-      ? (0.1 - i * 0.05) / major.length
+    const peakGain =
+      muting ?
+        (0.1 - i * 0.05) / major.length
       : (0.1 - i * 0.02) / major.length;
 
     const { osc, gain } = makeOsc(ctx);
@@ -57,7 +58,7 @@ function playMuteClick(muting) {
     gain.gain.linearRampToValueAtTime(peakGain, ctx.currentTime + delay + 0.04);
     gain.gain.exponentialRampToValueAtTime(
       0.001,
-      ctx.currentTime + delay + 0.38
+      ctx.currentTime + delay + 0.38,
     );
     osc.start(ctx.currentTime + delay);
     osc.stop(ctx.currentTime + delay + 0.42);
@@ -72,11 +73,16 @@ export function playPop(rising = true) {
   osc.frequency.setValueAtTime(rising ? 600 : 440, ctx.currentTime);
   osc.frequency.linearRampToValueAtTime(
     rising ? 880 : 280,
-    ctx.currentTime + 0.12
+    ctx.currentTime + 0.12,
   );
-  gain.gain.setValueAtTime(0.04, ctx.currentTime);
-  gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.18);
-  osc.start();
+  const t = ctx.currentTime;
+
+  gain.gain.setValueAtTime(0.001, t);
+  gain.gain.linearRampToValueAtTime(0.04, t + 0.005);
+  gain.gain.exponentialRampToValueAtTime(0.001, t + 0.18);
+
+  osc.start(t);
+
   osc.stop(ctx.currentTime + 0.2);
 }
 
@@ -100,7 +106,7 @@ export function playDetails(opening = true) {
   osc1.frequency.setValueAtTime(280, t);
   osc1.frequency.linearRampToValueAtTime(
     opening ? 200 : 200.2,
-    t + (opening ? 0.2 : -0.2)
+    t + (opening ? 0.2 : -0.2),
   );
   g1.gain.setValueAtTime(0.001, t);
   g1.gain.linearRampToValueAtTime(0.12, t + 0.03);
