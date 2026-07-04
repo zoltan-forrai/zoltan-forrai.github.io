@@ -78,5 +78,6 @@
   p {
     font-family: var(--ff-mono);
     font-size: 1.16rem;
+    color: white;
   }
 }
