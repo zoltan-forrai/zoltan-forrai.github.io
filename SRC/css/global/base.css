@@ -207,6 +207,10 @@ a:not(
     no-repeat center / contain;
 }
 
+a:has(title-span)::after {
+  display: none !important;
+}
+
 html#light {
   main a {
     font-weight: bold;
