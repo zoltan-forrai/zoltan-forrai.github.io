@@ -38,6 +38,7 @@
     </script>
     <script type="module" src="/index.js"></script>
     <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/SRC/css/element/pop-up.css" />
     <link rel="stylesheet" href="/SRC/css/element/btn.css" />
   </head>
   <body class="bg rad">
@@ -142,6 +143,25 @@
         </footer>
       </aside>
     </main>
+    <div id="annoyance">
+      <div id="overlay"></div>
+      <div id="pop-up">
+        <dev-notice>
+          <span>&ldquo;It works on my machine&rdquo;</span>
+        </dev-notice>
+        <article>
+          <p>Wait friend, before you proceed...</p>
+          <p>I coded this website on macOS and tested it in firefox.</p>
+          <p>
+            It very well might be the case that if you are on Windows, use a
+            Chromium-based browser, have a 4K monitor, or try to access the site
+            on mobile things look broken.
+          </p>
+          <p>That is because they are.</p>
+          <p><a href="#">I understand and I wish to proceed.</a></p>
+        </article>
+      </div>
+    </div>
     <script>
       (async function () {
         const res = await fetch("/rss.xml");
@@ -176,6 +196,23 @@
           if (datetime) target.setAttribute("title", datetime);
         }
       })();
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var popup = document.getElementById("annoyance");
+        var storageKey = "devNoticeSeen";
+
+        if (localStorage.getItem(storageKey)) {
+          popup.style.display = "none";
+          return;
+        }
+
+        var proceedLink = popup.querySelector("article p:last-child a");
+        proceedLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          localStorage.setItem(storageKey, "true");
+          popup.style.display = "none";
+        });
+      });
     </script>
   </body>
 </html>
