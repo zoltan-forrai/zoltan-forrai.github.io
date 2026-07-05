@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
       (function () {
         const saved = localStorage.getItem("theme");
         const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
+          "(prefers-color-scheme: dark)",
         ).matches;
         const isDark = saved ? saved === "dark" : prefersDark;
         document.documentElement.id = isDark ? "dark" : "light";
@@ -31,7 +31,7 @@
           <li tabindex="0" data-icon="personal">
             <b>Personal</b>
             <ul>
-              <li><a href="/personal/about">Who am I?</a></li>
+              <li><a href="/personal/about">My Lore</a></li>
               <li><a href="/personal/faq">Questions</a></li>
               <li><a href="/personal/warbler">Warbler</a></li>
             </ul>
@@ -47,9 +47,9 @@
           <li tabindex="0" data-icon="interests">
             <b>Interests</b>
             <ul>
-              <li><a href="/interests/other">Other Works</a></li>
-              <li><a href="/interests/obsessions">Obsessions</a></li>
               <li><a href="/interests/library">Library</a></li>
+              <li><a href="/interests/obsessions">Obsessions</a></li>
+              <li><a href="/interests/other">Other Works</a></li>
             </ul>
           </li>
           <li tabindex="0" data-icon="beyond">

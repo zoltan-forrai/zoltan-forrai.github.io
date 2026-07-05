@@ -54,7 +54,7 @@
           <li tabindex="0" data-icon="personal">
             <b>Personal</b>
             <ul>
-              <li><a href="/personal/about">Who am I?</a></li>
+              <li><a href="/personal/about">My Lore</a></li>
               <li><a href="/personal/faq">Questions</a></li>
               <li><a href="/personal/warbler">Warbler</a></li>
             </ul>
@@ -70,9 +70,9 @@
           <li tabindex="0" data-icon="interests">
             <b>Interests</b>
             <ul>
-              <li><a href="/interests/other">Other Works</a></li>
-              <li><a href="/interests/obsessions">Obsessions</a></li>
               <li><a href="/interests/library">Library</a></li>
+              <li><a href="/interests/obsessions">Obsessions</a></li>
+              <li><a href="/interests/other">Other Works</a></li>
             </ul>
           </li>
           <li tabindex="0" data-icon="beyond">
@@ -198,15 +198,15 @@
       })();
 
       document.addEventListener("DOMContentLoaded", function () {
-        var popup = document.getElementById("annoyance");
-        var storageKey = "devNoticeSeen";
+        const popup = document.getElementById("annoyance");
+        const storageKey = "devNoticeSeen";
 
         if (localStorage.getItem(storageKey)) {
           popup.style.display = "none";
           return;
         }
 
-        var proceedLink = popup.querySelector("article p:last-child a");
+        const proceedLink = popup.querySelector("article p:last-child a");
         proceedLink.addEventListener("click", function (e) {
           e.preventDefault();
           localStorage.setItem(storageKey, "true");

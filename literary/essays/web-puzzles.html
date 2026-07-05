@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Obsession・gildrom.com</title>
     <link rel="icon" type="image/png" href="/favicon.ico" />
+    <title>Web Riddles・gildrom.com</title>
     <script>
       (function () {
         const saved = localStorage.getItem("theme");
@@ -17,9 +17,9 @@
     </script>
     <script type="module" src="/index.js"></script>
     <link rel="stylesheet" href="/index.css" />
-    <link rel="stylesheet" href="/SRC/css/layout/deck.css" />
+    <link rel="stylesheet" href="/SRC/css/layout/essay.css" />
   </head>
-  <body class="rad">
+  <body>
     <header>
       <title-bar>
         <a href="/">
@@ -65,34 +65,27 @@
       </nav>
     </header>
     <main>
-      <form>
-        <search>
-          <input
-            type="search"
-            name="filter"
-            autocomplete="off"
-            placeholder="OBSESSIONS・Filter Cards" />
-          <input
-            type="reset"
-            value="X"
-            title="clear search"
-            aria-label="clear search" />
-        </search>
-      </form>
-      <deck-section>
-        <a
-          id="lierary-theory-bibliography"
-          href="/interests/obsessions/theory"
-          data-tags="literature literary theory criticism">
-          <title-span>Literary Theory</title-span>
-        </a>
-        <a
-          id="maze"
-          href="/interests/obsessions/Maze"
-          data-tags="maze puzzle christopher manson">
-          <title-span>Maze</title-span>
-        </a>
-      </deck-section>
+      <dev-notice><span>Work in Progress</span></dev-notice>
+      <article>
+        <header>
+          <ul>
+            <li title="">date: <span></span></li>
+          </ul>
+        </header>
+        <h1></h1>
+        <p></p>
+      </article>
+      <footer>
+        Find&nbsp;me&nbsp;on&nbsp;<a
+          target="_blank"
+          href="//gildrom.newgrounds.com"
+          ><img src="/SRC/asset/svg/ng.svg" height="20" />Newgrounds</a
+        >
+        and&nbsp;in&nbsp;my&nbsp;<a target="_blank" href="/rss.xml"
+          ><img src="/SRC/asset/svg/rss.svg" height="20" />RSS&nbsp;Feed</a
+        >.
+      </footer>
     </main>
+    <script src="/SRC/js/tag.js"></script>
   </body>
 </html>

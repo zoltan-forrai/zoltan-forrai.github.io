@@ -8,7 +8,7 @@
 
   max-height: calc(100vh - 2rem);
 
-  border-radius: 20px;
+  border-radius: 10px;
   backdrop-filter: var(--glass-blur);
   overflow: hidden;
 
@@ -68,7 +68,7 @@
 }
 
 #pop-up dev-notice {
-  border-radius: 20px 20px 0 0;
+  border-radius: 10px 10px 0 0;
   span {
     border-radius: 2px;
   }

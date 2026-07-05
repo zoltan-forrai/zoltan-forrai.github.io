@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
       (function () {
         const saved = localStorage.getItem("theme");
         const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
+          "(prefers-color-scheme: dark)",
         ).matches;
         const isDark = saved ? saved === "dark" : prefersDark;
         document.documentElement.id = isDark ? "dark" : "light";
@@ -35,7 +35,7 @@
           <li tabindex="0" data-icon="personal">
             <b>Personal</b>
             <ul>
-              <li><a href="/personal/about">Who am I?</a></li>
+              <li><a href="/personal/about">My Lore</a></li>
               <li><a href="/personal/faq">Questions</a></li>
               <li><a href="/personal/warbler">Warbler</a></li>
             </ul>
@@ -51,9 +51,9 @@
           <li tabindex="0" data-icon="interests">
             <b>Interests</b>
             <ul>
-              <li><a href="/interests/other">Other Works</a></li>
-              <li><a href="/interests/obsessions">Obsessions</a></li>
               <li><a href="/interests/library">Library</a></li>
+              <li><a href="/interests/obsessions">Obsessions</a></li>
+              <li><a href="/interests/other">Other Works</a></li>
             </ul>
           </li>
           <li tabindex="0" data-icon="beyond">
@@ -68,124 +68,118 @@
       </nav>
     </header>
     <main>
-
-        <page-wrapper>
-          <page-header>
-            <h1 class="typewriter">
-              Literary Theory, Analysis, &amp; Criticism
-            </h1>
-            <p>
-              My personal annotated bibliography from Plato to the present.
-              Entries are ordered chronologically. Use
-              <kbd>Ctrl</kbd> + <kbd>F</kbd> to search by tag, author, title,
-              term, or keyword. Click a title to expand its entry.
-            </p>
-            <p>
-              <b>Note&colon;</b> This bibliography is not comprehensive. The
-              entries reflect my own reading journey into theory. This page is a
-              compainon to my <a href="/interests/library">Library</a>.
-            </p>
-          </page-header>
-          <!-- ==== TEMPLATE ==== -->
-          <!-- ENTRY START -->
-          <article id="template">
+      <page-wrapper>
+        <page-header>
+          <h1 class="typewriter">Literary Theory, Analysis, &amp; Criticism</h1>
+          <p>
+            My personal annotated bibliography from Plato to the present.
+            Entries are ordered chronologically. Use
+            <kbd>Ctrl</kbd> + <kbd>F</kbd> to search by tag, author, title,
+            term, or keyword. Click a title to expand its entry.
+          </p>
+          <p>
+            <b>Note&colon;</b> This bibliography is not comprehensive. The
+            entries reflect my own reading journey into theory. This page is a
+            compainon to my <a href="/interests/library">Library</a>.
+          </p>
+        </page-header>
+        <!-- ==== TEMPLATE ==== -->
+        <!-- ENTRY START -->
+        <article id="template">
+          <details>
+            <summary>
+              <entry-header>
+                <entry-byline>
+                  Author ·
+                  <original-year>year (orig. pub.)</original-year>
+                  · citation information (APA) · [Read: yyyy-mm]
+                  <a href=""></a>
+                </entry-byline>
+                <entry-title>Title (TEMPLATE)</entry-title>
+                <tag-row>
+                  <tag-period>time period</tag-period>
+                  <tag-type>text type</tag-type>
+                  <tag-school>school / movement</tag-school>
+                  <tag-lang>language / translation</tag-lang>
+                </tag-row>
+              </entry-header>
+            </summary>
+            <details open>
+              <summary>
+                Context &amp; Argument<summary-icon>+</summary-icon>
+              </summary>
+              <div>
+                <p
+                  data-comm="Summary: Argument -> claim + evidence + warrant (reason)">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p
+                  data-comm="Eval: What? Who? Why? When? Where? + How -> method">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </details>
             <details>
               <summary>
-                <entry-header>
-                  <entry-byline>
-                    Author ·
-                    <original-year>year (orig. pub.)</original-year>
-                    · citation information (APA) · [Read: yyyy-mm]
-                    <a href=""></a>
-                  </entry-byline>
-                  <entry-title>Title (TEMPLATE)</entry-title>
-                  <tag-row>
-                    <tag-period>time period</tag-period>
-                    <tag-type>text type</tag-type>
-                    <tag-school>school / movement</tag-school>
-                    <tag-lang>language / translation</tag-lang>
-                  </tag-row>
-                </entry-header>
+                Notes &amp; Response <summary-icon>+</summary-icon>
               </summary>
-              <details open>
-                <summary>
-                  Context &amp; Argument<summary-icon>+</summary-icon>
-                </summary>
-                <div>
-                  <p
-                    data-comm="Summary: Argument -> claim + evidence + warrant (reason)">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
-                  <p
-                    data-comm="Eval: What? Who? Why? When? Where? + How -> method">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
-                </div>
-              </details>
-              <details>
-                <summary>
-                  Notes &amp; Response <summary-icon>+</summary-icon>
-                </summary>
-                <reader-response>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </p>
-                </reader-response>
-              </details>
-              <details>
-                <summary>Key terms <summary-icon>+</summary-icon></summary>
-                <div>
-                  <key-terms>
-                    <span>term 1</span>
-                    <span>term 2</span>
-                    <span>term 3</span>
-                  </key-terms>
-                </div>
-              </details>
-              <details>
-                <summary>Connections <summary-icon>+</summary-icon></summary>
-                <div>
-                  <connections-group>
-                    <connections-label
-                      >Connection Type (influence, response,
-                      application)</connections-label
-                    >
-                    <a href="#">
-                      Reference
-                      <connection-year>year</connection-year>
-                    </a>
-                  </connections-group>
-                </div>
-              </details>
+              <reader-response>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </reader-response>
             </details>
-          </article>
-          <!-- ENTRY END -->
+            <details>
+              <summary>Key terms <summary-icon>+</summary-icon></summary>
+              <div>
+                <key-terms>
+                  <span>term 1</span>
+                  <span>term 2</span>
+                  <span>term 3</span>
+                </key-terms>
+              </div>
+            </details>
+            <details>
+              <summary>Connections <summary-icon>+</summary-icon></summary>
+              <div>
+                <connections-group>
+                  <connections-label
+                    >Connection Type (influence, response,
+                    application)</connections-label
+                  >
+                  <a href="#">
+                    Reference
+                    <connection-year>year</connection-year>
+                  </a>
+                </connections-group>
+              </div>
+            </details>
+          </details>
+        </article>
+        <!-- ENTRY END -->
 
-          <div>
-            <h2>Primary Texts</h2>
-            <hr />
-            <!--original, foundational theoretical texts-->
-          </div>
+        <div>
+          <h2>Primary Texts</h2>
+          <hr />
+          <!--original, foundational theoretical texts-->
+        </div>
 
-          <div>
-            <h2>Secondary Texts</h2>
-            <hr />
-            <!--comment on, explain, apply, or critique primary texts-->
-          </div>
+        <div>
+          <h2>Secondary Texts</h2>
+          <hr />
+          <!--comment on, explain, apply, or critique primary texts-->
+        </div>
 
-          <div>
-            <h2>Applied Criticism</h2>
-            <hr />
-            <!--commenting on and deploying a theoretical framework-->
-          </div>
+        <div>
+          <h2>Applied Criticism</h2>
+          <hr />
+          <!--commenting on and deploying a theoretical framework-->
+        </div>
 
-          <div>
-            <h2>Related Texts</h2>
-            <hr />
-            <!--provide context but not directly about literary theory-->
-          </div>
-        </page-wrapper>
-
+        <div>
+          <h2>Related Texts</h2>
+          <hr />
+          <!--provide context but not directly about literary theory-->
+        </div>
+      </page-wrapper>
     </main>
   </body>
 </html>
