@@ -137,49 +137,6 @@ p {
   hyphens: auto;
 }
 
-p a,
-span a,
-main:not(:has(deck-section, thanks-background)) a {
-  color: var(--c-text-a);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-  border-radius: 5px;
-  outline-offset: 2px;
-
-  &::selection,
-  *::selection {
-    color: var(--c-text-a);
-  }
-
-  &:hover,
-  &:hover::selection,
-  &:hover *::selection {
-    color: var(--c-text-a-hov);
-  }
-
-  &:active,
-  &:active::selection,
-  &:active *::selection {
-    color: var(--c-text-a-act);
-  }
-
-  &:visited,
-  &:visited::selection,
-  &:visited *::selection {
-    color: var(--c-text-a-v);
-  }
-
-  &:visited:hover,
-  &:visited:hover::selection &:visited:hover *::selection {
-    color: var(--c-text-a-v-hov);
-  }
-
-  &:visited:active,
-  &:visited:active::selection &:visited:active *::selection {
-    color: var(--c-text-a-v-act);
-  }
-}
-
 #light :is(p a, span a, main:not(:has(deck-section, thanks-background)) a) {
   text-decoration-thickness: 1.5px;
 }
@@ -266,4 +223,48 @@ html#light {
       transform: translateY(2px);
     }
   }
+}
+
+a {
+  color: var(--c-text-a);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  border-radius: 5px;
+  outline-offset: 2px;
+}
+
+a::selection {
+  color: var(--c-text-a);
+}
+
+a:hover,
+a:hover::selection,
+a:hover *::selection {
+  color: var(--c-text-a-hov);
+}
+
+a:active,
+a:active::selection,
+a:active *::selection {
+  color: var(--c-text-a-act);
+}
+
+a:visited,
+a:visited::selection,
+a:visited *::selection {
+  color: var(--c-text-a-v);
+}
+
+a:visited:hover {
+  color: var(--c-text-a-v-hov);
+}
+a:visited:hover::selection,
+a:visited:hover *::selection {
+  color: var(--c-text-a-v-hov);
+}
+
+a:visited:active,
+a:visited:active::selection,
+a:visited:active *::selection {
+  color: var(--c-text-a-v-act);
 }

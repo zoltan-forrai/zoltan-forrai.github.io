@@ -116,7 +116,7 @@ deck-section a {
     transform 0.15s ease-out,
     box-shadow 0.15s ease;
   will-change: transform, box-shadow;
-  color: light-dark(hsla(0, 0%, 0%, 0.7), var(--off-white));
+  color: light-dark(hsla(0, 0%, 0%, 0.7), var(--off-white)) !important;
   box-shadow: var(--glass-shadow-b);
   background-image: var(--grad-card);
   backdrop-filter: blur(3px);
@@ -135,7 +135,7 @@ deck-section a {
     filter: brightness(1.1);
     transform: scale(1.04);
     z-index: 1;
-    color: light-dark(hsla(0, 0%, 0%, 0.8), var(--off-white));
+    color: light-dark(hsla(0, 0%, 0%, 0.8), var(--off-white)) !important;
   }
 
   &:active {
@@ -221,5 +221,4 @@ html#light body main {
     inset 0 0 20px rgba(255, 255, 255, 0.8),
     inset 0 0 30px rgba(255, 255, 255, 0.6),
     inset 0 0 50px rgba(255, 255, 255, 0.4);
-
 }
