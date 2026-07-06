@@ -32,10 +32,7 @@ const transitionTheme = (isDark) => {
     updateTheme(isDark);
     return;
   }
-  document.startViewTransition({
-    update: () => updateTheme(isDark),
-    types: ["theme"],
-  });
+  document.startViewTransition(() => updateTheme(isDark));
 };
 toggle.onclick = () => {
   const isDark = html.id === "light";

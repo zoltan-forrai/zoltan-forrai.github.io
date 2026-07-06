@@ -6,11 +6,11 @@
       -moz-user-select: none;
     }
 
-    ::view-transition-old(root):active-view-transition-type(theme) {
+    ::view-transition-old(root) {
       animation-delay: 300ms;
     }
 
-    ::view-transition-new(root):active-view-transition-type(theme) {
+    ::view-transition-new(root) {
       animation: circle-in 600ms;
     }
 
@@ -25,7 +25,3 @@
   }
 }
 
-/* Not yet supported in firefox! */
-@view-transition {
-  navigation: auto;
-}

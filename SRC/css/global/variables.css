@@ -326,6 +326,5 @@
 
   --glass-shadow-b:
     inset 0px -10px 25px -5px hsla(from var(--white) h s l / 0.8),
-    inset 0px 12px 25px -5px hsla(from var(--white) h s l / 0.8),
-    3px 5px 8px 0px hsla(from var(--c-blue) h s l / 0.5);
+    inset 0px 12px 25px -5px hsla(from var(--white) h s l / 0.8);
 }

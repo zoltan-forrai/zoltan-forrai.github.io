@@ -81,3 +81,8 @@
     color: white;
   }
 }
+
+body:has(#annoyance:not([style="display: none;"])) main,
+body:has(#annoyance:not([style="display: none;"])) header {
+  filter: blur(3px);
+}

@@ -191,19 +191,13 @@ article.not-found h1 {
 
 /* --------------------------------- */
 
-
 dev-notice {
   display: inline-block;
   text-align: center;
+  min-height: 30px;
   width: 100%;
   position: relative;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  -webkit-text-stroke: 1px black;
-  font-size: 1.5rem;
   padding: 0px 20px;
-  color: black;
   background-image: repeating-linear-gradient(
     -45deg,
     hsla(52, 100%, 40%, 1) 0 20px,
@@ -219,8 +213,14 @@ dev-notice span {
   background-color: hsla(52, 100%, 40%, 1);
   user-select: none;
   padding-inline: 4px;
-    border-radius: 10px;
+  border-radius: 5px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-text-stroke: 1px black;
+  font-size: 1.5rem;
 }
 
 .typewriter {

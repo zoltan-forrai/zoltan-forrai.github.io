@@ -29,6 +29,7 @@ if (
 // Filter
 if (document.querySelector("deck-section")) {
   await import("/SRC/js/filter.js");
+  await import("/SRC/js/wip.js");
 }
 
 // Summary
