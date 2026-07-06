@@ -31,6 +31,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 img,
 picture,
 video,
@@ -413,7 +414,9 @@ ul div a {
   background-color: var(--c-page);
   box-shadow: var(--glass-shadow);
   transform: scale(0.952);
-  transition: transform 0.2s ease, filter 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
 
   &:hover {
     transform: scale(1);

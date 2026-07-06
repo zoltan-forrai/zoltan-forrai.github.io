@@ -1,4 +1,12 @@
 @font-face {
+  font-family: "alagard";
+  src: url("/SRC/asset/font/Alagard/alagard.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "departure-mono";
   src: url("/SRC/asset/font/departuremono/DepartureMono-Regular.woff2")
       format("woff2"),

@@ -2,6 +2,11 @@
 @import "/SRC/css/global/fonts.css";
 @import "/SRC/css/global/variables.css";
 
+* {
+  font-family: var(--ff-alagard);
+
+}
+
 a {
   color: var(--c-text-a);
   text-decoration-thickness: 1px;

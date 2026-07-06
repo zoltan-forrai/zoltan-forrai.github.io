@@ -94,7 +94,7 @@ h1 {
 
 h2 {
   font-size: var(--base-fs);
-  margin-block: var(--mp-l) calc(var(--mp-s) / 2);
+  margin-block: 1.2em calc(var(--mp-s) / 2);
 }
 h3 {
   font-size: var(--base-fs);
@@ -236,4 +236,17 @@ dev-notice span {
 .jb-mono {
   font-family: var(--ff-jb-mono);
   font-size: 1.27rem;
+}
+
+#cv {
+  display: block;
+  width: 100%;
+  font-size: var(--f-size-m);
+
+  svg {
+    transform: translateY(5px);
+    color: var(--c-text) !important;
+    width: 1em;
+    height: 1em;
+  }
 }

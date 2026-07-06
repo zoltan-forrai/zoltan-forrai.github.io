@@ -4,7 +4,7 @@ main > aside {
   gap: 9px;
 }
 
-main > aside > footer {
+aside footer {
   max-width: 100%;
   display: flex;
   flex: 1 1 auto;
@@ -38,35 +38,11 @@ body:has(pspotify-p) {
     padding: 15px 0;
     position: relative;
     background: var(--grad-foot-green-rad);
-    text-align: center;
   }
 
   main > aside {
     gap: 7px;
     z-index: var(--z-raised);
-  }
-
-  main > aside > footer span {
-    display: block;
-    width: 100%;
-    margin-block: 5px 10px;
-    font-size: var(--f-size-m);
-  }
-
-  main > aside > footer svg {
-    transform: translateY(5px);
-    width: 1em;
-    height: 1em;
-  }
-
-  main > aside > footer a {
-    text-decoration: underline;
-    color: var(--c-text) !important;
-    user-select: none;
-
-    &:hover {
-      color: white;
-    }
   }
 
   @media (min-width: 661px) {
