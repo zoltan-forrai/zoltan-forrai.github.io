@@ -147,4 +147,5 @@ footer:has(gallery-row) {
 footer p {
   font-family: var(--ff-alagard);
   font-size: var(--f-size-m);
+  padding-left: 10px;
 }

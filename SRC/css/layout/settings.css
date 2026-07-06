@@ -1,5 +1,12 @@
+
+tech-stack-list {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.4rem;
+}
+
 nav:has(a[href="/rss.xml"]) {
   border-bottom: 1px solid var(--color-alt-white);
+  font-family: var(--ff-type);
 }
 
 nav:has(a[href="/rss.xml"]) ul {
@@ -27,8 +34,6 @@ nav:has(a[href="/rss.xml"]) a {
 nav:has(a[href="/rss.xml"]) a:hover {
   color: light-dark(black, white);
 }
-
-
 
 buttons-88x31 {
   user-select: none;
@@ -85,7 +90,6 @@ tech-stack-icons a:focus-visible img {
 tech-stack-icons a:focus-visible {
   border-radius: 12px;
 }
-
 
 /* Mobile Adaptations */
 @media screen and (max-width: 768px) {
@@ -163,7 +167,6 @@ section:has(code) ul {
   border-bottom: 5px solid black;
 }
 
-
 magic-spell {
   color: light-dark(orangered, slateblue);
   font-weight: bold;
@@ -186,3 +189,9 @@ magic-spell {
     margin-top: 0;
   }
 }
+
+h3 {
+  font-family: var(--ff-alagard);
+
+}
+

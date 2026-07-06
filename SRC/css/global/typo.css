@@ -162,8 +162,24 @@ faq-container details[open] summary {
 }
 
 details p {
-  padding: 10px 10px 10px 20px;
+  padding: 0px 10px 0px 20px;
   line-height: 1.5;
+}
+
+faq-container details p {
+  padding: 5px 10px 5px 20px;
+}
+
+
+details:is(:not(faq-container details)) p:first-of-type {
+  margin-top: 15px;
+}
+details:is(:not(faq-container details)) p:last-of-type {
+  padding-bottom: 10px;
+}
+
+details h3 {
+  padding: 0px 10px 5px 20px;
 }
 
 /* inline */
@@ -225,17 +241,26 @@ dev-notice span {
 
 .typewriter {
   font-family: var(--ff-type);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .departure {
   font-family: var(--ff-mono);
-  font-size: 1.2rem;
+  font-size: 1.24rem;
 }
 
 .jb-mono {
   font-family: var(--ff-jb-mono);
-  font-size: 1.27rem;
+  font-size: 1.3rem;
+}
+
+.alagard {
+  font-family: var(--ff-alagard);
+  font-size: 1.5rem;
+}
+
+.cochin {
+  font-family: var(--ff-lit);
 }
 
 #cv {
