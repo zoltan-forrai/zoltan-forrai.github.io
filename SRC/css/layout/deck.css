@@ -171,8 +171,6 @@ title-span {
   }
 }
 
-
-
 deck-section a.dark {
   background-color: black;
   box-shadow: 0px 15px 19px 2px rgba(0, 0, 0, 0.5);
@@ -203,7 +201,6 @@ deck-section a dev-notice:nth-of-type(2) {
 
 html#light deck-section a dev-notice {
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6);
-
 }
 
 html#dark body main {
@@ -211,11 +208,18 @@ html#dark body main {
   background-image: url(/SRC/media/img/grunge.png);
   background-size: cover;
   background-blend-mode: lighten;
+  box-shadow:
+    inset 0 0 60px rgba(0, 0, 0, 0.8),
+    inset 0 0 65px rgba(0, 0, 0, 0.6),
+    inset 0 0 105px rgba(0, 0, 0, 0.4);
 }
 
 html#light body main {
-
   background-image: url(/SRC/media/img/water.png);
   background-size: cover;
+  box-shadow:
+    inset 0 0 20px rgba(255, 255, 255, 0.8),
+    inset 0 0 30px rgba(255, 255, 255, 0.6),
+    inset 0 0 50px rgba(255, 255, 255, 0.4);
 
 }
