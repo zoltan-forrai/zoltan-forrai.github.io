@@ -49,7 +49,8 @@ pspotify-p img {
   min-height: 0;
 }
 
-@supports (background: -webkit-named-image(i)) {
+@supports (background: -webkit-named-image(i)) {ű
+  /* I hate safari */
   pspotify-p img {
     scale: 0.82;
     width: unset !important;
