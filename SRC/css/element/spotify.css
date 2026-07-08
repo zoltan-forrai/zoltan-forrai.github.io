@@ -1,7 +1,8 @@
 pspotify-p {
+  display: block;
   position: relative;
   margin: 0;
-  width: 100%;
+
   aspect-ratio: 3/1;
   /* Needed for height! */
   flex-shrink: 0;
@@ -15,7 +16,6 @@ pspotify-p {
   -moz-user-select: none;
   -ms-user-select: none;
 
-
   &::after {
     content: "";
     position: absolute;
@@ -24,25 +24,42 @@ pspotify-p {
     right: 0;
     bottom: 0;
     pointer-events: none;
-    box-shadow: inset 0px -10px 25px -10px var(--spt-shadow-dark),
+    box-shadow:
+      inset 0px -10px 25px -10px var(--spt-shadow-dark),
       inset 0px 15px 20px -10px var(--spt-shadow-darker);
     z-index: 1;
   }
 
   &:focus-within {
     outline: 2px solid orange;
-
   }
 }
 
 pspotify-p a {
+  position: absolute;
+  inset: 0;
   display: block;
 }
 
 pspotify-p img {
-  width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
+  min-width: 0;
+  min-height: 0;
+}
+
+@supports (background: -webkit-named-image(i)) {
+  pspotify-p img {
+    scale: 0.82;
+    width: unset !important;
+    max-width: unset !important;
+    height: unset !important;
+    transform-origin: top left;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 #spotify-light {
@@ -77,14 +94,5 @@ html#light {
   }
   #spotify-light {
     display: block;
-  }
-}
-
-@media (max-width: 660px) {
-  pspotify-p {
-    max-width: fit-content;
-  }
-  pspotify-p img {
-    min-width: calc(100vw - 12px);
   }
 }

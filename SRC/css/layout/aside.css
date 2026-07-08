@@ -30,6 +30,10 @@ aside footer {
   main > aside > footer {
     padding: 20px 0px;
   }
+
+  body:has(pspotify-p) aside {
+    margin-left: 0;
+  }
 }
 
 /* about */
@@ -45,20 +49,20 @@ body:has(pspotify-p) {
     z-index: var(--z-raised);
   }
 
-  @media (min-width: 661px) {
-    aside {
-      position: fixed;
-      top: 88px;
-      left: 9px;
-      height: calc(100vh - 97px);
-      width: clamp(300px, 35vw, 390px);
-    }
+  /* Add margin to main content so it's not hidden under the fixed aside */
+  main {
+    margin-left: calc(clamp(300px, 35vw, 380px) + 9px);
+    padding-left: 0.6rem !important;
+  }
+}
 
-    /* Add margin to main content so it's not hidden under the fixed aside */
-    main {
-      margin-left: calc(clamp(300px, 35vw, 390px) + 9px);
-      padding-left: 0.6rem !important;
-    }
+@media (min-width: 661px) {
+  body:has(pspotify-p) aside {
+    position: fixed;
+    top: 88px;
+    left: 9px;
+    height: calc(100vh - 97px);
+    width: clamp(300px, 35vw, 380px);
   }
 }
 
@@ -153,5 +157,13 @@ html#light {
 }
 
 footer:has(.status-update:hover) svg-links a[href="/rss.xml"] img {
-  filter: saturate(1) brightness(var(--svg-link-brightness)) hue-rotate(160deg) drop-shadow(2px 2px 4px hsla(0, 0%, 0%, 0.7));
+  filter: saturate(1) brightness(var(--svg-link-brightness)) hue-rotate(160deg)
+    drop-shadow(2px 2px 4px hsla(0, 0%, 0%, 0.7));
+}
+
+@media (max-width: 660px) {
+
+  body:has(pspotify-p) main {
+    margin-left: 0;
+  }
 }

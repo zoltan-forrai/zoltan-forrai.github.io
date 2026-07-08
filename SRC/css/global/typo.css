@@ -4,7 +4,7 @@ faq-container {
   box-sizing: content-box; /* To make the text itself 70ch */
   max-inline-size: 70ch;
   margin-inline: auto;
-  padding: 2rem min(5rem, 4%);
+  padding: 2rem min(22px, 4%);
   display: block;
 }
 
