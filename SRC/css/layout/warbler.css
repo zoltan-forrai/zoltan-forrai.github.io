@@ -59,7 +59,8 @@ status-update {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  box-shadow: inset 0px 15px 20px -10px hsla(from var(--black) h s l / 0.3),
+  box-shadow:
+    inset 0px 15px 20px -10px hsla(from var(--black) h s l / 0.3),
     inset -0px -10px 25px -11px hsla(from var(--black) h s l / 0.3);
 }
 
@@ -131,28 +132,34 @@ interaction-row label {
 interaction-row a,
 interaction-row label {
   color: hsl(0, 0%, 45%) !important;
-  cursor: pointer;
 }
 
 interaction-row a svg,
 interaction-row label svg {
   width: 18px;
   height: 18px;
+  cursor: pointer;
 }
 
-interaction-row a:hover,
-interaction-row label:hover {
-  color: hsl(0, 0%, 60%);
+interaction-row a svg:hover,
+interaction-row label svg:hover {
+  color: hsl(0, 0%, 60%) !important;
 }
 
-interaction-row a:active,
-interaction-row label:active {
+interaction-row a svg:active,
+interaction-row label svg:active {
   scale: 0.9;
 }
 
 [class="heart"]:checked ~ label svg {
-  fill: palevioletred;
-  stroke: palevioletred;
+  fill: hsl(340, 57%, 65%);
+  stroke: hsl(340, 88%, 60%);
+}
+
+[class="heart"]:checked ~ label svg:hover {
+  fill: hsl(340, 75%, 75%);
+  stroke: hsl(340, 88%, 70%);
+
 }
 
 /* Mobile Responsive Styles */
