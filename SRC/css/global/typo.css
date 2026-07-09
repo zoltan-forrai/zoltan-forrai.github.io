@@ -163,7 +163,7 @@ faq-container details[open] summary {
 
 details p {
   padding: 0px 10px 0px 20px;
-  line-height: 1.5;
+  line-height: var(--lh-m);
 }
 
 faq-container details p {
