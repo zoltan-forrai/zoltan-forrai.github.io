@@ -16,9 +16,6 @@
       })();
     </script>
     <script type="module" src="/index.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
-      rel="stylesheet" />
     <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="/SRC/css/layout/theory.css" />
   </head>
@@ -35,7 +32,7 @@
           <li tabindex="0" data-icon="personal">
             <b>Personal</b>
             <ul>
-              <li><a href="/personal/about">My Lore</a></li>
+              <li><a href="/personal/about">Who am I?</a></li>
               <li><a href="/personal/faq">Questions</a></li>
               <li><a href="/personal/warbler">Warbler</a></li>
             </ul>
@@ -68,9 +65,9 @@
       </nav>
     </header>
     <main>
-      <page-wrapper>
-        <page-header>
-          <h1 class="typewriter">Literary Theory, Analysis, &amp; Criticism</h1>
+      <article>
+        <header>
+          <h1>Literary Theory, Analysis, &amp; Criticism</h1>
           <p>
             My personal annotated bibliography from Plato to the present.
             Entries are ordered chronologically. Use
@@ -79,107 +76,141 @@
           </p>
           <p>
             <b>Note&colon;</b> This bibliography is not comprehensive. The
-            entries reflect my own reading journey into theory. This page is a
-            compainon to my <a href="/interests/library">Library</a>.
+            entries reflect my own reading journey into theory.
           </p>
-        </page-header>
-        <!-- ==== TEMPLATE ==== -->
-        <!-- ENTRY START -->
-        <article id="template">
-          <details>
-            <summary>
-              <entry-header>
-                <entry-byline>
-                  Author ·
-                  <original-year>year (orig. pub.)</original-year>
-                  · citation information (APA) · [Read: yyyy-mm]
-                  <a href=""></a>
-                </entry-byline>
-                <entry-title>Title (TEMPLATE)</entry-title>
-                <tag-row>
-                  <tag-period>time period</tag-period>
-                  <tag-type>text type</tag-type>
-                  <tag-school>school / movement</tag-school>
-                  <tag-lang>language / translation</tag-lang>
-                </tag-row>
-              </entry-header>
-            </summary>
-            <details open>
-              <summary>
-                Context &amp; Argument<summary-icon>+</summary-icon>
-              </summary>
-              <div>
-                <p
-                  data-comm="Summary: Argument -> claim + evidence + warrant (reason)">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-                <p
-                  data-comm="Eval: What? Who? Why? When? Where? + How -> method">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary>
-                Notes &amp; Response <summary-icon>+</summary-icon>
-              </summary>
-              <reader-response>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </reader-response>
-            </details>
-            <details>
-              <summary>Key terms <summary-icon>+</summary-icon></summary>
-              <div>
-                <key-terms>
-                  <span>term 1</span>
-                  <span>term 2</span>
-                  <span>term 3</span>
-                </key-terms>
-              </div>
-            </details>
-            <details>
-              <summary>Connections <summary-icon>+</summary-icon></summary>
-              <div>
-                <connections-group>
-                  <connections-label
-                    >Connection Type (influence, response,
-                    application)</connections-label
-                  >
-                  <a href="#">
-                    Reference
-                    <connection-year>year</connection-year>
-                  </a>
-                </connections-group>
-              </div>
-            </details>
-          </details>
-        </article>
-        <!-- ENTRY END -->
-
-        <div>
-          <h2>Primary Texts</h2>
-          <hr />
-          <!--original, foundational theoretical texts-->
-        </div>
-
-        <div>
-          <h2>Secondary Texts</h2>
-          <hr />
-          <!--comment on, explain, apply, or critique primary texts-->
-        </div>
-
-        <div>
-          <h2>Applied Criticism</h2>
-          <hr />
-          <!--commenting on and deploying a theoretical framework-->
-        </div>
-
-        <div>
-          <h2>Related Texts</h2>
-          <hr />
-          <!--provide context but not directly about literary theory-->
-        </div>
-      </page-wrapper>
+        </header>
+        <p id="jumper">
+          <a href="#primary">Primary Texts</a> ・
+          <a href="#secondary">Secondary Texts</a> ・
+          <a href="#applied">Applied Criticism</a> ・
+          <a href="#related">Related Texts</a>
+        </p>
+        <section id="primary">
+          <div>
+            <h2>Primary Texts</h2>
+            <hr />
+            <!--original, foundational theoretical texts-->
+          </div>
+        </section>
+        <section id="secondary">
+          <div>
+            <h2>Secondary Texts</h2>
+            <hr />
+            <!--comment on, explain, apply, or critique primary texts-->
+          </div>
+        </section>
+        <section id="applied">
+          <div>
+            <h2>Applied Criticism</h2>
+            <hr />
+            <!--commenting on and deploying a theoretical framework-->
+          </div>
+        </section>
+        <section id="related">
+          <div>
+            <h2>Related Texts</h2>
+            <hr />
+            <!--provide context but not directly about literary theory-->
+          </div>
+        </section>
+      </article>
     </main>
+    <script>
+      (async () => {
+        const works = await fetch("/theory.json").then((response) =>
+          response.json(),
+        );
+
+        const sections = {
+          primary: document.querySelector("#primary"),
+          secondary: document.querySelector("#secondary"),
+          applied: document.querySelector("#applied"),
+          related: document.querySelector("#related"),
+        };
+
+        Object.entries(works)
+          .sort(([, a], [, b]) => a.year - b.year)
+          .forEach(([id, work]) => {
+          if (!work.section || !sections[work.section]) {
+            return;
+          }
+          const entry = document.createElement("details");
+          entry.id = id;
+          entry.innerHTML = `
+              <summary>
+                <div class="top-row">
+                  <span class="authors">${work.authors.join(", ")}</span> ·
+                  <span class="year">${work.year}</span> ·
+                  <span class="read">[Read: ${work.read}]</span>
+                  <a class="link" href="/interests/library#${id}"> </a>
+                </div>
+                <div class="title">${work.title}</div>
+                <div class="tags">
+                  <mark class="period">${work.tags[0]}</mark>
+                  <mark class="type">${work.tags[1]}</mark>
+                  <mark class="school">${work.tags[2]}</mark>
+                  <mark class="lang">${work.tags[3]}</mark>
+                </div>
+              </summary>
+              <div class="entry-body">
+                <details class="argument" open>
+                  <summary>Context & Argument <i>+</i></summary>
+                  <div>
+                    <p class="summary">${work.summary}</p>
+                    <p class="context">${work.context}</p>
+                  </div>
+                </details>
+                <details class="notes">
+                  <summary>Notes & Response <i>+</i></summary>
+                  <div>
+                    <p class="response">${work.response}</p>
+                  </div>
+                </details>
+                <details class="terms">
+                  <summary>Key Terms <i>+</i></summary>
+                  <div></div>
+                </details>
+                <details class="connection">
+                  <summary>Connections <i>+</i></summary>
+                  <p class="con-det">Connection Type (influence, response, application)</p>
+                  <div></div>
+                </details>
+              </div>
+            `;
+          sections[work.section].appendChild(entry);
+
+          const target = location.hash.slice(1);
+
+          if (target) {
+            const entry = document.getElementById(target);
+            if (entry instanceof HTMLDetailsElement) {
+              entry.open = true;
+              entry.scrollIntoView({ behavior: "smooth", block: "start" });
+              entry.style.outline = "2px solid light-dark(orangered, orange)";
+            }
+          }
+
+          const termsContainer = entry.querySelector(".terms div");
+
+          work.terms.forEach((term) => {
+            const span = document.createElement("span");
+            span.textContent = term;
+            termsContainer.appendChild(span);
+          });
+
+          const connectionContainer = entry.querySelector(".connection div");
+
+          work.connection.forEach((connection) => {
+            const a = document.createElement("a");
+            connectionContainer.appendChild(a);
+            a.href = `#${connection}`;
+
+            a.innerHTML = `
+                ${works[connection].title} <span>${works[connection].year}</span>
+              `;
+          });
+        });
+      })();
+    </script>
   </body>
 </html>

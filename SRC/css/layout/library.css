@@ -279,7 +279,6 @@ table:not(#author-section table) thead th:hover {
   color: light-dark(black, white);
 }
 
-
 #author-section table {
   width: 100%;
   border-collapse: collapse;
@@ -747,4 +746,29 @@ a::selection {
 .is-read:not(section .is-read) td:nth-child(1) *::selection {
   color: hsl(120, 100%, 30%) !important;
   font-weight: bold;
+}
+
+#theory-link::before {
+  content: "";
+  mask-image: url("/SRC/asset/svg/icon-notebook-pen.svg");
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--c-g-65);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  vertical-align: middle;
+  margin: 3.5px 4px 0 10px;
+  transform: scale(0.9);
+  transition: transform 0.2s ease;
+}
+
+#theory-link:hover:before {
+  background-color: var(--c-g-90);
+  transform: scale(1);
+}
+
+#theory-link:active:before {
+  background-color: var(--c-g-40);
+  transform: scale(0.85);
 }

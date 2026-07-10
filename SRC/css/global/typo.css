@@ -170,7 +170,6 @@ faq-container details p {
   padding: 5px 10px 5px 20px;
 }
 
-
 details:is(:not(faq-container details)) p:first-of-type {
   margin-top: 15px;
 }
@@ -274,4 +273,9 @@ dev-notice span {
     width: 1em;
     height: 1em;
   }
+}
+
+kbd {
+  font-family: var(--ff-type);
+  font-size: 1.23rem;
 }

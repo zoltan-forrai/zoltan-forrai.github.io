@@ -1,0 +1,36 @@
+{
+  "template": {
+    "section": "",
+    "title": "",
+    "authors": ["", ""],
+    "year": 1999,
+    "read": "1999 September",
+    "tags": [
+      "time period",
+      "media type",
+      "school / movement",
+      "Laguage / translation"
+    ],
+    "summary": "Summary: Argument -> claim + evidence + warrant (reason)",
+    "context": "Eval: What? Who? Why? When? Where? + How -> method",
+    "response": "Ideas...",
+    "terms": ["term 1", "term 2"],
+    "connection": ["cannot be an empty string"]
+  },
+
+  "how-to-read-a-book": {
+    "section": "related",
+    "title": "How To Read A Book",
+    "authors": ["Mortimer J. Adler", "Charles Van Doren"],
+    "year": 1972,
+    "read": "2026 July",
+    "tags": ["", "book", "", "English"],
+    "summary": "",
+    "context": "",
+    "response": "",
+    "terms": ["Close Reading"],
+    "connection": []
+  }
+
+
+}
