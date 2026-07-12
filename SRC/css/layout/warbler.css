@@ -1,9 +1,9 @@
-[data-page="warbler"] ::selection {
-  color: black;
-  background-color: lightskyblue;
+tweet-timeline status-update::selection {
+  color: black !important;
+  background-color: lightskyblue !important;
 }
 
-[data-page="warbler"] main-box {
+tweet-timeline main-box {
   display: block;
   height: calc(100vh - 97px);
   overflow: hidden;
@@ -18,7 +18,7 @@
   }
 }
 
-[data-page="warbler"] main-box::after {
+tweet-timeline main-box::after {
   content: "";
   position: absolute;
   top: 0;
@@ -164,7 +164,7 @@ interaction-row label svg:active {
 
 /* Mobile Responsive Styles */
 @media (max-width: 600px) {
-  [data-page="warbler"] main-box {
+  tweet-timeline main-box {
     height: calc(100vh - 70px);
   }
 

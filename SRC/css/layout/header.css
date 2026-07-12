@@ -81,10 +81,17 @@ title-bar a:any-link {
 
 title-bar a img {
   margin: 0.5rem 0.8rem 0.5rem 1.6rem;
+  filter: brightness(0.9) saturate(1)
+    drop-shadow(
+      0 0 5px light-dark(hsla(from black h s l / 1), hsla(from black h s l / 1))
+    );
+}
 
-  filter: drop-shadow(
-    0 0 5px light-dark(hsla(from black h s l / 1), hsla(from black h s l / 1))
-  );
+title-bar a:hover img {
+  filter: brightness(1.1) saturate(1.5)
+    drop-shadow(
+      0 0 5px light-dark(hsla(from black h s l / 1), hsla(from black h s l / 1))
+    );
 }
 
 title-bar a span {
