@@ -1,127 +1,173 @@
-<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/download/743a8bee9-5e9533429/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-<url>
-<loc>https://www.gildrom.com/</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/personal/about</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/personal/obsessions</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/personal/library</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/literary/fiction</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/literary/poetry</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/literary/essays</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/tavern/contact</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/tavern/warbler</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/tavern/patronage</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/beyond/other</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/beyond/secret</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/beyond/epilogue</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/beyond/colophon</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/personal/CV/</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/literary/fiction/befitting</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>
-https://www.gildrom.com/literary/fiction/reverie_ride
-</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/literary/fiction/the_cure</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/literary/poetry/wheres_she</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>
-https://www.gildrom.com/literary/essays/literary-theory
-</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/personal/CV/index</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/faq</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/legal</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://www.gildrom.com/legalease</loc>
-<lastmod>2026-02-21T14:36:22+00:00</lastmod>
-<priority>0.51</priority>
-</url>
+  <url>
+       <loc>https://www.gildrom.com/</loc>
+       <lastmod>2026-07-12T14:07:49+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/personal/about</loc>
+       <lastmod>2026-07-12T14:07:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/personal/faq</loc>
+       <lastmod>2026-07-12T14:07:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/personal/warbler</loc>
+       <lastmod>2026-07-12T14:07:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/literary/essays</loc>
+       <lastmod>2026-07-12T14:07:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/literary/fiction</loc>
+       <lastmod>2026-07-12T14:07:49+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/literary/games</loc>
+       <lastmod>2026-07-12T14:07:49+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/interests/library</loc>
+       <lastmod>2026-07-12T14:07:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/interests/obsessions</loc>
+       <lastmod>2026-07-12T14:07:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/interests/other</loc>
+       <lastmod>2026-07-12T14:07:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/beyond/patronage</loc>
+       <lastmod>2026-07-12T14:07:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/beyond/contact</loc>
+       <lastmod>2026-07-12T14:07:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/beyond/secret</loc>
+       <lastmod>2026-07-12T14:07:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/rss.xml</loc>
+       <lastmod>2026-07-12T14:07:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/settings</loc>
+       <lastmod>2026-07-12T14:07:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/zoltan-forrai</loc>
+       <lastmod>2026-07-12T14:07:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/literary/essays/web-puzzles</loc>
+       <lastmod>2026-07-12T14:07:49+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/literary/essays/ng-games</loc>
+       <lastmod>2026-07-12T14:07:49+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/literary/essays/weblog</loc>
+       <lastmod>2026-07-12T14:07:49+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/literary/fiction/befitting</loc>
+       <lastmod>2026-07-12T14:07:49+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/literary/fiction/wheres_she</loc>
+       <lastmod>2026-07-12T14:07:49+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/literary/fiction/reverie_ride</loc>
+       <lastmod>2026-07-12T14:07:49+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/literary/fiction/the_cure</loc>
+       <lastmod>2026-07-12T14:07:49+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/interests/obsessions/theory</loc>
+       <lastmod>2026-07-12T14:07:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/interests/obsessions/Maze</loc>
+       <lastmod>2026-07-12T14:07:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/forrai-zoltan.html</loc>
+       <lastmod>2026-07-12T14:07:49+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/zoltan-forrai.html</loc>
+       <lastmod>2026-07-12T14:07:49+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://www.gildrom.com/forrai-zoltan</loc>
+       <lastmod>2026-07-12T14:07:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.5120</priority>
+  </url>
 </urlset>
