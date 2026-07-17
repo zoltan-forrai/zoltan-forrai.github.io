@@ -105,7 +105,7 @@ header ul li mark {
     background-color: oklch(from var(--tag-color) l c h / 0.2);
   }
 
-  &:is(#adventure, #vampire, #psycho, ) {
+  &:is(#adventure, #vampire, #psycho, #lucifer ) {
     --tag-color: hsl(0, 75%, 50%);
   }
   &:is() {
@@ -117,7 +117,7 @@ header ul li mark {
   &:is(#sci-fi, ) {
     --tag-color: hsl(129, 80%, 35%);
   }
-  &:is(#poetry, #ballad, ) {
+  &:is(#poetry, #ballad, #religion ) {
     --tag-color: hsl(208, 80%, 50%);
   }
   &:is(#fantasy, ) {
