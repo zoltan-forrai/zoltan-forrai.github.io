@@ -4,7 +4,7 @@
 
 body > header {
   height: var(--header-height);
-  width: 100%;
+  width: calc(100% - 9px);
   position: fixed;
   top: 0;
   z-index: var(--z-sticky);
@@ -127,7 +127,8 @@ menu label[for="burger"],
   header nav {
     position: fixed;
     top: var(--titlebar-height);
-    width: 100%;
+    width: calc(100% - 4px);
+
     user-select: none;
     -moz-user-select: none;
   }
@@ -326,19 +327,21 @@ header nav a[href="/literary/essays"]::before {
 header nav a[href="/literary/fiction"]::before {
   mask-image: url("/SRC/asset/svg/icon-book-closed.svg");
 }
-header nav a[href="/literary/games"]::before {
-  mask-image: url("/SRC/asset/svg/puzzle.svg");
+header nav a[href="/literary/library"]::before {
+  mask-image: url("/SRC/asset/svg/icon-book-open.svg");
 }
 
 /* Interests */
 header nav a[href="/interests/other"]::before {
   mask-image: url("/SRC/asset/svg/icon-palette.svg");
 }
+
+header nav a[href="/interests/games"]::before {
+  mask-image: url("/SRC/asset/svg/puzzle.svg");
+}
+
 header nav a[href="/interests/obsessions"]::before {
   mask-image: url("/SRC/asset/svg/icon-star.svg");
-}
-header nav a[href="/interests/library"]::before {
-  mask-image: url("/SRC/asset/svg/icon-book-open.svg");
 }
 
 /* Beyond */

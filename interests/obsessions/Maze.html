@@ -3,7 +3,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
-		<title>Maze</title>
+		<title>maze</title>
 	</head>
 	<body>
 		<script>/*! For license information please see main.js.LICENSE.txt */
@@ -11,7 +11,11 @@
 		<tw-story tags>
 			<tw-passage class="passage" aria-live="polite"></tw-passage>
 		</tw-story>
-		<tw-storydata name="Maze" startnode="47" creator="Twine" creator-version="2.12.0" format="Snowman" format-version="2.1.1" ifid="6E62E6F2-587D-4A41-964C-08CC95BDB4DF" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
+		<tw-storydata name="maze" startnode="47" creator="Twine" creator-version="2.12.0" format="Snowman" format-version="2.1.1" ifid="6E62E6F2-587D-4A41-964C-08CC95BDB4DF" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">* {
+  scrollbar-width: none !important;
+}
+
+body {
   background-color: #FDF7DD;
   font-family: serif;
   font-size: 17px;
@@ -54,15 +58,15 @@ text-align: right;
 }
 
 hr {
-  width: 65ch;
+  width: 62ch;
   max-width: 95vw;
   margin: 5px 0 15px 0; 
 }
 
 p {
-  width: 63ch;
-  max-width: 95vw;
-  margin: 0; 
+  width: 63.5ch;
+  max-width: 93vw;
+  margin: 0 5px; 
   text-indent: 1.1rem;
   overflow-wrap: break-word;
   hyphens: auto;
@@ -169,11 +173,11 @@ img:not(div img, span img), span {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   
   tw-story img:not(div img, span img), span  {
     float: right;
-    margin: 20px 0 20px 20px;
+    margin: 30px 0 20px 20px;
     max-width: 52%;
     width: calc(100vw - 65ch);
 
@@ -188,7 +192,7 @@ img:not(div img, span img), span {
  
   tw-story:has(img) {
     max-width: 99%;
-    margin-inline: 5% 2%;
+    margin-inline: 1.5% 1.5%;
   }
   
   tw-passage {
@@ -240,7 +244,126 @@ document.addEventListener("click", (e) => {
 overlay.addEventListener("click", closeOverlay);
 document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeOverlay();
-});</script><tw-tag name="p" color="green"></tw-tag><tw-tag name="testtag" color="orange"></tw-tag><tw-tag name="test" color="green"></tw-tag><tw-tag name="estate" color="purple"></tw-tag><tw-tag name="Path" color="green"></tw-tag><tw-tag name="Shortest" color="green"></tw-tag><tw-tag name="Loop" color="blue"></tw-tag><tw-tag name="Trap" color="orange"></tw-tag><tw-tag name="Dead-End" color="purple"></tw-tag><tw-tag name="Goal" color="yellow"></tw-tag><tw-passagedata pid="1" name="Directions" tags="" position="400,400" size="100,100">&lt;script&gt;document.title = &quot;Directions・gildrom.com&quot;;&lt;/script&gt;
+});
+
+
+(function () {
+  // ---- Config ----
+  // Pass CSS selectors for scrollable containers here.
+  // Leave empty to track the whole page (window scrolling) instead.
+  const TARGETS = []; // e.g. ['#sidebar', '.chat-panel']
+
+  const SIDE = "right";
+  const TRACK_WIDTH = "4px";
+  const TRACK_COLOR = "rgba(0, 0, 0, 0.0)";
+  const FILL_COLOR =
+    "light-dark(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 100%, 0.3))";
+  const Z_INDEX = 9999;
+
+  // ---- Shared styling (injected once) ----
+  const style = document.createElement("style");
+  style.textContent = `
+    .custom-scroll-track {
+      position: fixed;
+      top: 0;
+      width: ${TRACK_WIDTH};
+      height: 100%;
+      background: ${TRACK_COLOR};
+      z-index: ${Z_INDEX};
+      pointer-events: none;
+    }
+
+    .custom-scroll-fill {
+      width: 100%;
+      height: 0%;
+      border-radius: 20px;
+      background: ${FILL_COLOR};
+      transition: height 0.1s ease-out;
+    }
+  `;
+  document.head.appendChild(style);
+
+  // ---- Builds one indicator bound to a given scroll source ----
+  function createIndicator(scrollSource) {
+    // scrollSource is either window or a DOM element
+    const isWindow = scrollSource === window;
+
+    const track = document.createElement("div");
+    track.className = "custom-scroll-track";
+    track.style[SIDE] = "1px";
+
+    const fill = document.createElement("div");
+    fill.className = "custom-scroll-fill";
+
+    track.appendChild(fill);
+
+    if (isWindow) {
+      document.body.appendChild(track);
+    } else {
+      // Anchor the track to the container so it lines up with it
+      // even if the container itself moves or is nested.
+      const computedPosition = getComputedStyle(scrollSource).position;
+      if (computedPosition === "static") {
+        scrollSource.style.position = "relative";
+      }
+      scrollSource.appendChild(track);
+      track.style.position = "absolute";
+    }
+
+    let ticking = false;
+
+    function updateFill() {
+      let scrollTop, scrollHeight, clientHeight;
+
+      if (isWindow) {
+        scrollTop = window.scrollY || document.documentElement.scrollTop;
+        scrollHeight = document.documentElement.scrollHeight;
+        clientHeight = window.innerHeight;
+      } else {
+        scrollTop = scrollSource.scrollTop;
+        scrollHeight = scrollSource.scrollHeight;
+        clientHeight = scrollSource.clientHeight;
+      }
+
+      const scrollable = scrollHeight - clientHeight;
+      const percent = scrollable > 0 ? (scrollTop / scrollable) * 100 : 0;
+      fill.style.height = percent + "%";
+      ticking = false;
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        requestAnimationFrame(updateFill);
+        ticking = true;
+      }
+    }
+
+    const listenerTarget = isWindow ? window : scrollSource;
+    listenerTarget.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    window.addEventListener("load", updateFill);
+
+    updateFill();
+
+    return { track, fill, update: updateFill };
+  }
+
+  // ---- Set up indicators for each configured target ----
+  if (TARGETS.length === 0) {
+    createIndicator(window);
+  } else {
+    TARGETS.forEach((selector) => {
+      const el = document.querySelector(selector);
+      if (el) {
+        createIndicator(el);
+      } else {
+        console.warn(
+          `custom scroll indicator: no element found for selector "${selector}"`
+        );
+      }
+    });
+  }
+})();</script><tw-tag name="p" color="green"></tw-tag><tw-tag name="testtag" color="orange"></tw-tag><tw-tag name="test" color="green"></tw-tag><tw-tag name="estate" color="purple"></tw-tag><tw-tag name="Path" color="green"></tw-tag><tw-tag name="Shortest" color="green"></tw-tag><tw-tag name="Loop" color="blue"></tw-tag><tw-tag name="Trap" color="orange"></tw-tag><tw-tag name="Dead-End" color="purple"></tw-tag><tw-tag name="Goal" color="yellow"></tw-tag><tw-passagedata pid="1" name="Directions" tags="" position="400,400" size="100,100">&lt;script&gt;document.title = &quot;Directions・gildrom.com&quot;;&lt;/script&gt;
 
 &lt;audio autoplay&gt;
   &lt;source src=&quot;https://ia601505.us.archive.org/3/items/maze_audio/challenge.mp3&quot;&gt;

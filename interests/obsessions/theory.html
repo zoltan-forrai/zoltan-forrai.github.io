@@ -42,14 +42,14 @@
             <ul>
               <li><a href="/literary/essays">Essays</a></li>
               <li><a href="/literary/fiction">Fiction</a></li>
-              <li><a href="/literary/games">Games</a></li>
+              <li><a href="/literary/library">Library</a></li>
             </ul>
           </li>
           <li tabindex="0" data-icon="interests">
             <b>Interests</b>
             <ul>
-              <li><a href="/interests/library">Library</a></li>
               <li><a href="/interests/obsessions">Obsessions</a></li>
+              <li><a href="/interests/games">Games & Code</a></li>
               <li><a href="/interests/other">Other Works</a></li>
             </ul>
           </li>
@@ -131,12 +131,12 @@
         Object.entries(works)
           .sort(([, a], [, b]) => a.year - b.year)
           .forEach(([id, work]) => {
-          if (!work.section || !sections[work.section]) {
-            return;
-          }
-          const entry = document.createElement("details");
-          entry.id = id;
-          entry.innerHTML = `
+            if (!work.section || !sections[work.section]) {
+              return;
+            }
+            const entry = document.createElement("details");
+            entry.id = id;
+            entry.innerHTML = `
               <summary>
                 <div class="top-row">
                   <span class="authors">${work.authors.join(", ")}</span> ·
@@ -177,39 +177,39 @@
                 </details>
               </div>
             `;
-          sections[work.section].appendChild(entry);
+            sections[work.section].appendChild(entry);
 
-          const target = location.hash.slice(1);
+            const target = location.hash.slice(1);
 
-          if (target) {
-            const entry = document.getElementById(target);
-            if (entry instanceof HTMLDetailsElement) {
-              entry.open = true;
-              entry.scrollIntoView({ behavior: "smooth", block: "start" });
-              entry.style.outline = "2px solid light-dark(orangered, orange)";
+            if (target) {
+              const entry = document.getElementById(target);
+              if (entry instanceof HTMLDetailsElement) {
+                entry.open = true;
+                entry.scrollIntoView({ behavior: "smooth", block: "start" });
+                entry.style.outline = "2px solid light-dark(orangered, orange)";
+              }
             }
-          }
 
-          const termsContainer = entry.querySelector(".terms div");
+            const termsContainer = entry.querySelector(".terms div");
 
-          work.terms.forEach((term) => {
-            const span = document.createElement("span");
-            span.textContent = term;
-            termsContainer.appendChild(span);
-          });
+            work.terms.forEach((term) => {
+              const span = document.createElement("span");
+              span.textContent = term;
+              termsContainer.appendChild(span);
+            });
 
-          const connectionContainer = entry.querySelector(".connection div");
+            const connectionContainer = entry.querySelector(".connection div");
 
-          work.connection.forEach((connection) => {
-            const a = document.createElement("a");
-            connectionContainer.appendChild(a);
-            a.href = `#${connection}`;
+            work.connection.forEach((connection) => {
+              const a = document.createElement("a");
+              connectionContainer.appendChild(a);
+              a.href = `#${connection}`;
 
-            a.innerHTML = `
+              a.innerHTML = `
                 ${works[connection].title} <span>${works[connection].year}</span>
               `;
+            });
           });
-        });
       })();
     </script>
   </body>

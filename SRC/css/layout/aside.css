@@ -51,7 +51,7 @@ body:has(pspotify-p) {
 
   /* Add margin to main content so it's not hidden under the fixed aside */
   main {
-    margin-left: calc(clamp(300px, 35vw, 380px) + 9px);
+    margin-left: calc(clamp(300px, 35vw, 370px) + 9px);
     padding-left: 0.6rem !important;
   }
 }
@@ -62,7 +62,7 @@ body:has(pspotify-p) {
     top: 88px;
     left: 9px;
     height: calc(100vh - 97px);
-    width: clamp(300px, 35vw, 380px);
+    width: clamp(300px, 35vw, 370px);
   }
 }
 

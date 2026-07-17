@@ -124,7 +124,7 @@ input[type="search"]:not(:placeholder-shown) ~ [type="reset"] {
 #library-body {
   position: relative;
   width: 100%;
-  margin-top: 140px;
+  margin-top: 135px;
   background-color: light-dark(#d6d8df, #16161e);
   border-radius: 0 0 20px 20px;
   overflow: hidden;
@@ -347,7 +347,7 @@ section:not(#top-section) {
   position: absolute;
   top: 0;
   right: 0;
-  min-height: calc(100vh - 150px);
+  min-height: calc(100vh - 145px);
   max-height: calc(100vh - 200px);
   min-width: 400px;
   width: 600px;
@@ -376,7 +376,7 @@ section:not(#top-section)::before {
   font-size: 1.5rem;
   width: 4px;
 
-  height: var(--handle-height);
+  height: 100%;
   color: var(--c-highlight);
   background-color: light-dark(hsl(236, 23%, 78%), hsl(236, 23%, 24%));
   border-left: 1px solid
@@ -772,6 +772,12 @@ a::selection {
   transform: scale(0.85);
 }
 
+@media (min-width: 660px) {
+  main#library,
+  body:has(main#library) {
+    min-height: calc(100vh - var(--body-margin-top-mobile) - 100px) !important;
+  }
+}
 @media (max-width: 660px) {
   main#library,
   body:has(main#library) {
