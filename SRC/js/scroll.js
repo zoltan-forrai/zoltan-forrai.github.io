@@ -92,23 +92,14 @@ class CustomScrollbar {
         border-radius: 0px 0px 20px 20px;
         background: linear-gradient(
           to top,
-          light-dark(hsla(from var(--c-g-45) h s 15%), hsl( from var(--c-g-50) h 40% l )),
-          light-dark(var(--c-g-45), hsl( from var(--c-g-25) h 60% l )),
-          light-dark(var(--c-g-45), hsl( from var(--c-g-10) h 80% l ))
+          light-dark(hsla(from var(--c-g-45) h s 15%), hsl( from var(--c-g-40) h 20% l )),
+          light-dark(var(--c-g-45), hsl( from var(--c-g-25) h 30% l )),
+          light-dark(var(--c-g-45), hsl( from var(--c-g-10) h 40% l ))
         );
         transition: height 0.1s ease-out, transform 0.15s ease-out;
-        border-bottom: 0.1px solid white;
 
-        &[style*="99."],
-        &[style*="100"]  {
-        background:  linear-gradient(
-          to top,
-          light-dark(hsla(from var(--c-g-45) h s 15%), hsl( from var(--c-g-65) h 40% l )),
-          light-dark(hsla(from var(--c-g-45) h s 30%), hsl( from var(--c-g-45) h 30% l )),
-          light-dark(var(--c-g-45), hsl( from var(--c-g-30) h 60% l )),
-          light-dark(var(--c-g-45), hsl( from var(--c-g-10) h 80% l ))
-        );
-        }
+
+      
       }
 
       #custom-scroll-fill.dragging {
