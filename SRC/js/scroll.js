@@ -1,3 +1,5 @@
+console.log("scroll loaded");
+
 class CustomScrollbar {
   constructor(scrollSelector = "tbody") {
     this.scrollSelector = scrollSelector;
@@ -27,8 +29,6 @@ class CustomScrollbar {
 
     this.updateFill();
   }
-
-
 
   _resolveScrollTarget() {
     const candidate = document.querySelector(this.scrollSelector);
@@ -80,6 +80,7 @@ class CustomScrollbar {
         cursor: grabbing;
       }
 
+      html:has(body.custom-scroll-dragging),
       body.custom-scroll-dragging,
       body.custom-scroll-dragging * {
         cursor: grabbing !important;
@@ -123,7 +124,6 @@ class CustomScrollbar {
     window.addEventListener("mouseup", this.onWindowMouseUp);
   }
 
-
   getScrollMetrics() {
     if (this.usingCustomEl) {
       return {
@@ -145,7 +145,6 @@ class CustomScrollbar {
     }
   }
 
-
   updateFill() {
     if (this.fill.classList.contains("peek")) {
       this.ticking = false;
@@ -163,7 +162,6 @@ class CustomScrollbar {
       this.ticking = true;
     }
   }
-
 
   onScroll() {
     if (this.fill.classList.contains("peek")) {
@@ -225,7 +223,6 @@ class CustomScrollbar {
     this.track.classList.remove("dragging");
     document.body.classList.remove("custom-scroll-dragging");
   }
-
 
   destroy() {
     this.scrollEl.removeEventListener("scroll", this.onScroll);
