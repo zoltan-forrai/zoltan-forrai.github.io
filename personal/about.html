@@ -164,11 +164,11 @@
             </p>
             <p>
               I think most people who know me find me
-              <span class="title"></span>... <br />
+              <span class="word-shift"></span>... <br />
               I don&rsquo;t really mind; they are probably right...
             </p>
             <style>
-              .title {
+              .word-shift {
                 &::before {
                   content: "strange";
                 }
@@ -215,28 +215,5 @@
         </article>
       </main-box>
     </main>
-    <script>
-      const weirdCursor = document.querySelector("p:has(.title)");
-
-      let intervalId;
-      let timeoutId;
-      const cursors = ["ns-resize", "nesw-resize", "ew-resize", "nwse-resize"];
-      let i = 0;
-
-      weirdCursor.addEventListener("mouseenter", () => {
-        timeoutId = setTimeout(() => {
-          intervalId = setInterval(() => {
-            weirdCursor.style.cursor = cursors[i % cursors.length];
-            i++;
-          }, 70);
-        }, 10000);
-      });
-
-      weirdCursor.addEventListener("mouseleave", () => {
-        clearTimeout(timeoutId);
-        clearInterval(intervalId);
-        weirdCursor.style.cursor = "";
-      });
-    </script>
   </body>
 </html>
