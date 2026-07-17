@@ -279,3 +279,8 @@ kbd {
   font-family: var(--ff-type);
   font-size: 1.23rem;
 }
+
+.emoji {
+  display: inline-block;
+  transform: translateY(3.5px);
+}

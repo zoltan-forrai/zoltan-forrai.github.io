@@ -119,6 +119,7 @@
             &lsquo;of the spring&rsquo; or &lsquo;of the source&rsquo; at some
             point in history.
           </p>
+          <p>I&rsquo;m an artist... or something similar.</p>
           <p>
             In high school, I studied media and filmmaking, but I was left
             unsure whether to continue with it. I spent one semester in film
@@ -126,9 +127,10 @@
             disappointment, I left and pivoted careers.
           </p>
           <p>
-            My other love is the English language, so naturally, I turned to
-            language teaching as a viable path forward. So now I study English
-            and history at a more distinguished, albeit much more demanding
+            My other love, besides media, is the English language
+            <span class="emoji">🇬🇧</span>, so naturally, I turned to language
+            teaching as a viable path forward. So now I study English and
+            history at a more distinguished, albeit much more demanding
             university.
           </p>
           <details>
@@ -160,6 +162,29 @@
               and yet many texts can be approached as hermeneutic riddles. See
               <a href="/literary/library">my library</a>.
             </p>
+            <p>
+              I think most people who know me find me
+              <span class="title"></span>... <br />
+              I don&rsquo;t really mind; they are probably right...
+            </p>
+            <style>
+              .title {
+                &::before {
+                  content: "strange";
+                }
+                &::after {
+                  content: "weird";
+                  display: none;
+                }
+
+                &:hover::before {
+                  display: none;
+                }
+                &:hover::after {
+                  display: inline;
+                }
+              }
+            </style>
           </details>
           <h3>Why Do I Write?</h3>
           <p>
@@ -190,5 +215,28 @@
         </article>
       </main-box>
     </main>
+    <script>
+      const weirdCursor = document.querySelector("p:has(.title)");
+
+      let intervalId;
+      let timeoutId;
+      const cursors = ["ns-resize", "nesw-resize", "ew-resize", "nwse-resize"];
+      let i = 0;
+
+      weirdCursor.addEventListener("mouseenter", () => {
+        timeoutId = setTimeout(() => {
+          intervalId = setInterval(() => {
+            weirdCursor.style.cursor = cursors[i % cursors.length];
+            i++;
+          }, 70);
+        }, 10000);
+      });
+
+      weirdCursor.addEventListener("mouseleave", () => {
+        clearTimeout(timeoutId);
+        clearInterval(intervalId);
+        weirdCursor.style.cursor = "";
+      });
+    </script>
   </body>
 </html>
