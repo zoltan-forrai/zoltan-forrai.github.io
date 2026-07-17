@@ -167,7 +167,6 @@ review-reminder a {
 }
 
 img {
-  margin-block: 1rem 0;
   max-width: 100%;
 
   &[src=""] {
@@ -321,4 +320,8 @@ a {
   header menu {
     z-index: 99;
   }
+}
+
+footer p {
+  margin-block: 1rem;
 }

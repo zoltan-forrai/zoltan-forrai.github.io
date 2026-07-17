@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,7 +10,7 @@
       (function () {
         const saved = localStorage.getItem("theme");
         const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
+          "(prefers-color-scheme: dark)",
         ).matches;
         const isDark = saved ? saved === "dark" : prefersDark;
         document.documentElement.id = isDark ? "dark" : "light";
@@ -19,7 +19,7 @@
     <script type="module" src="/index.js"></script>
     <link rel="stylesheet" href="/SRC/css/layout/lit.css" />
   </head>
-  <body data-page="literature">
+  <body>
     <header>
       <ul>
         <li>
@@ -80,7 +80,6 @@
           ><img src="/SRC/asset/svg/rss.svg" height="20" />RSS&nbsp;Feed</a
         >.
       </p>
-      <br />
       <p>&copy; 2026 Forrai Zoltán. All rights reserved.</p>
     </footer>
   </body>
