@@ -215,5 +215,18 @@
         </article>
       </main-box>
     </main>
+    <script>
+      let details = document.querySelectorAll("details");
+
+      document.addEventListener("keydown", (o) => {
+        if (o.key === "o") {
+          const shouldOpen = [...details].some((detail) => !detail.open);
+
+          details.forEach((detail) => {
+            detail.open = shouldOpen;
+          });
+        }
+      });
+    </script>
   </body>
 </html>

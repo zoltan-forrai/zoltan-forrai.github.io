@@ -1,6 +1,5 @@
-
 tech-stack-list {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.4rem;
 }
 
@@ -183,20 +182,50 @@ magic-spell {
   padding: 1rem;
   border-radius: 10px !important;
   margin: 20px 0;
-  font-family: var(--ff-jb-mono);
 
   h3 {
     margin-top: 0;
   }
 }
 
-h3 {
+h3,
+h4 {
   font-family: var(--ff-alagard);
-
 }
 
 tech-stack-list ul {
   display: block;
-  margin-inline: auto;
+
   width: fit-content;
+}
+
+.keyboard-shortcuts {
+  padding: 10px 0 0 0;
+}
+
+.keyboard-shortcuts p {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--ff-mono);
+  font-size: 1.2rem;
+  padding: 0 10px 0 10px;
+  border-radius: 20px;
+  margin-block: 5px;
+  line-height: 1.5;
+
+  &:hover {
+    background-color: light-dark(
+      hsla(from var(--c-g-50) h s l / 0.6),
+      hsla(from var(--c-g-50) h s l / 0.1)
+    );
+
+    kbd {
+      text-decoration: underline;
+    }
+  }
+}
+
+.keyboard-shortcuts kbd {
+  transform: translateY(3px);
+  padding: 0 5px 0 5px;
 }

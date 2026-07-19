@@ -85,6 +85,10 @@ class CustomScrollbar {
         cursor: grab;
         transition: width 0.15s ease-out;
       }
+      
+      body.light #custom-scroll-track {
+        background: var(--c-canvas-bg);
+      }
 
       #custom-scroll-track.mobile {
         cursor: default;
