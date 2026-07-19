@@ -2,6 +2,12 @@ toggle-btn {
   display: grid;
   align-items: center;
   width: 56px;
+  opacity: 0.8;
+}
+
+toggle-btn:hover {
+  opacity: 1;
+  filter: brightness(2);
 }
 
 toggle-btn label {

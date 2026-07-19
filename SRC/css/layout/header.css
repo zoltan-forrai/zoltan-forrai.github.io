@@ -13,7 +13,7 @@ body > header {
 }
 
 title-bar {
-  position: fixed;
+  position: relative;
   top: 0;
   z-index: var(--z-sticky);
   display: flex;
@@ -107,7 +107,7 @@ header menu {
 }
 
 menu toggle-btn {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 /* Burger hidden by default */

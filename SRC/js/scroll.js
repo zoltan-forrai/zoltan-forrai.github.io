@@ -13,6 +13,8 @@ class CustomScrollbar {
 
     this.ticking = false;
 
+    this.isMobile = this._detectMobile();
+
     this.onScroll = this.onScroll.bind(this);
     this.onResize = this.onResize.bind(this);
     this.onTrackMouseEnter = this.onTrackMouseEnter.bind(this);
@@ -28,6 +30,15 @@ class CustomScrollbar {
     this._bindEvents();
 
     this.updateFill();
+  }
+
+  _detectMobile() {
+    const coarsePointer =
+      window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+    const touchCapable =
+      "ontouchstart" in window || navigator.maxTouchPoints > 0;
+    const narrowViewport = window.innerWidth <= 820;
+    return coarsePointer || (touchCapable && narrowViewport);
   }
 
   _resolveScrollTarget() {
@@ -52,6 +63,10 @@ class CustomScrollbar {
 
     this.track.appendChild(this.fill);
     document.body.appendChild(this.track);
+
+    if (this.isMobile) {
+      this.track.classList.add("mobile");
+    }
   }
 
   _injectStyles() {
@@ -69,6 +84,11 @@ class CustomScrollbar {
         z-index: 9999;
         cursor: grab;
         transition: width 0.15s ease-out;
+      }
+
+      #custom-scroll-track.mobile {
+        cursor: default;
+        pointer-events: none;
       }
 
       #custom-scroll-track:hover,
@@ -122,6 +142,11 @@ class CustomScrollbar {
     if (this.usingCustomEl && window.ResizeObserver) {
       this.resizeObserver = new ResizeObserver(this.onScroll);
       this.resizeObserver.observe(this.scrollEl);
+    }
+
+    if (this.isMobile) {
+      // Visual only on mobile: no hover peek, no drag handlers at all.
+      return;
     }
 
     this.track.addEventListener("mouseenter", this.onTrackMouseEnter);
@@ -241,12 +266,14 @@ class CustomScrollbar {
       this.resizeObserver.disconnect();
     }
 
-    this.track.removeEventListener("mouseenter", this.onTrackMouseEnter);
-    this.track.removeEventListener("mouseleave", this.onTrackMouseLeave);
-    this.track.removeEventListener("mousedown", this.onTrackMouseDown);
+    if (!this.isMobile) {
+      this.track.removeEventListener("mouseenter", this.onTrackMouseEnter);
+      this.track.removeEventListener("mouseleave", this.onTrackMouseLeave);
+      this.track.removeEventListener("mousedown", this.onTrackMouseDown);
 
-    window.removeEventListener("mousemove", this.onWindowMouseMove);
-    window.removeEventListener("mouseup", this.onWindowMouseUp);
+      window.removeEventListener("mousemove", this.onWindowMouseMove);
+      window.removeEventListener("mouseup", this.onWindowMouseUp);
+    }
 
     this.track.remove();
     document.body.classList.remove("custom-scroll-dragging");
