@@ -78,10 +78,10 @@ class CustomScrollbar {
         right: 1px;
         width: 4px;
         height: 100%;
-        padding-left: 25px;
+        padding-left: 14px;
         box-sizing: content-box;
         background: rgba(0, 0, 0, 0.0);
-        z-index: 9999;
+        z-index: 9;
         cursor: grab;
         transition: width 0.15s ease-out;
       }
