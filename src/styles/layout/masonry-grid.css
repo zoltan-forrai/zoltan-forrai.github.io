@@ -70,11 +70,9 @@
 }
 
 .masonry {
-  display: grid-lanes;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 16px;
   position: relative;
 }
+
 .masonry img {
   /* to prevent flicker as they get positioned, this gets rewritten by the js */
   width: 0px;
@@ -100,19 +98,23 @@ main {
   padding: 1.25rem 0.4rem;
 }
 
+
+/* 
 @keyframes nudgeWidth {
   0% {
     width: 100%;
   }
   50% {
-    width: calc(100% + 1px);
+    width: calc(100% - 500px);
   }
   100% {
     width: 100%;
   }
 }
 
-main {
+#gallery {
   width: 100%;
-  animation: nudgeWidth 0.3s ease-in-out;
+  background-color: red;
+  animation: nudgeWidth 5s ease-in-out;
 }
+ */

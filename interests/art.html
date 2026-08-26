@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="/src/styles/typography.css" />
     <link rel="stylesheet" href="/src/styles/layout/masonry-grid.css" />
 
-    
     <script type="module" src="/index.js"></script>
     <title>Art・gildrom.com</title>
   </head>
@@ -22,13 +21,21 @@
     <main>
       <section id="gallery" class="masonry">
         <img src="/assets/media/img/art/mine/008.webp" alt="To Pet a Cat" />
-        <img src="/assets/media/img/art/mine/007.webp" alt="Around the Corner" />
+        <img
+          src="/assets/media/img/art/mine/007.webp"
+          alt="Around the Corner" />
         <img src="/assets/media/img/art/mine/006.webp" alt="Refusing to See" />
-        <img src="/assets/media/img/art/mine/005.webp" alt="Welcoming Committee" />
+        <img
+          src="/assets/media/img/art/mine/005.webp"
+          alt="Welcoming Committee" />
         <img src="/assets/media/img/art/mine/004.webp" alt="Wings" />
         <img src="/assets/media/img/art/mine/003.webp" alt="Do you Accept?" />
-        <img src="/assets/media/img/art/mine/002.webp" alt="Unguis the Crawler" />
-        <img src="/assets/media/img/art/mine/001.webp" alt="Eldritch Creature" />
+        <img
+          src="/assets/media/img/art/mine/002.webp"
+          alt="Unguis the Crawler" />
+        <img
+          src="/assets/media/img/art/mine/001.webp"
+          alt="Eldritch Creature" />
       </section>
     </main>
     <script src="/src/js/masonry.js"></script>
@@ -37,6 +44,27 @@
       var masonry = new MiniMasonry({
         container: ".masonry",
       });
+
+      var images = document.querySelectorAll(".masonry img");
+      var loaded = 0;
+
+      images.forEach(function (img) {
+        if (img.complete) {
+          loaded++;
+        } else {
+          img.addEventListener("load", onImageLoad);
+          img.addEventListener("error", onImageLoad); // still count broken images so you don't hang forever
+        }
+      });
+
+      function onImageLoad() {
+        loaded++;
+        masonry.layout();
+      }
+
+      if (loaded === images.length) {
+        masonry.layout();
+      }
     </script>
   </body>
 </html>
