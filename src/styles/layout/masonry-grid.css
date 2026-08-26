@@ -39,7 +39,7 @@
   max-width: 75%;
   max-height: 90vh;
   outline: 1px solid hsla(0, 0%, 100%, 0.3);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 @media (max-width: 900px) {
