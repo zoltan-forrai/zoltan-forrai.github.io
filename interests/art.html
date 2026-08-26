@@ -11,16 +11,30 @@
     <link rel="stylesheet" href="/src/styles/layout/site-header.css" />
     <link rel="stylesheet" href="/src/styles/layout/main.css" />
     <link rel="stylesheet" href="/src/styles/typography.css" />
-    
+    <link rel="stylesheet" href="/src/styles/layout/masonry-grid.css" />
+
     <script type="module" src="/index.js"></script>
     <title>Art・gildrom.com</title>
   </head>
   <body>
     <header id="site-header"></header>
     <main>
-      <article>
-
-      </article>
+      <section id="gallery" class="masonry">
+        <img src="/assets/media/img/art/mine/008.webp" alt="" />
+        <img src="/assets/media/img/art/mine/007.webp" alt="" />
+        <img src="/assets/media/img/art/mine/006.webp" alt="" />
+        <img src="/assets/media/img/art/mine/005.webp" alt="" />
+        <img src="/assets/media/img/art/mine/004.webp" alt="" />
+        <img src="/assets/media/img/art/mine/003.webp" alt="" />
+        <img src="/assets/media/img/art/mine/002.webp" alt="" />
+        <img src="/assets/media/img/art/mine/001.webp" alt="" />
+      </section>
     </main>
+    <script src="/src/js/masonry.js"></script>
+    <script>
+      var masonry = new MiniMasonry({
+        container: ".masonry",
+      });
+    </script>
   </body>
 </html>
