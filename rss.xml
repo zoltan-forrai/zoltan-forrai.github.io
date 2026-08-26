@@ -13,9 +13,7 @@
     <!-- <item>
       <title></title>
       <description></description>
-      <pubDate></pubDate>
-      <link>https://www.gildrom.com/</link>
-      <guid></guid>
+      <link></link>
     </item> -->
 
     <item>
@@ -23,7 +21,6 @@
       <description>I refactored the website. Check out the artwork gallery!</description>
       <link>https://www.gildrom.com/interests/art</link>
     </item>
-
 
   </channel>
 </rss>

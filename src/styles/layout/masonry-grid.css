@@ -96,3 +96,20 @@
 main {
   padding: 1.25rem 0.4rem;
 }
+
+@keyframes nudgeWidth {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: calc(100% + 1px);
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+main {
+  width: 100%;
+  animation: nudgeWidth 0.3s ease-in-out;
+}
