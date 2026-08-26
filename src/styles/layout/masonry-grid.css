@@ -76,6 +76,9 @@
   position: relative;
 }
 .masonry img {
+  /* to prevent flicker as they get positioned, this gets rewritten by the js */
+  width: 0px;
+
   position: absolute;
   border-radius: 2.5px;
   border: var(--border-light);
