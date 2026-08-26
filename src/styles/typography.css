@@ -1,0 +1,74 @@
+@import url("/src/styles/elements/a.css");
+
+article {
+  font-size: 1.3rem;
+  max-inline-size: 73ch;
+}
+
+footer {
+  text-align: center;
+  font-family: "Special Elite";
+  font-size: 1rem;
+  color: light-dark(var(--c-g-65), var(--c-g-50));
+}
+
+hr {
+  border-top: 1px solid light-dark(var(--c-g-65), var(--c-g-50));
+  margin-block: 1rem;
+}
+
+p {
+  line-height: 1.5;
+
+  & + p {
+    margin-top: 1.5rem;
+  }
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ul li::marker {
+  content: "◈ ";
+  color: light-dark(var(--c-g-65), var(--c-g-55));
+}
+
+li {
+  line-height: 1.5;
+}
+
+i {
+  font-style: oblique 15deg;
+}
+
+h1 {
+  color: light-dark(var(--c-g-65), var(--c-g-60));
+  font-size: clamp(3rem, 10vw, 4rem);
+  margin-block: 1rem 2rem;
+
+  &.small-h1 {
+    font-size: clamp(2rem, 5vw, 3.34rem);
+  }
+}
+h2 {
+  color: light-dark(var(--c-g-65), var(--c-g-60));
+  font-size: clamp(2rem, 7vw, 2.8rem);
+  margin-block: 2.5rem 1rem;
+}
+h3 {
+  color: light-dark(var(--c-g-65), var(--c-g-60));
+  font-size: clamp(1.6rem, 5vw, 1.8rem);
+  margin-block: 2.5rem 1rem;
+}
+
+.center {
+  text-align: center;
+}
+
+code {
+  font-family: "JetBrains Mono";
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

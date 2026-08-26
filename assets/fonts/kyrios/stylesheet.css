@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'AT Kyrios Display';
+    src: url('ATKyriosDisplay-Regular.woff2') format('woff2'),
+        url('ATKyriosDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AT Kyrios Standard';
+    src: url('ATKyriosStandard-Regular.woff2') format('woff2'),
+        url('ATKyriosStandard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AT Kyrios Text';
+    src: url('ATKyriosText-Regular.woff2') format('woff2'),
+        url('ATKyriosText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

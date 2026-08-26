@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="/src/styles/var.css" />
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="stylesheet" href="/src/styles/layout/site-header.css" />
+    <link rel="stylesheet" href="/src/styles/layout/main.css" />
+    <link rel="stylesheet" href="/src/styles/layout/main.css" />
+    <link rel="stylesheet" href="/src/styles/elements/btn.css" />
+    <link rel="stylesheet" href="/src/styles/typography.css" />
+    <link rel="stylesheet" href="/src/styles/pages/contact.css" />
+
+    <script type="module" src="/index.js"></script>
+    <title>Contact・gildrom.com</title>
+  </head>
+  <body>
+    <header id="site-header"></header>
+    <main>
+      <h1 class="center">Comments, Questions, Curses?</h1>
+      
+      <div id="toast">
+        <div id="toast-block">
+          <div>Message Received!</div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-mail-check-icon lucide-mail-check">
+            <path
+              d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            <path d="m16 19 2 2 4-4" />
+          </svg>
+          <a href="#" aria-label="Close menu">x</a>
+        </div>
+      </div>
+
+      <form
+        method="POST"
+        enctype="multipart/form-data"
+        action="https://formsubmit.co/780a58d32afbae6fd8888e0fde53deb6">
+        <fieldset>
+          <section>
+            <p>
+              <label for="name">Name</label>
+              <input
+                required
+                autocomplete="off"
+                id="name"
+                type="text"
+                name="name"
+                placeholder="William Shakespeare" />
+            </p>
+
+            <p>
+              <label for="email">Email (opt.) </label>
+              <input
+                autocomplete="off"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="shakespeare@globe.uk" />
+            </p>
+
+            <p id="file-field">
+              <label for="file">Upload File </label>
+            </p>
+
+            <div id="drop-zone">
+              <input id="file" name="attachment" type="file" accept="*" />
+
+              <svg id="plus">
+                <use
+                  href="/assets/media/img/svg/folder.svg#folder-plus-icon"></use>
+              </svg>
+
+              <svg id="open">
+                <use
+                  href="/assets/media/img/svg/folder.svg#folder-open-icon"></use>
+              </svg>
+            </div>
+          </section>
+
+          <section>
+            <p>
+              <label for="subject">Subject</label>
+              <input
+                required
+                autocomplete="off"
+                id="subject"
+                name="_subject"
+                placeholder="About the Gilded Lily!" />
+            </p>
+            <p>
+              <label for="message">Message</label>
+              <textarea
+                autocomplete="off"
+                required
+                id="message"
+                name="message"
+                placeholder="Uneasy lies the head that wears a crown..."></textarea>
+            </p>
+          </section>
+        </fieldset>
+
+        <hidden-inputs>
+          <!-- Spam filter -->
+          <input type="hidden" name="_blacklist" value="WhatsApp, whatsapp" />
+          <!-- Honey -->
+          <input type="text" name="_honey" style="display: none" />
+          <!-- Redirect to Thank You page -->
+          <input
+            type="hidden"
+            name="_next"
+            value="https://gildrom.com/beyond/contact#toast" />
+        </hidden-inputs>
+
+        <button type="submit">
+          <svg
+            width="22"
+            style="transform: translateY(2px)"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+            <path d="m21.854 2.147-10.94 10.939" />
+          </svg>
+          <b>Send</b>
+        </button>
+      </form>
+    </main>
+  </body>
+</html>

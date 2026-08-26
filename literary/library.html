@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="/src/styles/var.css" />
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="stylesheet" href="/src/styles/layout/site-header.css" />
+    <link rel="stylesheet" href="/src/styles/layout/main.css" />
+    <link rel="stylesheet" href="/src/styles/pages/library.css" />
+
+    <script type="module" src="/index.js"></script>
+    <title>Library・gildrom.com</title>
+  </head>
+  <body>
+    <header id="site-header"></header>
+    <main>
+      <form title="library" id="search-box">
+        <search>
+          <input
+            type="search"
+            id="search"
+            name="filter"
+            autocomplete="off"
+            placeholder="LIBRARY・Filter Books" />
+          <input
+            type="reset"
+            id="clear"
+            value="X"
+            title="clear search"
+            aria-label="clear search" />
+        </search>
+      </form>
+      <table id="main-table">
+        <thead>
+          <tr>
+            <th tabindex="0" id="title">Title</th>
+            <th tabindex="0" id="authors">Authors</th>
+            <th tabindex="0" id="tags">Tags</th>
+            <th tabindex="0" id="rating">Rating</th>
+          </tr>
+        </thead>
+        <tbody tabindex="-1"></tbody>
+      </table>
+    </main>
+    <script type="module" src="/src/js/library.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+const mySigil = document.querySelectorAll(".my-sigil");
+
+mySigil.forEach((sigil) => {
+  // for svgs we must use .setAttribute() !
+  sigil.setAttribute("width", "50");
+  sigil.setAttribute("viewBox", "0 0 100 100");
+  sigil.setAttribute("stroke", "currentColor");
+  sigil.setAttribute("stroke-width", "2");
+  sigil.setAttribute("stroke-linecap", "round");
+  sigil.setAttribute("stroke-linejoin", "round");
+
+  sigil.innerHTML = `
+    <defs>
+      <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feMerge>
+          <feMergeNode in="blur" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+    </defs>
+  <g>
+    <path
+      fill="none"
+      d="M 50 10 L80 65 L50 85 L20 65 L50 10"
+      filter="url(#glow)" />
+    <g filter="url(#glow)">
+      <path fill="none" d="M 51 30 L51 72" />
+      <path fill="none" d="M 51 60 L62 51.33" />
+      <path fill="none" d="M 51 72 L67 60.33" />
+    </g>
+  </g>
+  `;
+});

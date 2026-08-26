@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'UnifrakturCook';
+    src: url('UnifrakturCook-Light.woff2') format('woff2'),
+        url('UnifrakturCook-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UnifrakturCook';
+    src: url('UnifrakturCook.woff2') format('woff2'),
+        url('UnifrakturCook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

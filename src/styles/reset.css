@@ -1,0 +1,17 @@
+* {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  hyphens: auto;
+  line-height: 1;
+  margin: 0;
+  overflow-wrap: break-word;
+  padding: 0;
+  scrollbar-width: none;
+  text-decoration: none;
+  float: none;
+  user-select: none;
+  overscroll-behavior-block: contain;
+}

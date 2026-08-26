@@ -1,0 +1,29 @@
+{
+  "template": {
+    "section": "",
+    "title": "",
+    "authors": [],
+    "tags": ["Laguage / translation", "media type", "school / movement"],
+    "year": 1999,
+    "summary": "Summary: Argument -> claim + evidence + warrant (reason)",
+    "context": "Eval: What? Who? Why? When? Where? + How -> method",
+    "response": "Ideas...",
+    "terms": ["term 1", "term 2"],
+    "connection": ["cannot be an empty string"]
+  },
+
+  "comment": "----------------------------------------------------------------",
+
+  "how-to-read-a-book": {
+    "section": "related",
+    "title": "How To Read A Book",
+    "authors": ["Mortimer J. Adler", "Charles Van Doren"],
+    "tags": ["English", "Book", "Great Books Movement, Classical Humanism"],
+    "year": 1972,
+    "summary": "Originally published in 1940.",
+    "context": "",
+    "response": "",
+    "terms": [],
+    "connection": []
+  }
+}

@@ -1,0 +1,267 @@
+h1 {
+  font-family: "Special Elite";
+  font-size: clamp(1.5rem, 4.5vw, 2.21rem);
+  margin-bottom: 1rem;
+}
+
+* {
+  scroll-margin-top: 150px;
+}
+
+:target h2,
+:target hr {
+  color: light-dark(orangered, orange);
+}
+
+section > details:target {
+  outline: 2px solid light-dark(orangered, orange);
+}
+
+#jumper {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 81px;
+  padding-block: 1rem 0.125rem;
+  margin-bottom: 55px;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--c-page);
+  box-shadow: 0 0 0 5px var(--c-page);
+
+  a {
+    &:any-link,
+    &:any-link::selection {
+      color: var(--c-blue);
+    }
+
+    &:hover,
+    &:hover::selection {
+      color: hsl(from var(--c-blue) h s calc(l + 10));
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+    }
+  }
+}
+
+h2 {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: lighter;
+  margin: 0;
+}
+
+section > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  line-height: normal;
+  margin: 2.5rem 0 1.25rem;
+}
+
+hr {
+  flex: 1;
+  border: none;
+  margin-block: 7.5px;
+  border-top: 0.5px solid;
+  background-color: transparent;
+}
+
+section > details {
+  border: var(--border-light);
+  border-radius: 5px;
+  background-color: light-dark(var(--c-g-20), hsl(0, 0%, 8%));
+  box-shadow: 3.5px 3.5px 3px 0px rgba(0, 0, 0, 0.5);
+
+  &:is(#light &) {
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  &:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 1rem;
+  }
+}
+
+.top-row {
+  display: block;
+  font-family: "Departure Mono";
+  font-weight: normal;
+  font-size: 0.9rem;
+  position: relative;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.4rem;
+  padding-right: 20px;
+  line-height: normal;
+}
+.year {
+  color: slateblue;
+}
+.title {
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-bottom: 0.9rem;
+}
+
+.tags {
+  font-family: "Departure Mono";
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  line-height: normal;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tags mark {
+  border: var(--border-light);
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  line-height: normal;
+}
+
+.lang {
+  --tag-color: hsl(129, 80%, 35%);
+  color: var(--tag-color);
+  background-color: hsl(from var(--tag-color) h s l / 0.1);
+}
+.type {
+  --tag-color: hsl(208, 80%, 50%);
+  color: var(--tag-color);
+  background-color: hsl(from var(--tag-color) h s l / 0.1);
+}
+.school {
+  --tag-color: hsl(257, 100%, 65%);
+  color: var(--tag-color);
+  background-color: hsl(from var(--tag-color) h s l / 0.1);
+}
+
+.entry-body summary {
+  background-color: light-dark(hsla(0, 0%, 100%, 0.9), hsla(0, 0%, 0%, 0.25));
+  border-top: var(--border-light);
+  font-family: "DM Sans", system-ui, sans-serif;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  list-style: none;
+  transition:
+    background 0.1s ease,
+    color 0.1s ease;
+}
+
+.entry-body details:not([open]):last-of-type summary {
+  border-radius: 0 0 5px 5px;
+}
+
+.entry-body details[open] > summary {
+  border-bottom: var(--border-light);
+}
+
+summary i {
+  font-family: var(--ff-mono);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1;
+  transition: transform 0.2s ease;
+  font-style: normal;
+}
+
+details[open] > summary i {
+  transform: rotate(45deg);
+}
+
+.entry-body details div {
+  padding: 1rem;
+}
+
+.entry-body details div p {
+  font-size: 1.1rem;
+}
+
+
+.terms div {
+  padding: 0.9rem 1.4rem 0.9rem;
+
+  display: flex;
+  gap: 10px;
+}
+
+.terms span {
+  font-family: "Departure Mono";
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: normal;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 3px;
+  border: var(--border-light);
+  --tag-color: hsl(129, 80%, 35%);
+  color: var(--tag-color);
+  background-color: hsl(from var(--tag-color) h s l / 0.1);
+}
+
+.con-det {
+  padding: 0.5rem 1rem 0.25rem 1rem;
+  font-family: "Departure Mono";
+  font-size: 0.8rem;
+}
+
+details.connection div {
+  padding: 0.25rem 1rem 0.5rem 1rem;
+}
+
+.connection div a {
+  display: block;
+  font-family: "Departure Mono";
+  font-size: 0.9rem;
+  line-height: 1.5;
+
+  &:hover {
+    text-decoration: none !important;
+    > span {
+      text-decoration: 1px underline
+        light-dark(hsl(0, 0%, 50%), hsl(219, 5%, 30%)) !important;
+    }
+  }
+
+  &::before {
+    content: "- [[";
+    margin-right: -1ch;
+    color: light-dark(hsl(0, 0%, 50%), hsl(219, 5%, 30%));
+  }
+  &::after {
+    content: "]]";
+    margin-left: -1ch;
+    color: light-dark(hsl(0, 0%, 50%), hsl(219, 5%, 30%));
+  }
+}

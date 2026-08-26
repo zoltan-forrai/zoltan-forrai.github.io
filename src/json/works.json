@@ -1,0 +1,1783 @@
+{
+  "works": [
+    {
+      "title": "How to Read a Book",
+      "authors": ["Mortimer J. Adler", "Charles Van Doren"],
+      "tags": ["close reading", ""],
+      "status": "reading",
+      "rating": 4,
+      "link": "https://dn710009.ca.archive.org/0/items/howto-read-abook/HowtoReadABook.pdf"
+    },
+    {
+      "title": "Iliad",
+      "authors": ["Homer"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Odyssey",
+      "authors": ["Homer"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Old Testament",
+      "authors": [""],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Tragedies",
+      "authors": ["Aeschylus"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Tragedies",
+      "authors": ["Sophocles"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "History (of the Persian War)",
+      "authors": ["Heredotus"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Tragedies",
+      "authors": ["Euripides"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "History of the Peleponnesian War",
+      "authors": ["Thucydides"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Medical writings",
+      "authors": ["Hippocrates"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Comedies",
+      "authors": ["Aristophanes"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Dialogues",
+      "authors": ["Plato"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Works",
+      "authors": ["Aristotle"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Letters",
+      "authors": ["Epicurus"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Elements",
+      "authors": ["Euclid"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Works",
+      "authors": ["Archimedes"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "On Conic Sections",
+      "authors": ["Apolloinus of Perga"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Works",
+      "authors": ["Cicero"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "On the Nature of Things",
+      "authors": ["Lucretius"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Works",
+      "authors": ["Virgil"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Works",
+      "authors": ["Horace"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "History of Rome",
+      "authors": ["Livy"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Works",
+      "authors": ["Ovid"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Lives of the Noble Grecians and Romans of Moralia",
+      "authors": ["Plutarch"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Histories Annals Agricola Germania",
+      "authors": ["Tacitus"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Introduction to Arithmetic",
+      "authors": ["Nicomachus of Gerasa"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Discourses Encheridion (Handbook)",
+      "authors": ["Epictetus"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Almagest",
+      "authors": ["Ptolemy"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Works",
+      "authors": ["Lucian"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Meditations",
+      "authors": ["Marcus Auerelius"],
+      "tags": [""],
+      "status": "read",
+      "rating": 4.5
+    },
+    {
+      "title": "On the Natural Faculties",
+      "authors": ["Galen"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The New Testament",
+      "authors": [""],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Enneads",
+      "authors": ["Plotinus"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Works",
+      "authors": ["St. Augustine"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Song of Roland",
+      "authors": ["Aristotle"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Nibelungnlied",
+      "authors": ["Aristotle"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Saga of Burnt Njal",
+      "authors": ["Aristotle"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Summa Theologica",
+      "authors": ["St. Thomas Aquinas"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Works",
+      "authors": ["Dante Alighieri"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Works",
+      "authors": ["Geoffrey Chaucer"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Notebooks",
+      "authors": ["Leonardo da Vinci"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Prince",
+      "authors": ["Niccolo Machiavelli"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Discoursees on the First Ten Books of Livy",
+      "authors": ["Niccolo Machiavelli"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Praise of Folly",
+      "authors": ["Desiderius Erasmus"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "On the Revolutions of Heavenly Spheres",
+      "authors": ["Nicolaus Copernicus"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Utopia",
+      "authors": ["Sir Thomas More"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Three Treatises Table-Talk",
+      "authors": ["Martin Luther"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Gargantua and Pantagruel",
+      "authors": ["Francois Rabelais"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Institutes of the Christian Religion",
+      "authors": ["John Calvin"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Essays",
+      "authors": ["Michel de Montaigne"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "On the Loadstone and Magnetic Bodies",
+      "authors": ["William Gilbert"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Don Quixote",
+      "authors": ["Miguel de Cervantes"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Prothalamion",
+      "authors": ["Edmund Spencer"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Fairie Queene",
+      "authors": ["Edmund Spencer"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Essays",
+      "authors": ["Francis Bacon"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Advancement of Learning",
+      "authors": ["Francis Bacon"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Novum Organum",
+      "authors": ["Francis Bacon"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "New Atlantis",
+      "authors": ["Francis Bacon"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Works",
+      "authors": ["William Shakespeare"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Starry Messenger",
+      "authors": ["Galileo Galilei"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Dialogues Concerning Two New Sciences",
+      "authors": ["Galileo Galilei"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Epitome of Copernician Astronomy",
+      "authors": ["Johannes Kepler"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Concernign the Harmonies of the World",
+      "authors": ["Johannes Kepler"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "On the Motion of the Heart and Blood in Animals",
+      "authors": ["William Harvey"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "On the Circulation of the Blood",
+      "authors": ["William Harvey"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "On the Generation of Animals",
+      "authors": ["William Harvey"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Leviathan",
+      "authors": ["Thomas Hobbes"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Rules for the Direction of the Mind",
+      "authors": ["René Descartes"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Discourse on Method",
+      "authors": ["René Descartes"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Geometry",
+      "authors": ["René Descartes"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Meditations of First Philosophy",
+      "authors": ["René Descartes"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Works",
+      "authors": ["John Milton"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Comedies",
+      "authors": ["Moliere"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Provincial Letters",
+      "authors": ["Blaise Pascal"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Pensées",
+      "authors": ["Blaise Pascal"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Scientific Treatises",
+      "authors": ["Blaise Pascal"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Treatises on Light",
+      "authors": ["Christiaan Huygens"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Ethics",
+      "authors": ["Benedict de Spinoza"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Letter Concerning Toleration",
+      "authors": ["John Locke"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Of Civil Government",
+      "authors": ["John Locke"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Essay Concerning Human Understanding",
+      "authors": ["John Locke"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Some Thoughts Concernign Education",
+      "authors": ["John Locke"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Tragedies",
+      "authors": ["Jean Baptiste Racine"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Mathematical Principles of Natural Philosophy",
+      "authors": ["Isaac Newton"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Optics",
+      "authors": ["Isaac Newton"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Discourse on Metaphysics",
+      "authors": ["Gottfied Wilhelm von Leibniz"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "New Essays Concerning Human Understanding",
+      "authors": ["Gottfied Wilhelm von Leibniz"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Monadology",
+      "authors": ["Gottfied Wilhelm von Leibniz"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Robinson Crusoe",
+      "authors": ["Daniel Defoe"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "A Tale of a Tub",
+      "authors": ["Jonathan Swift"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Journal to Stella",
+      "authors": ["Jonathan Swift"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Gulliver’s Travels",
+      "authors": ["Jonathan Swift"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "A Modest Proposal",
+      "authors": ["Jonathan Swift"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Way of the World",
+      "authors": ["William Congreve"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Principles of Human Knowledge",
+      "authors": ["George Berkeley"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Essay on Criticism",
+      "authors": ["Alexander Pope"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Rape of the Lock",
+      "authors": ["Alexander Pope"],
+      "tags": [""],
+      "status": "read",
+      "rating": 3.5
+    },
+    {
+      "title": "Essay on Man",
+      "authors": ["Alexander Pope"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Persian Letters",
+      "authors": ["Charles de Secondat, Baron de Montesquieu"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Spirit of Laws",
+      "authors": ["Charles de Secondat, Baron de Montesquieu"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Letters on the English",
+      "authors": ["Voltaire"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Candide",
+      "authors": ["Voltaire"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Philosphical Dictionary",
+      "authors": ["Voltaire"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Joseph Andrews",
+      "authors": ["Henry Fielding"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Tom Jones",
+      "authors": ["Henry Fielding"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Vanity of Human Wishes",
+      "authors": ["Samuel Johnson"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Dictionary",
+      "authors": ["Samuel Johnson"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Rasselas",
+      "authors": ["Samuel Johnson"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Lives of Poets",
+      "authors": ["Samuel Johnson"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Treatise of Human Nature",
+      "authors": ["David Hume"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Essays Moral and Political",
+      "authors": ["David Hume"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "An Inquiry Concerning Human Understanding",
+      "authors": ["David Hume"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "On the Origin of Inequality",
+      "authors": ["Jean Jacques Rousseau"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "On Political Economy",
+      "authors": ["Jean Jacques Rousseau"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Emile",
+      "authors": ["Jean Jacques Rousseau"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Social Contract",
+      "authors": ["Jean Jacques Rousseau"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Tristam Shandy",
+      "authors": ["Laurence Sterne"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "A Snetimental Journey Through France and Italy",
+      "authors": ["Laurence Sterne"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Theory of Moral Sentiments",
+      "authors": ["Adam Smith"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Inquiry into the Nature and Causes of the Wealth of Nations",
+      "authors": ["Adam Smith"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Critique of Pure Reason",
+      "authors": ["Immanuel Kant"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Fundamental Principles of the Metaphysics of Morals",
+      "authors": ["Immanuel Kant"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Critique of Practical Reason",
+      "authors": ["Immanuel Kant"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Science of Right",
+      "authors": ["Immanuel Kant"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Criticque of Judgment",
+      "authors": ["Immanuel Kant"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Perpetual Peace",
+      "authors": ["Immanuel Kant"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Decline and Fall of the Roman Empire",
+      "authors": ["Edward Gibbon"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Autobiography",
+      "authors": ["Immanuel Kant"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Journal",
+      "authors": ["James Boswell"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Life of Samuel Johnson Ll.D.",
+      "authors": ["Immanuel Kant"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Elements of Chemistry",
+      "authors": ["Antoine Laurent Lavoisier"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Federalist Papers",
+      "authors": ["John Jay", "James Madison", "Alexander Hamilton"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Introduction to the Principles of Morals and Legislation",
+      "authors": ["Jeremy Bentham"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Theory of Fictions",
+      "authors": ["Jeremy Bentham"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Faust",
+      "authors": ["Johann Wolfgang von Goethe"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Poetry and Truth",
+      "authors": ["Johann Wolfgang von Goethe"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Analytial Theory of Heat",
+      "authors": ["Jean Baptiste Joseph Fourier"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Phenomenology of Spirit",
+      "authors": ["Georg Wilhelm Friederich Hegel"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Philosophy of Right",
+      "authors": ["Georg Wilhelm Friederich Hegel"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Lectures on the Philosophy of History",
+      "authors": ["Georg Wilhelm Friederich Hegel"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Poems",
+      "authors": ["William Wordsworth"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Poems",
+      "authors": ["Sauel Taylor Coleridge"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Biographia Literaria",
+      "authors": ["Sauel Taylor Coleridge"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Pride and Prejudice",
+      "authors": ["Jane Austen"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Emma",
+      "authors": ["Jane Austen"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "On War",
+      "authors": ["Karl von Clausewitz"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Red and the Black",
+      "authors": ["Stendhal"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Charterhouse of Parma",
+      "authors": ["Stendhal"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "On Love",
+      "authors": ["Stendhal"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Don Juan",
+      "authors": ["Lord George Gordon Byron"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Studies in Pessimism",
+      "authors": ["Arthus Schopenhauer"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Chemical History of a Candle",
+      "authors": ["Michael Faraday"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Experimental Researches in Electricity",
+      "authors": ["Michael Faraday"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Principles of Geology",
+      "authors": ["Charles Lyell"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Posivite Philosophy",
+      "authors": ["Auguste Comte"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Pere Goriot",
+      "authors": ["Honoré de Balzac"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Eugénie Grandet",
+      "authors": ["Honoré de Balzac"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Representative Men",
+      "authors": ["Ralp Waldo Emerson"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Essays",
+      "authors": ["Ralp Waldo Emerson"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Journal",
+      "authors": ["Ralp Waldo Emerson"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Scarlet Letter",
+      "authors": ["Nathaniel Hawthrone"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Demcracy in America",
+      "authors": ["Alexis de Tocqueville"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "A System of Logic",
+      "authors": ["John Stuart Mill"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "On Liberty",
+      "authors": ["John Stuart Mill"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Representative Government",
+      "authors": ["John Stuart Mill"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Utilitarianism",
+      "authors": ["John Stuart Mill"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Subject of Women",
+      "authors": ["John Stuart Mill"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Autobiography",
+      "authors": ["John Stuart Mill"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Origin of Species",
+      "authors": ["Charles Darwin"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Descent of Man",
+      "authors": ["John Stuart Mill"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Autobiography",
+      "authors": ["John Stuart Mill"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Works",
+      "authors": ["Charles Dickens"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Introduction to the Stify of Experimental Medicine",
+      "authors": ["Claude Bernard"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Civil Disobedience",
+      "authors": ["Henry David Thoreau"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Walden",
+      "authors": ["John Stuart Mill"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Capital",
+      "authors": ["Karl Marx"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Adam Bede",
+      "authors": ["George Eliot"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Middlemarch",
+      "authors": ["George Eliot"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Moby-Dick",
+      "authors": ["Herman Melville"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Billy Budd",
+      "authors": ["Herman Melville"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Crime and Punishment",
+      "authors": ["Fyodor Dostoevsky"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Idiot",
+      "authors": ["Fyodor Dostoevsky"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Brothers Karamazov",
+      "authors": ["Fyodor Dostoevsky"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Madame Bovary",
+      "authors": ["Gustave Flaubert"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Three Stories",
+      "authors": ["Gustave Flaubert"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Plays",
+      "authors": ["Henrik Ibsen"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "War and Peace",
+      "authors": ["Leo Tolstoy"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Anna Karenina",
+      "authors": ["Leo Tolstoy"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "What is Art?",
+      "authors": ["Leo Tolstoy"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Twenty-three Tales",
+      "authors": ["Leo Tolstoy"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Adventures of Huckleberry Finn",
+      "authors": ["Mark Twain"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Mysterious Stranger",
+      "authors": ["Mark Twain"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Principles of Psychology",
+      "authors": ["William James"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Varieties of Religious Experience",
+      "authors": ["William James"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Pragmatism",
+      "authors": ["William James"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Essays in Radical Empricism",
+      "authors": ["William James"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The American",
+      "authors": ["Henry James"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Ambassadors",
+      "authors": ["Henry James"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Thus Sopke Zarathustra",
+      "authors": ["Friedrich Wilhelm Nietzsche"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Beyond Good and Evil",
+      "authors": ["Friedrich Wilhelm Nietzsche"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Genealogy of Morals",
+      "authors": ["Friedrich Wilhelm Nietzsche"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Will to Power",
+      "authors": ["Friedrich Wilhelm Nietzsche"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Science and Hypothesis",
+      "authors": ["Jules Henri Poincaré"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Science and Method",
+      "authors": ["Jules Henri Poincaré"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Interpretation of Dreams",
+      "authors": ["Sigmund Freud"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Introductory Lecture on Psychoanalysis",
+      "authors": ["Sigmund Freud"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Civilization and Its Discontents",
+      "authors": ["Sigmund Freud"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "New Introductory Lectures on Psychoanalysis",
+      "authors": ["Sigmund Freud"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Plays",
+      "authors": ["George Bernard Shaw"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Origin and Development of the Quantum Theory",
+      "authors": ["Max Planck"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Where is Science Going?",
+      "authors": ["Max Planck"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Scientific Autobiography",
+      "authors": ["Max Planck"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Time and Free Will",
+      "authors": ["Henri Bergson"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Matter and Memory",
+      "authors": ["Henri Bergson"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Creative Evolution",
+      "authors": ["Henri Bergson"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Two Sources of Morality and Religion",
+      "authors": ["Henri Bergson"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "How We Think",
+      "authors": ["John Dewey"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Democracy and Education",
+      "authors": ["John Dewey"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Experience and Nature",
+      "authors": ["John Dewey"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Logic, the Theory of Inquiry",
+      "authors": ["John Dewey"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "And Introduction to Mathematics",
+      "authors": ["Alfred North Whitehead"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Science and the Modern World",
+      "authors": ["Alfred North Whitehead"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Aims of Education and Other Essays",
+      "authors": ["Alfred North Whitehead"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Adventures of Ideas",
+      "authors": ["Alfred North Whitehead"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Life of Reason",
+      "authors": ["George Santayana"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Skepticism and Animal Faith",
+      "authors": ["George Santayana"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Persons and Places",
+      "authors": ["George Santayana"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The State and Revolution",
+      "authors": ["Nikolai Lenin"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Remembrance of Things Past",
+      "authors": ["Marcel Prous"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Problems of Philosophy",
+      "authors": ["Bertrand Russell"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Analysis of Mind",
+      "authors": ["Bertrand Russell"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "An Inquiry into Meaning and Truth",
+      "authors": ["Bertrand Russell"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Human Knowledge; Its Scope and Limits",
+      "authors": ["Bertrand Russell"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Magic Mountain",
+      "authors": ["Thomas Mann"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Joseph and His Brothers",
+      "authors": ["Thomas Mann"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Meaning of Relativity",
+      "authors": ["Albert Einstein"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "On the Metgod of Theoretical Physics",
+      "authors": ["Albert Einstein"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Evolution of Physics",
+      "authors": ["Albert Einstein"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "\"The Dead\" in Dubliners",
+      "authors": ["James Joyce"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Portrait of the Artist as a Young Man",
+      "authors": ["James Joyce"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Ulysses",
+      "authors": ["James Joyce"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Art and Scholasticism",
+      "authors": ["Jacques Maritain"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Degrees of Knowledge",
+      "authors": ["Jacques Maritain"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Rights of Man and Natural Law",
+      "authors": ["Jacques Maritain"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "True Humanism",
+      "authors": ["Jacques Maritain"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The Trial",
+      "authors": ["Franz kafka"],
+      "tags": [""],
+      "status": "read",
+      "rating": 3
+    },
+    {
+      "title": "The Castle",
+      "authors": ["Franz kafka"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "A Study of History",
+      "authors": ["Arnold Toynbee"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Civilization on Trial",
+      "authors": ["Arnold Toynbee"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Nausea",
+      "authors": ["Jean-Paul Sartre"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "No Exit",
+      "authors": ["Jean-Paul Sartre"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Being and Nothingness",
+      "authors": ["Jean-Paul Sartre"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "The First Circle",
+      "authors": ["Aleksanr I. Solzhenitsyn"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    },
+    {
+      "title": "Cancer Ward",
+      "authors": ["Aleksanr I. Solzhenitsyn"],
+      "tags": [""],
+      "status": "",
+      "rating": 0
+    }
+  ]
+}

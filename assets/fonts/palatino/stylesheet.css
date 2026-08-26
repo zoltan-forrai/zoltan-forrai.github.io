@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Palatino';
+    src: local('Palatino'), local('Palatino-Roman'),
+        url('Palatino-Roman.woff2') format('woff2'),
+        url('Palatino-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Palatino';
+    src: local('Palatino Italic'), local('Palatino-Italic'),
+        url('Palatino-Italic.woff2') format('woff2'),
+        url('Palatino-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Palatino';
+    src: local('Palatino Bold'), local('Palatino-Bold'),
+        url('Palatino-Bold.woff2') format('woff2'),
+        url('Palatino-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Palatino';
+    src: local('Palatino Bold Italic'), local('Palatino-BoldItalic'),
+        url('Palatino-BoldItalic.woff2') format('woff2'),
+        url('Palatino-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+

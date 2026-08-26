@@ -1,0 +1,85 @@
+#btn-theme {
+  position: relative;
+  display: grid;
+  align-items: center;
+  width: 56px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  &:focus-visible {
+    border-radius: 30px;
+  }
+}
+
+#theme-track,
+#theme-thumb {
+  opacity: 0.8;
+  filter: brightness(0.8);
+}
+
+#btn-theme:hover :is(#theme-track, #theme-thumb),
+#btn-theme:focus-visible :is(#theme-track, #theme-thumb) {
+  opacity: 1;
+  filter: brightness(1);
+}
+
+#theme-track {
+  inset: 0;
+  position: absolute;
+  border-radius: 28px;
+  transition: 0.3s;
+  border: var(--border-light-b);
+  box-shadow: 1px 1px 2px 0.5px rgba(0, 0, 0, 0.2);
+  background-color: hsla(from var(--c-g-30) h s l / 0.35);
+  overflow-y: hidden;
+
+  &:is(#light &)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(
+      to bottom,
+      hsla(0, 0%, 100%, 0.5),
+      hsla(0, 0%, 100%, 0)
+    );
+    pointer-events: none;
+    z-index: 2;
+  }
+}
+
+#theme-thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  background: var(--c-g-70);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  background-size: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='icon-moon' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'/%3E%3C/svg%3E");
+}
+
+#btn-theme.no-transition #theme-thumb,
+#btn-theme.no-transition #theme-track {
+  transition: none;
+}
+
+html#light #btn-theme #theme-thumb {
+  transform: translateX(28px);
+  background-size: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='LightGray' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cline x1='12' y1='2' x2='12' y2='5'/%3E%3Cline x1='12' y1='19' x2='12' y2='22'/%3E%3Cline x1='2' y1='12' x2='5' y2='12'/%3E%3Cline x1='19' y1='12' x2='22' y2='12'/%3E%3Cline x1='4.93' y1='4.93' x2='7.05' y2='7.05'/%3E%3Cline x1='16.95' y1='16.95' x2='19.07' y2='19.07'/%3E%3Cline x1='4.93' y1='19.07' x2='7.05' y2='16.95'/%3E%3Cline x1='16.95' y1='7.05' x2='19.07' y2='4.93'/%3E%3C/svg%3E");
+}

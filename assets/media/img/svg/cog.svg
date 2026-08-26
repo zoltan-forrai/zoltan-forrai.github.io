@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
+    <g id="svg-links" transform="matrix(0.968804,0,0,0.968804,3.516463,3.480605)">
+        <g transform="matrix(0.9232,0,0,0.9232,47.980324,48.017336)">
+            <g id="svg-links1" serif:id="svg-links">
+                <g transform="matrix(1,0,0,1,-54.166667,-54.166667)">
+                    <clipPath id="_clip1">
+                        <rect x="5.208" y="5.208" width="97.917" height="97.917"/>
+                    </clipPath>
+                    <g clip-path="url(#_clip1)">
+                        <g transform="matrix(4.166667,0,0,4.166667,4.166667,4.166667)">
+                            <path d="M11,10.27L7,3.34" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3.5px;"/>
+                            <path d="M11,13.73L7,20.66" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3.5px;"/>
+                            <path d="M12,22L12,20" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3.5px;"/>
+                            <path d="M12,2L12,4" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3.5px;"/>
+                            <path d="M14,12L22,12" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3.5px;"/>
+                            <path d="M17,20.66L16,18.93" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3.5px;"/>
+                            <path d="M17,3.34L16,5.07" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3.5px;"/>
+                            <path d="M2,12L4,12" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3.5px;"/>
+                            <path d="M20.66,17L18.93,16" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3.5px;"/>
+                            <path d="M20.66,7L18.93,8" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3.5px;"/>
+                            <path d="M3.34,17L5.07,16" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3.5px;"/>
+                            <path d="M3.34,7L5.07,8" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:3.5px;"/>
+                            <circle cx="12" cy="12" r="2" style="fill:none;stroke:black;stroke-width:3.5px;"/>
+                            <circle cx="12" cy="12" r="8" style="fill:none;stroke:black;stroke-width:3.5px;"/>
+                        </g>
+                        <g transform="matrix(4.166667,0,0,4.166667,4.166667,4.166667)">
+                            <path d="M11,10.27L7,3.34" style="fill:none;fill-rule:nonzero;stroke:rgb(255,165,0);stroke-width:2px;"/>
+                            <path d="M11,13.73L7,20.66" style="fill:none;fill-rule:nonzero;stroke:rgb(255,165,0);stroke-width:2px;"/>
+                            <path d="M12,22L12,20" style="fill:none;fill-rule:nonzero;stroke:rgb(255,165,0);stroke-width:2px;"/>
+                            <path d="M12,2L12,4" style="fill:none;fill-rule:nonzero;stroke:rgb(255,165,0);stroke-width:2px;"/>
+                            <path d="M14,12L22,12" style="fill:none;fill-rule:nonzero;stroke:rgb(255,165,0);stroke-width:2px;"/>
+                            <path d="M17,20.66L16,18.93" style="fill:none;fill-rule:nonzero;stroke:rgb(255,165,0);stroke-width:2px;"/>
+                            <path d="M17,3.34L16,5.07" style="fill:none;fill-rule:nonzero;stroke:rgb(255,165,0);stroke-width:2px;"/>
+                            <path d="M2,12L4,12" style="fill:none;fill-rule:nonzero;stroke:rgb(255,165,0);stroke-width:2px;"/>
+                            <path d="M20.66,17L18.93,16" style="fill:none;fill-rule:nonzero;stroke:rgb(255,165,0);stroke-width:2px;"/>
+                            <path d="M20.66,7L18.93,8" style="fill:none;fill-rule:nonzero;stroke:rgb(255,165,0);stroke-width:2px;"/>
+                            <path d="M3.34,17L5.07,16" style="fill:none;fill-rule:nonzero;stroke:rgb(255,165,0);stroke-width:2px;"/>
+                            <path d="M3.34,7L5.07,8" style="fill:none;fill-rule:nonzero;stroke:rgb(255,165,0);stroke-width:2px;"/>
+                            <circle cx="12" cy="12" r="2" style="fill:none;stroke:rgb(255,165,0);stroke-width:2px;"/>
+                            <circle cx="12" cy="12" r="8" style="fill:none;stroke:rgb(255,165,0);stroke-width:2px;"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

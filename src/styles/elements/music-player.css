@@ -1,0 +1,58 @@
+#music-player {
+  display: block;
+  position: relative;
+  margin: 0;
+  aspect-ratio: 3/1;
+  /* Needed for height! */
+  flex-shrink: 0;
+  overflow: hidden;
+  border: var(--border-light);
+  border-radius: 10px;
+  background-color: var(--c-page);
+
+  &:focus-within {
+    outline: 2px solid orange;
+  }
+}
+
+#music-player img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  min-width: 0;
+  min-height: 0;
+}
+
+@supports (background: -webkit-named-image(i)) {
+  /* I hate safari */
+  #music-player img {
+    scale: 0.82;
+    width: unset !important;
+    max-width: unset !important;
+    height: unset !important;
+    transform-origin: top left;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+#music-player .light-music {
+  display: none;
+  mix-blend-mode: multiply;
+}
+
+#light {
+  #music-player .light-music {
+    display: block;
+  }
+  #music-player .dark-music {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  #music-player {
+    width: clamp(300px, 35vw, 370px);
+  }
+}

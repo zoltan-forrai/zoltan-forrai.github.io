@@ -1,0 +1,89 @@
+:root {
+  --c-blue: light-dark(hsl(220, 100%, 40%), hsl(210, 100%, 55%));
+  --c-purple-link: light-dark(hsl(270, 80%, 50%), hsl(270, 60%, 57%));
+}
+
+article a,
+.literature a:not(mark a) {
+  &:link {
+    color: var(--c-blue);
+  }
+
+  &:link::selection {
+    color: var(--c-blue);
+  }
+
+  &:hover {
+    color: hsl(from var(--c-blue) h s calc(l + 10));
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+
+    &::selection {
+      color: hsl(from var(--c-blue) h s calc(l + 10));
+    }
+  }
+
+  &:visited {
+    color: var(--c-purple-link);
+
+    &::selection {
+      color: light-dark(hsl(270, 80%, 55%), hsl(270, 60%, 60%));
+    }
+
+    &:hover {
+      color: light-dark(hsl(270, 100%, 60%), hsl(270, 60%, 65%));
+
+      &::selection {
+        color: light-dark(hsl(270, 100%, 60%), hsl(270, 60%, 65%));
+      }
+    }
+  }
+
+  &:any-link:focus-visible,
+  &:any-link:focus-visible::selection {
+    outline: none;
+    color: orange;
+    text-decoration: underline;
+  }
+
+  *,
+  *::selection {
+    color: inherit;
+  }
+}
+
+.cv-link:before {
+  content: "";
+  height: 1.2rem;
+  width: 1.2rem;
+  display: inline-block;
+  background-color: currentColor;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  vertical-align: middle;
+  margin-right: 0rem;
+  transform: translateY(-5px);
+  mask-image: url("/assets/media/img/svg/icon/icon-scroll-text.svg");
+}
+
+article a:not(#deck a)[target="_blank"],
+.literature a[target="_blank"] {
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    margin-left: 0.2em;
+    vertical-align: text-bottom;
+    margin-bottom: 4px;
+    font-size: 1.4rem;
+    background-color: var(--c-text);
+    background-size: contain;
+    mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6'/><path d='m21 3-9 9'/><path d='M15 3h6v6'/></svg>")
+      no-repeat center / contain;
+  }
+
+  &:focus-visible::after {
+    background-color: orange;
+  }
+}

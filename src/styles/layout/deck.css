@@ -1,0 +1,121 @@
+@import url("/src/styles/elements/search.css");
+
+#deck {
+  max-inline-size: unset;
+  padding: 0.5rem 1.5rem;
+  position: relative;
+  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+@media (max-width: 1000px) {
+  #deck {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+#deck a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  aspect-ratio: 3 / 4;
+  position: relative;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  outline: var(--border-light);
+  border: 7.5px solid light-dark(var(--c-g-35), hsl(0, 0%, 8%));
+  background-color: light-dark(var(--c-g-35), hsl(0, 0%, 8%));
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  filter: brightness(0.9);
+
+  container-type: inline-size;
+  container-name: card;
+
+  transition:
+    transform 0.15s ease-out,
+    box-shadow 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    outline: var(--border-light-b);
+    text-decoration: none;
+    box-shadow: 7.5px 7.5px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    filter: brightness(1);
+
+    & span {
+      color: light-dark(var(--c-g-80), var(--c-g-90));
+    }
+  }
+
+  &:is(#light &) {
+    outline: var(--border-light-b);
+    filter: brightness(1);
+
+    &:focus-visible {
+      outline-color: darkorange;
+      outline-width: 2px;
+    }
+  }
+
+  &:focus-visible {
+    outline-color: orange;
+  }
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 5px 10px 10px 10px;
+    top: 0.25rem;
+    left: 0.25rem;
+    z-index: 1;
+    background-color: light-dark(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.8));
+
+    backdrop-filter: blur(3px);
+  }
+
+  &::after {
+    content: "";
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 0.67rem;
+    left: 0.7rem;
+    z-index: 1;
+    background-color: light-dark(var(--c-g-80), var(--c-g-60));
+
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  &:hover::after {
+    background-color: light-dark(var(--c-g-80), var(--c-g-90));
+  }
+}
+
+#deck span {
+  user-select: none;
+  width: calc(100% - 0.75rem);
+  margin: 0.4rem;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-variant-caps: small-caps;
+  font-weight: bold;
+  font-family: "Special Elite";
+  backdrop-filter: blur(3px);
+  background-color: light-dark(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.8));
+  color: light-dark(var(--c-g-80), var(--c-g-60));
+
+  font-size: clamp(1rem, 8cqw, 2.5rem);
+
+  padding: 1rem 0.1rem 0.75rem 0.1rem;
+  line-height: 1;
+}

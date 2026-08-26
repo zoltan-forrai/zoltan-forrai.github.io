@@ -1,0 +1,183 @@
+@import url("/src/styles/elements/search.css");
+
+::selection {
+  color: light-dark(black, #6da7ec);
+  background-color: light-dark(lightskyblue, #032042);
+}
+
+main {
+  overflow: hidden;
+}
+
+form {
+  margin-bottom: 0.5rem;
+}
+
+table {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 160px);
+  border-collapse: collapse;
+  font-family: "Palatino";
+  user-select: text;
+}
+
+thead {
+  display: block;
+  border-bottom: var(--border-light);
+}
+
+th {
+  font-size: 1.4rem;
+  padding-block: 0.5rem 0.25rem;
+  color: light-dark(var(--c-g-65), var(--c-g-60));
+  border-radius: 10px;
+  outline-offset: -2.5px;
+
+  &:hover {
+    color: light-dark(var(--c-g-80), var(--c-g-90));
+  }
+
+  span {
+    font-size: 1rem;
+    width: 1rem;
+  }
+}
+
+thead tr,
+tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+tbody {
+  display: block;
+  overflow-y: auto;
+  height: calc(100% - 0px);
+  padding-bottom: 1.75rem;
+}
+
+td:nth-of-type(1) a {
+  color: inherit;
+  text-decoration: 1px underline hsl(from currentColor h s calc(l - 20));
+  text-underline-offset: 2px;
+
+  &:hover {
+    filter: brightness(1.3);
+    text-decoration: 1px underline hsl(from currentColor h s calc(l - 5));
+  }
+}
+
+td:nth-of-type(3) {
+  text-align: center;
+  padding: 0.11rem 1rem 0rem 1rem;
+}
+
+td:nth-of-type(3) a {
+  border-radius: 10px;
+  padding: 0 0.5rem;
+  font-family: "JetBrains Mono";
+  border: 0.5px solid hsla(0, 0%, 100%, 0.15);
+  background-color: light-dark(
+    hsl(from var(--c-blue) h s calc(l + 40)),
+    hsl(from var(--c-blue) h s calc(l - 40))
+  );
+
+  &:link {
+    color: light-dark(
+      hsl(from var(--c-blue) h s calc(l - 0)),
+      hsl(from var(--c-blue) h s calc(l + 10))
+    );
+  }
+
+  &:hover {
+    color: light-dark(
+      hsl(from var(--c-blue) h s calc(l - 5)),
+      hsl(from var(--c-blue) h s calc(l + 30))
+    );
+
+    text-decoration: underline;
+
+    &:is(#light &) {
+      text-decoration-thickness: 1px;
+    }
+  }
+
+  &::before {
+    content: "#";
+  }
+  /* &::after {
+    content: ",";
+    color: light-dark(var(--c-g-65), var(--c-g-60));
+  } */
+}
+
+.read {
+  background: light-dark(hsl(120, 80%, 75%), hsl(120, 40%, 10%));
+  color: light-dark(hsl(120, 100%, 10%), hsl(120, 80%, 50%));
+}
+.reading {
+  background: light-dark(hsl(35, 100%, 77%), hsl(35, 60%, 10%));
+  color: light-dark(hsl(35, 100%, 10%), hsl(35, 100%, 55%));
+}
+
+tr:nth-child(even) {
+  background-color: light-dark(var(--c-g-20), var(--c-g-20));
+
+  &.read {
+    background: light-dark(hsl(120, 80%, 85%), hsl(120, 40%, 12.5%));
+    color: light-dark(hsl(120, 100%, 10%), hsl(120, 80%, 50%));
+  }
+
+  &.reading {
+    background: light-dark(hsl(35, 100%, 85%), hsl(35, 60%, 12.6%));
+    color: light-dark(hsl(35, 100%, 10%), hsl(35, 100%, 55%));
+  }
+}
+
+td {
+  white-space: nowrap;
+  padding: 0.3rem 1rem 0.125rem 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 10vw;
+  user-select: text;
+  line-height: 1.3rem;
+}
+
+:is(th, td):nth-of-type(4) {
+  width: 8vw;
+  min-width: 125px;
+  max-width: 125px;
+  overflow: hidden;
+  text-overflow: unset;
+  padding: 0.1rem 1rem 0.1rem 1rem;
+}
+
+th:nth-of-type(4) {
+  padding: 0.1rem 1rem 0.1rem 0.5rem;
+}
+
+td:nth-of-type(4) span {
+  color: light-dark(darkorange, orange);
+  display: flex;
+  align-items: baseline;
+}
+
+@media (max-width: 700px) {
+  th:nth-of-type(3),
+  th:nth-of-type(4),
+  td:nth-of-type(3),
+  td:nth-of-type(4) {
+    display: none;
+  }
+
+  table {
+    height: calc(100vh - 129px);
+  }
+
+  tbody {
+    height: calc(100% - 0px);
+  }
+}

@@ -1,0 +1,85 @@
+.faq-container {
+  counter-reset: item-counter;
+
+  [open]::details-content {
+    margin: 0.5rem 1rem 0.25rem 1rem;
+  }
+
+  summary {
+    counter-increment: item-counter;
+    font-family: "Special Elite";
+    font-size: 1.2rem;
+  }
+}
+
+details {
+  margin-top: 1.5rem;
+  border: 1px solid
+    light-dark(
+      hsla(from var(--c-g-65) h s l / 0.2),
+      hsla(from var(--c-g-55) h s l / 0.2)
+    );
+  border-radius: 10px;
+  background-color: light-dark(hsla(0, 0%, 0%, 0.05), hsla(0, 0%, 0%, 0.1));
+  box-shadow: 3.5px 3.5px 3px 0px rgba(0, 0, 0, 0.5);
+
+  &:is(#light &) {
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  &:has(summary:focus-visible) {
+    border: 1px dashed light-dark(darkorange, orange);
+  }
+}
+
+::details-content {
+  font-size: 1.26rem;
+  text-align: justify;
+}
+
+[open]::details-content {
+  margin: 1rem 1.5rem 1rem 1.5rem;
+}
+
+summary {
+  border-radius: 10px 10px 10px 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  color: light-dark(var(--c-g-65), var(--c-g-55));
+  background-color: light-dark(hsla(0, 0%, 0%, 0.05), hsla(0, 0%, 100%, 0.03));
+  font-weight: bold;
+  cursor: pointer;
+
+  &:is(.faq-container summary):before {
+    content: counter(item-counter) ". ";
+    margin-inline: 0.2rem;
+    font-size: 1.1rem;
+  }
+
+  &:is([open] summary) {
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid
+      light-dark(
+        hsla(from var(--c-g-65) h s l / 0.2),
+        hsla(from var(--c-g-55) h s l / 0.2)
+      );
+  }
+
+  &::marker {
+    color: light-dark(var(--c-g-65), var(--c-g-55));
+  }
+
+  &:hover {
+    background-color: light-dark(hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 100%, 0.05));
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: light-dark(hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 100%, 0.05));
+
+    &::marker,
+    &:before {
+      color: light-dark(darkorange, orange);
+    }
+  }
+}

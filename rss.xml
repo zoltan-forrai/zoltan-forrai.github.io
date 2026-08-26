@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" >
+  <channel>
+    <title>Forrai Zoltán</title>
+    <link>https://www.gildrom.com/rss.xml</link>
+    <description>Updates from gildrom.com</description>
+    <image>
+      <title>gildrom.com</title>
+      <url>https://www.gildrom.com/favicon.ico</url>
+      <link>https://www.gildrom.com/</link>
+    </image> 
+
+    <!-- <item>
+      <title></title>
+      <description></description>
+      <pubDate></pubDate>
+      <link>https://www.gildrom.com/</link>
+      <guid></guid>
+    </item> -->
+
+    <item>
+      <title>Yo, wazzap?</title>
+      <description></description>
+      <pubDate>Wed, 26 Aug 2026 00:15:04</pubDate>
+      <link>https://www.gildrom.com/</link>
+      <guid>https://www.gildrom.com/#1</guid>
+    </item>
+
+
+  </channel>
+</rss>
+
+
+

@@ -1,0 +1,418 @@
+@font-face {
+  font-family: "Alagard";
+  src:
+    url("/assets/fonts/alagard/Alagard.woff2") format("woff2"),
+    url("/assets/fonts/alagard/Alagard.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alagard";
+  src:
+    url("/assets/fonts/alagard/Alagard_1.woff2") format("woff2"),
+    url("/assets/fonts/alagard/Alagard_1.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cochin LT Std";
+  src:
+    url("/assets/fonts/cochin/CochinLTStd-Bold.woff2") format("woff2"),
+    url("/assets/fonts/cochin/CochinLTStd-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cochin LT Std";
+  src:
+    url("/assets/fonts/cochin/CochinLTStd-Bold_1.woff2") format("woff2"),
+    url("/assets/fonts/cochin/CochinLTStd-Bold_1.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cochin LT Std";
+  src:
+    url("/assets/fonts/cochin/CochinLTStd-BoldItalic.woff2") format("woff2"),
+    url("/assets/fonts/cochin/CochinLTStd-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cochin LT Std";
+  src:
+    url("/assets/fonts/cochin/CochinLTStd-BoldItalic_1.woff2") format("woff2"),
+    url("/assets/fonts/cochin/CochinLTStd-BoldItalic_1.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cochin LT Std";
+  src:
+    url("/assets/fonts/cochin/CochinLTStd-Italic.woff2") format("woff2"),
+    url("/assets/fonts/cochin/CochinLTStd-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cochin LT Std";
+  src:
+    url("/assets/fonts/cochin/CochinLTStd-Italic_1.woff2") format("woff2"),
+    url("/assets/fonts/cochin/CochinLTStd-Italic_1.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cochin LT Std";
+  src:
+    url("/assets/fonts/cochin/CochinLTStd.woff2") format("woff2"),
+    url("/assets/fonts/cochin/CochinLTStd.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cochin LT Std";
+  src:
+    url("/assets/fonts/cochin/CochinLTStd_1.woff2") format("woff2"),
+    url("/assets/fonts/cochin/CochinLTStd_1.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Departure Mono";
+  src:
+    url("/assets/fonts/departuremono/DepartureMono-Regular.woff2")
+      format("woff2"),
+    url("/assets/fonts/departuremono/DepartureMono-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Departure Mono";
+  src:
+    url("/assets/fonts/departuremono/DepartureMono-Regular_1.woff2")
+      format("woff2"),
+    url("/assets/fonts/departuremono/DepartureMono-Regular_1.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Departure Mono";
+  src:
+    url("/assets/fonts/departuremono/DepartureMono-Regular_2.woff2")
+      format("woff2"),
+    url("/assets/fonts/departuremono/DepartureMono-Regular_2.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-Bold.woff2") format("woff2"),
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-BoldItalic.woff2")
+      format("woff2"),
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-BoldItalic.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-ExtraBold.woff2")
+      format("woff2"),
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-ExtraBold.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-ExtraBoldItalic.woff2")
+      format("woff2"),
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-ExtraBoldItalic.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-ExtraLight.woff2")
+      format("woff2"),
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-ExtraLight.woff")
+      format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-ExtraLightItalic.woff2")
+      format("woff2"),
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-ExtraLightItalic.woff")
+      format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-Italic.woff2")
+      format("woff2"),
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-Light.woff2") format("woff2"),
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-LightItalic.woff2")
+      format("woff2"),
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-LightItalic.woff")
+      format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-Medium.woff2")
+      format("woff2"),
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-MediumItalic.woff2")
+      format("woff2"),
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-MediumItalic.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-Regular.woff2")
+      format("woff2"),
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-SemiBold.woff2")
+      format("woff2"),
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-SemiBold.woff")
+      format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-SemiBoldItalic.woff2")
+      format("woff2"),
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-SemiBoldItalic.woff")
+      format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-Thin.woff2") format("woff2"),
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src:
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-ThinItalic.woff2")
+      format("woff2"),
+    url("/assets/fonts/jetbrainsmono/JetBrainsMono-ThinItalic.woff")
+      format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JohnDoe";
+  src:
+    url("/assets/fonts/johndoe/JohnDoe.woff2") format("woff2"),
+    url("/assets/fonts/johndoe/JohnDoe.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AT Kyrios Display";
+  src:
+    url("/assets/fonts/kyrios/ATKyriosDisplay-Regular.woff2") format("woff2"),
+    url("/assets/fonts/kyrios/ATKyriosDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AT Kyrios Standard";
+  src:
+    url("/assets/fonts/kyrios/ATKyriosStandard-Regular.woff2") format("woff2"),
+    url("/assets/fonts/kyrios/ATKyriosStandard-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AT Kyrios Text";
+  src:
+    url("/assets/fonts/kyrios/ATKyriosText-Regular.woff2") format("woff2"),
+    url("/assets/fonts/kyrios/ATKyriosText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Luminari";
+  src:
+    url("/assets/fonts/luminari/Luminari-Regular.woff2") format("woff2"),
+    url("/assets/fonts/luminari/Luminari-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Newgrounds Font";
+  src:
+    url("/assets/fonts/newgrounds/NewgroundsFontRegular.woff2") format("woff2"),
+    url("/assets/fonts/newgrounds/NewgroundsFontRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Special Elite";
+  src:
+    url("/assets/fonts/specialelite/SpecialElite-Regular.woff2") format("woff2"),
+    url("/assets/fonts/specialelite/SpecialElite-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Trattatello";
+  src:
+    url("/assets/fonts/trattatello/Trattatello.woff2") format("woff2"),
+    url("/assets/fonts/trattatello/Trattatello.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "UnifrakturCook";
+  src:
+    url("/assets/fonts/unifrakturcook/UnifrakturCook-Light.woff2")
+      format("woff2"),
+    url("/assets/fonts/unifrakturcook/UnifrakturCook-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "UnifrakturCook";
+  src:
+    url("/assets/fonts/unifrakturcook/UnifrakturCook.woff2") format("woff2"),
+    url("/assets/fonts/unifrakturcook/UnifrakturCook.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

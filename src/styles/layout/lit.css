@@ -1,0 +1,344 @@
+@import url("/src/styles/elements/btn-theme.css");
+@import url("/src/styles/elements/btn-audio.css");
+
+:root {
+  --c-page: light-dark(#dee3ed, #121212);
+}
+
+::selection {
+  background-color: var(--c-text);
+  color: var(--c-page);
+}
+
+html {
+  background-color: var(--c-page);
+  /* overscroll-behavior: none; */
+}
+
+body {
+  display: block;
+  margin: 0;
+  background-color: var(--c-page);
+
+  * {
+    user-select: text;
+  }
+}
+
+header ul {
+  margin: 0;
+  padding: 1rem;
+  font-family: "Departure Mono";
+}
+
+header ul li {
+  &::marker {
+    content: ""; /* remove diamond */
+  }
+
+  &:last-of-type a::after {
+    content: "";
+    height: 1.1rem;
+    width: 1.1rem;
+    display: inline-block;
+    background-color: currentColor;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    vertical-align: middle;
+    margin-left: 0.2rem;
+    transform: translateY(-1px);
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-undo2-icon lucide-undo-2'%3E%3Cpath d='M9 14 4 9l5-5'/%3E%3Cpath d='M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11'/%3E%3C/svg%3E");
+  }
+}
+
+mark {
+  margin-inline: -0.25ch;
+  padding: 0 0.5ch;
+  border-radius: 20px;
+  background-color: hsl(from var(--tag-color) h s l / 0.15);
+
+  &:first-of-type {
+    margin-inline-start: -0.5ch;
+  }
+
+  &:is(#adventure, #vampire, #psycho, #lucifer, ) {
+    --tag-color: hsl(0, 75%, 50%);
+  }
+  &:is(#satire, ) {
+    --tag-color: hsl(30, 90%, 45%);
+  }
+  &:is(#religion, ) {
+    --tag-color: light-dark(hsl(80, 90%, 35%), hsl(58, 80%, 40%));
+  }
+  &:is(#sci-fi, ) {
+    --tag-color: hsl(129, 80%, 35%);
+  }
+  &:is(#poetry, #ballad, #free-verse, ) {
+    --tag-color: hsl(208, 80%, 50%);
+  }
+  &:is(#fantasy, ) {
+    --tag-color: hsl(257, 100%, 65%);
+  }
+  &:is(#horror, #dark-fantasy, ) {
+    --tag-color: hsl(277, 80%, 50%);
+  }
+
+  a:any-link {
+    color: var(--tag-color);
+    padding: 0 0.5ch;
+    border-radius: 20px;
+    hyphens: none;
+    word-break: keep-all;
+
+    &:hover {
+      color: light-dark(
+        hsl(from var(--tag-color) h s calc(l - 5)),
+        hsl(from var(--tag-color) h s calc(l + 10))
+      );
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+    }
+
+    &::selection {
+      color: var(--tag-color);
+      background-color: hsl(from var(--tag-color) h s l / 0.2);
+    }
+  }
+}
+
+header menu {
+  padding: 0;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  gap: 10px;
+  top: 8.5px;
+  right: 15px;
+}
+
+article {
+  box-sizing: content-box;
+  max-inline-size: 700px;
+  margin-inline: auto;
+  padding: 1rem min(12px, 4%);
+  padding-top: 0;
+  text-align: justify;
+  font-family: serif;
+}
+
+h1 {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-sizing: content-box;
+  margin-block: 0 clamp(1.5rem, 8vw, 3rem);
+  margin-left: -10px;
+  padding: 15px 10px 7px 10px;
+  line-height: 0.8;
+  font-size: clamp(1.5rem, 8vw, 2.5rem);
+  font-weight: normal;
+  letter-spacing: 0.18em;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--c-page);
+}
+
+article p,
+blockquote {
+  hyphens: auto;
+  line-break: auto;
+  text-align: justify;
+  word-break: normal;
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+
+  &:first-of-type::first-letter {
+    color: light-dark(var(--c-g-65), var(--c-g-60));
+    float: left;
+    margin-right: 0.1rem;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: var(--initial);
+  }
+}
+
+blockquote {
+  margin: 1rem 1rem 1.5rem 10%;
+}
+
+.first-word {
+  margin-right: 0.5rem;
+}
+
+article p + p {
+  text-indent: 1.5em;
+  margin: 0;
+}
+
+.poetry {
+  margin-inline: auto;
+  width: fit-content;
+
+  p {
+    line-height: 2;
+    margin-block: 20px;
+    text-align: left;
+    text-indent: 0;
+    max-width: fit-content;
+  }
+}
+
+hr {
+  border: none;
+  margin: 2.5em 0 1.5em 0;
+  position: relative;
+  text-align: center;
+
+  &::before {
+    color: light-dark(#121212, #dee3ed);
+    content: "* * *";
+    font-size: 1em;
+    letter-spacing: 1em;
+  }
+}
+
+.tbc {
+  text-align: right;
+  margin-right: 5%;
+}
+
+footer {
+  border-top: 2px dashed
+    light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  margin: 10rem auto 1rem auto;
+  padding: 0.5rem;
+  max-width: 70ch;
+}
+
+footer p {
+  text-align: center;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+footer a {
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 950px) {
+  #home-link,
+  header menu {
+    display: none;
+  }
+
+  h1 {
+    margin-block: 2rem 2rem;
+  }
+
+  article p + p {
+    text-indent: 1em;
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+
+  hr {
+    border: none;
+    margin: 2em 0 1.5em 0;
+  }
+
+  .tbc,
+  blockquote {
+    margin-right: 1rem;
+  }
+
+  footer {
+    margin: 5rem auto 1rem auto;
+  }
+
+  footer p {
+    font-size: 1.1rem;
+  }
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0.85in 0.75in 1in 0.75in;
+  }
+
+  body {
+    font-family: "Garamond", "EB Garamond", "Georgia", serif !important;
+    font-size: 11pt !important;
+    line-height: 1.5 !important;
+    text-align: justify !important;
+    hyphens: auto !important;
+    orphans: 3 !important;
+    widows: 3 !important;
+  }
+  * {
+    color: black !important;
+    background-color: transparent !important;
+  }
+
+  header {
+    font-family: "Courier New", Courier, monospace !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    ul,
+    li {
+      font-family: "Courier New", Courier, monospace !important;
+
+      margin-top: 0 !important;
+    }
+    li:nth-of-type(1),
+    li:nth-of-type(2),
+    li:nth-of-type(4),
+    li:last-of-type::after {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      mask-image: none !important;
+    }
+    ul:after {
+      content: "E-mail:  zoltan.forrai@gildrom.com";
+      position: relative;
+      top: 0.175rem;
+    }
+
+    li:nth-of-type(3)::before {
+      content: "Name: ";
+    }
+    li:nth-of-type(5)::before {
+      content: "Website: ";
+    }
+  }
+
+  h1 + p::first-letter {
+    color: black !important;
+    font-family: "Garamond", "EB Garamond", "Georgia", serif !important;
+    font-weight: 600 !important;
+  }
+
+  .poetry {
+    margin-top: 4rem !important;
+
+    p {
+      break-inside: avoid !important;
+      & + p {
+        margin-top: 3rem !important;
+      }
+    }
+  }
+
+  p:not(.poetry p) {
+    margin: 0 !important;
+    text-align: justify !important;
+  }
+
+  footer,
+  #custom-scroll-track {
+    display: none;
+  }
+}

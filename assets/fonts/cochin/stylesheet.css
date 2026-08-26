@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Cochin LT Std';
+    src: url('CochinLTStd-Bold.woff2') format('woff2'),
+        url('CochinLTStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cochin LT Std';
+    src: url('CochinLTStd-Bold_1.woff2') format('woff2'),
+        url('CochinLTStd-Bold_1.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cochin LT Std';
+    src: url('CochinLTStd-BoldItalic.woff2') format('woff2'),
+        url('CochinLTStd-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cochin LT Std';
+    src: url('CochinLTStd-BoldItalic_1.woff2') format('woff2'),
+        url('CochinLTStd-BoldItalic_1.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cochin LT Std';
+    src: url('CochinLTStd-Italic.woff2') format('woff2'),
+        url('CochinLTStd-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cochin LT Std';
+    src: url('CochinLTStd-Italic_1.woff2') format('woff2'),
+        url('CochinLTStd-Italic_1.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cochin LT Std';
+    src: url('CochinLTStd.woff2') format('woff2'),
+        url('CochinLTStd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cochin LT Std';
+    src: url('CochinLTStd_1.woff2') format('woff2'),
+        url('CochinLTStd_1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,268 @@
+#toast {
+  display: none;
+}
+
+#toast:target {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+#toast-block {
+  border: var(--border-light);
+  border-radius: 10px;
+  overflow: hidden;
+  position: fixed;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 1.5rem;
+  background: var(--c-page);
+  box-shadow: 0px 0px 10px 5px
+    light-dark(hsla(0, 0%, 0%, 0.3), hsla(0, 0%, 0%, 0.6));
+
+  width: clamp(300px, 50%, 700px);
+  height: 50%;
+  font-size: 2.5rem;
+  font-family: "Special Elite";
+  text-align: center;
+}
+
+#toast-block svg {
+  padding: 3rem 1rem 1rem 1rem;
+  height: 90%;
+  width: 100%;
+  color: green;
+}
+
+#toast-block a {
+  font-family: "Special Elite";
+  position: absolute;
+  top: 0rem;
+  right: 0.5rem;
+
+  transform: rotateZ(90deg);
+
+  color: orangered;
+
+  &:hover {
+    color: red;
+    text-decoration: none;
+  }
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  margin-block: 2.5rem;
+  font-size: clamp(2.1rem, 7vw, 2.8rem);
+}
+
+p,
+p + p {
+  margin: 0;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: light-dark(var(--c-g-65), var(--c-g-60));
+}
+
+input,
+textarea,
+#drop-zone {
+  touch-action: pan-y;
+  user-select: auto;
+  -webkit-user-select: auto;
+  display: block;
+  width: 100%;
+  min-width: 200px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: var(--border-light);
+  color: var(--c-text);
+  padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+  margin-block: 0.3rem 1.5rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  box-shadow:
+    inset 0 0 5px 5px light-dark(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1)),
+    3px 3px 5px 0px light-dark(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5));
+  background-color: light-dark(var(--c-g-35), var(--c-g-20));
+
+  &::placeholder {
+    color: light-dark(var(--c-g-55), var(--c-g-40));
+  }
+
+  &:focus {
+    background-color: light-dark(var(--c-g-25), var(--c-g-25));
+    outline: 1px solid light-dark(darkorange, orange);
+
+    &::placeholder {
+      color: light-dark(var(--c-g-60), var(--c-g-50));
+    }
+  }
+  &:is(#light &) {
+    outline-width: 2px;
+  }
+}
+
+#email:focus:invalid {
+  outline: 2px solid red;
+}
+
+#email:focus:valid:not(:placeholder-shown) {
+  outline: 2px solid green;
+}
+
+section:has(textarea) {
+  display: flex;
+  flex-direction: column;
+}
+
+p:has(textarea) {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  flex: 1 1 auto;
+  resize: none;
+}
+
+div#drop-zone {
+  box-sizing: border-box;
+  height: 150px;
+
+  padding: 1rem;
+  padding-bottom: 0;
+  font-family: inherit;
+  font-size: 1rem;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  flex-wrap: wrap;
+
+  svg {
+    position: absolute;
+    user-select: none;
+    filter: invert(0.25);
+    min-height: 180px;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 120px;
+  }
+
+  svg#open {
+    display: none;
+  }
+
+  &:hover,
+  &.drop-zone--over {
+    background-color: var(--c-g-25);
+
+    svg#plus {
+      display: none;
+    }
+    svg#open {
+      display: block;
+    }
+  }
+
+  input#file {
+    display: none;
+  }
+
+  &:has(div.drop-zone-thumb) svg {
+    display: none !important;
+  }
+
+  div.drop-zone-thumb {
+    margin-right: 30px;
+    margin-bottom: 50px;
+    width: 100px;
+    height: 80px;
+    background-size: contain;
+    position: relative;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%234C4C4C" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>');
+
+    &::after {
+      content: attr(data-label);
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      font-family: "Departure Mono";
+      white-space: nowrap;
+      font-size: 13.75px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      max-width: 100%;
+    }
+  }
+}
+
+.drop-zone-thumb.selected {
+  outline: 2px dashed light-dark(var(--c-g-55), var(--c-g-40));
+  outline-offset: 4px;
+}
+
+button[type="submit"] {
+  width: clamp(300px, 45%, 400px);
+  margin: 1rem auto;
+  display: block;
+  font-size: 1.7rem;
+  padding: 0.9rem 1rem 0.7rem 1rem;
+
+  b {
+    margin-right: 22px;
+  }
+}
+
+body:has(lt-toolbar) {
+  margin-right: 2px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    margin-block: 0.5rem 2.5rem;
+  }
+
+  fieldset {
+    display: block;
+    width: 100%;
+  }
+
+  textarea {
+    min-height: 200px;
+  }
+
+  #drop-zone {
+    max-height: 100px;
+  }
+}

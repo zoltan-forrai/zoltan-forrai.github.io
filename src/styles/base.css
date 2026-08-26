@@ -1,0 +1,110 @@
+/* View Transition : Light-Dark switch */
+@media (min-width: 700px) {
+  @media (prefers-reduced-motion: no-preference) {
+    ::view-transition {
+      user-select: none;
+      -moz-user-select: none;
+    }
+
+    ::view-transition-old(root) {
+      animation-delay: 500ms;
+    }
+
+    ::view-transition-new(root) {
+      animation: circle-in 800ms;
+    }
+
+    @keyframes circle-in {
+      from {
+        clip-path: circle(0% at 97.7% 2.5%);
+      }
+      to {
+        clip-path: circle(150% at 97.7% 2.5%);
+      }
+    }
+  }
+}
+
+:focus-visible {
+  outline: 2.5px solid light-dark(darkorange, orange);
+}
+
+::selection {
+  background: light-dark(hsl(120, 80%, 70%), hsl(120, 80%, 10%));
+  color: light-dark(hsl(120, 80%, 20%), hsl(120, 80%, 50%));
+}
+
+html {
+  color-scheme: dark;
+  font-family: "Cochin LT Std";
+  background-color: var(--c-background);
+  color: var(--c-text);
+
+  &#light {
+    color-scheme: light;
+  }
+}
+
+body {
+  margin: 56px 7px 5px 5px;
+  /* the header + margin top and bottom */
+  min-height: calc(100vh - 61px);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  caret-color: light-dark(darkorange, orange);
+}
+
+img {
+  font-family: "Courier New", Courier, monospace;
+  color: light-dark(var(--c-text), white);
+}
+
+.my-sigil {
+  display: block;
+  margin: 2.5rem auto;
+}
+
+div#newgrounds-webring {
+  margin-inline: auto;
+  scale: 0.9;
+  margin-top: 0.5rem;
+
+  > img {
+    display: none;
+  }
+
+  div.footer {
+    background: transparent !important;
+
+    img {
+      filter: drop-shadow(1px 0px 0.5px rgba(0, 0, 0, 0.5))
+        drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.5))
+        drop-shadow(-1px 0px 0.5px rgba(0, 0, 0, 0.5))
+        drop-shadow(0px -1px 0.5px rgba(0, 0, 0, 0.5));
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  body {
+    margin: 86px 7px 5px 5px;
+    min-height: calc(100vh - 91px);
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    flex-direction: row;
+  }
+}
+
+/* temporal */
+
+/* main, .aside-box {
+  &:not(#light &) {
+    background-image: url("/assets/media/img/grunge.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+} */
