@@ -34,30 +34,4 @@
   #maze {
     background-image: url("/assets/media/img/cover/maze-375.jpg");
   }
-
-  #newgrounds {
-    background-image: url("/assets/media/img/cover/ng-1110.png");
-    background-color: black;
-    background-size: contain;
-    background-position: top;
-    border: none;
-    aspect-ratio: 1 / 1;
-
-    &:before,
-    &:after {
-      display: none;
-    }
-
-    &:hover span {
-      color: #e5d96e;
-    }
-
-    span {
-      font-family: "Newgrounds Font";
-      font-size: 1.7rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #e5a30d;
-    }
-  }
 }
