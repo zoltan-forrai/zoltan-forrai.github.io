@@ -17,9 +17,13 @@
     </item> -->
 
     <item>
-      <title>I refactored the website. Check out the artwork gallery!</title>
-      <description>I refactored the website. Check out the artwork gallery!</description>
-      <pubDate>Thu, 27 Aug 2026 12:50:06</pubDate>
+      <title>I refactored the website. Check out the artwork page!</title>
+      <description>
+        The website has been greatly refactored. Added a lot of new pages, like 
+        the Artwork gallery. There are still a few bugfixes coming in the next 
+        few days. 
+      </description>
+      <pubDate>Thu, 27 Aug 2026 14:20:22</pubDate>
       <link>https://www.gildrom.com/interests/art</link>
       <guid>https://www.gildrom.com/interests/art</guid>
     </item>
