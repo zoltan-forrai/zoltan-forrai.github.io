@@ -84,7 +84,7 @@
               </li>
             </ul>
           </section>
-          <section>
+          <section class="second">
             <h2 class="small-h2 Alagard" style="margin-top: 0">
               Other tools I use
             </h2>
@@ -99,10 +99,15 @@
               <li><a href="//vscodium.com/">VSCodium</a></li>
               <li><a href="//www.zotero.org/">Zotero</a></li>
             </ul>
+            <svg class="my-sigil"></svg>
           </section>
         </div>
       </article>
       <style>
+        article {
+          padding-bottom: 0;
+        }
+
         article > div {
           display: flex;
           gap: 10%;
@@ -111,6 +116,24 @@
         article > div > section li,
         h2 {
           white-space: nowrap;
+        }
+
+        .second {
+          background-color: light-dark(
+            rgba(0, 0, 0, 0.075),
+            rgba(0, 0, 0, 0.2)
+          );
+          border: 1px solid
+            light-dark(rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05));
+          padding: 1rem 1.5rem;
+          border-radius: 10px;
+
+          display: flex;
+          flex-direction: column;
+        }
+
+        .my-sigil {
+          margin-block: auto;
         }
 
         @media (max-width: 800px) {
