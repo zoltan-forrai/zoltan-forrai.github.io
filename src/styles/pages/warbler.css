@@ -7,6 +7,10 @@ p + p {
   margin-top: 0;
 }
 
+p:not(:has(span)) {
+  padding-bottom: calc(41px);
+}
+
 p {
   background-color: light-dark(hsl(202, 100%, 86%), hsl(230, 30%, 15%));
   border-radius: 10px;

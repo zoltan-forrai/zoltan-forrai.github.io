@@ -9,6 +9,10 @@
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
+form {
+  height: 31px;
+}
+
 @media (max-width: 1000px) {
   #deck {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

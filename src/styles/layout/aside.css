@@ -54,9 +54,18 @@
   hyphens: none;
   font-family: "JetBrains Mono";
   text-align: left;
+  min-height: 59.5px;
 
   color: var(--c-text);
   background-color: light-dark(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.25));
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  hyphens: auto;
 
   &:before {
     content: url("/assets/media/img/svg/rss.svg");
