@@ -5,8 +5,9 @@ document.querySelectorAll("mark").forEach((mark) => {
 
   link.textContent = text;
   const isEssayPage = window.location.pathname.includes("/essays");
-  link.href = isEssayPage
-    ? `/literary/essays?q=${encodeURIComponent(text)}`
+  link.href =
+    isEssayPage ?
+      `/interests/essays?q=${encodeURIComponent(text)}`
     : `/literary/fiction?q=${encodeURIComponent(text)}`;
 
   mark.textContent = "";

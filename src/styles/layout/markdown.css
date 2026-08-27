@@ -251,6 +251,7 @@ article a:not(header a, footer a) {
 article img {
   max-width: 100%;
   max-height: 35vh;
+  min-height: 250px;
   display: block;
   margin-inline: auto;
   margin-block: 1rem;
