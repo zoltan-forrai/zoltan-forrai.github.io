@@ -73,7 +73,7 @@ article a:not(#deck a)[target="_blank"],
     display: inline-block;
     width: 0.7em;
     height: 0.7em;
-    margin-left: 0.2em;
+    margin-left: 0.1em;
     vertical-align: text-bottom;
     margin-bottom: 4px;
     font-size: 1.4rem;

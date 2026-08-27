@@ -56,6 +56,10 @@ h2 {
   color: light-dark(var(--c-g-65), var(--c-g-60));
   font-size: clamp(2rem, 7vw, 2.8rem);
   margin-block: 2.5rem 1rem;
+
+  &.small-h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
 }
 h3 {
   color: light-dark(var(--c-g-65), var(--c-g-60));
@@ -71,4 +75,52 @@ code {
   font-family: "JetBrains Mono";
   font-size: 0.95rem;
   line-height: 1.5;
+}
+
+.Alagard {
+  font-family: "Alagard";
+}
+.Cochin {
+  font-family: "Cochin LT Std";
+}
+.Departure {
+  font-family: "Departure Mono";
+}
+.JetBrains {
+  font-family: "JetBrains Mono";
+}
+.JohnDoe {
+  font-family: "JohnDoe";
+}
+.Kyrios {
+  font-family: "AT Kyrios Standard";
+
+  &.text {
+    font-family: "AT Kyrios Text";
+  }
+  &.display {
+    font-family: "AT Kyrios Display";
+  }
+}
+.Luminari {
+  font-family: "Luminari";
+}
+.Newgrounds {
+  font-family: "Newgrounds Font";
+}
+.Palatino {
+  font-family: "Palatino";
+}
+.Special {
+  font-family: "Special Elite";
+}
+.Trattatello {
+  font-family: "Trattatello";
+}
+.Unifraktur {
+  font-family: "UnifrakturCook";
+}
+
+::marker {
+  font-family: "Cochin LT Std" !important;
 }

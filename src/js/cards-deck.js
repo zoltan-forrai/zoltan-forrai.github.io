@@ -3,6 +3,7 @@ const placeholderName = searchBox.title.toUpperCase();
 searchBox.innerHTML = `
   <search>
     <input
+      class="Departure"
       type="search"
       id="search"
       name="filter"
@@ -78,4 +79,3 @@ searchBox.innerHTML = `
     applyFilter();
   }
 })();
-

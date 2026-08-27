@@ -10,12 +10,126 @@
     <link rel="stylesheet" href="/src/styles/base.css" />
     <link rel="stylesheet" href="/src/styles/layout/site-header.css" />
     <link rel="stylesheet" href="/src/styles/layout/main.css" />
+    <link rel="stylesheet" href="/src/styles/typography.css" />
 
     <script type="module" src="/index.js"></script>
     <title>Colophon・gildrom.com</title>
   </head>
   <body>
     <header id="site-header"></header>
-    <main></main>
+    <style>
+      li {
+        font-family: "palatino";
+      }
+    </style>
+    <main>
+      <article>
+        <h1 class="small-h1 Alagard">Colophon</h1>
+        <div>
+          <section>
+            <ul>
+              <li>
+                <b>Domain provider&colon;</b>
+                <a href="//cloudflare.com/products/registrar/"
+                  >Cloudflare Registrar</a
+                >
+              </li>
+              <li>
+                <b>Website hosted on&colon;</b>
+                <a href="//docs.github.com/en/pages">GitHub Pages</a>
+              </li>
+              <li>
+                <b>Now playing widget by&colon;</b>
+                <a href="//github.com/kittinan/spotify-github-profile"
+                  >Kittinan</a
+                >
+              </li>
+              <li>
+                <b>Masonry layout&colon;</b>
+                <a href="//spope.github.io/MiniMasonry.js/">MiniMasonry.js</a>
+              </li>
+              <li>
+                <b>E-mail forwarding&colon;</b>
+                <a href="//formsubmit.co/">FormSubmit</a>
+              </li>
+              <li>
+                <b>Password page&colon;</b>
+                <a href="//github.com/robinmoisson/staticrypt">StatiCrypt</a>
+              </li>
+              <li>
+                <b>Games made in&colon;</b>
+                <a href="//twinery.org/">Twine</a>
+              </li>
+
+              <li>
+                <b>Fonts used&colon;</b>
+                <ul>
+                  <li class="Alagard">Alagard</li>
+                  <li class="Cochin">Cochin</li>
+                  <li class="Departure">Departure Mono</li>
+                  <li class="JetBrains">JetBrains Mono</li>
+                  <!-- <li class="JohnDoe">John Doe</li> -->
+                  <!-- <li class="Kyrios">
+                    <span class="Kyrios">Kyrios,</span>
+                    <span class="Kyrios display">Kyrios</span>,
+                    <span class="Kyrios text">Kyrios</span>
+                  </li> -->
+                  <li class="Luminari">Luminari</li>
+                  <!-- <li class="Newgrounds">Newgrounds</li> -->
+                  <li class="Palatino">Palatino</li>
+                  <li class="Special">Special Elite</li>
+                  <!-- <li class="Trattatello">Trattatello</li> -->
+                  <!-- <li class="Unifraktur">Unifraktur</li> -->
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2 class="small-h2 Alagard" style="margin-top: 0">
+              Other tools I use
+            </h2>
+            <ul>
+              <li><a href="//www.affinity.studio/">Affinity</a></li>
+              <li><a href="//apps.ankiweb.net/">Anki</a></li>
+              <li><a href="//www.beat-app.fi/">Beat</a></li>
+              <li><a href="//www.blender.org/">Blender</a></li>
+              <li><a href="//obsidian.md/">Obsidian</a></li>
+              <li><a href="//www.onlyoffice.com/">OnlyOffice</a></li>
+              <li><a href="//twinery.org/">Twine</a></li>
+              <li><a href="//vscodium.com/">VSCodium</a></li>
+              <li><a href="//www.zotero.org/">Zotero</a></li>
+            </ul>
+          </section>
+        </div>
+      </article>
+      <style>
+        article > div {
+          display: flex;
+          gap: 10%;
+        }
+
+        article > div > section li,
+        h2 {
+          white-space: nowrap;
+        }
+
+        @media (max-width: 800px) {
+          article > div {
+            display: block;
+          }
+
+          article > div > section li,
+          h2 {
+            white-space: unset;
+          }
+        }
+
+        @media (max-width: 500px) {
+          li {
+            font-size: 1rem;
+          }
+        }
+      </style>
+    </main>
   </body>
 </html>

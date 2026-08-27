@@ -9,13 +9,7 @@
       <url>https://www.gildrom.com/favicon.ico</url>
       <link>https://www.gildrom.com/</link>
     </image> 
-
-    <!-- <item>
-      <title></title>
-      <description></description>
-      <link></link>
-    </item> -->
-
+<!--  -->
     <item>
       <title>I refactored the website. Check out the artwork page!</title>
       <description>
@@ -27,7 +21,7 @@
       <link>https://www.gildrom.com/interests/art</link>
       <guid>https://www.gildrom.com/interests/art</guid>
     </item>
-
+<!--  -->
   </channel>
 </rss>
 
