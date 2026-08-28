@@ -234,6 +234,7 @@ img {
   object-fit: cover;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   display: none;
+  user-select: none;
 }
 
 html:not(#light) img.dark {
