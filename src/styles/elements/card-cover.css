@@ -34,4 +34,11 @@
   #maze {
     background-image: url("/assets/media/img/cover/maze-375.jpg");
   }
+
+  #where-she {
+    background-image: url("/assets/media/img/cover/where-is-she.jpg");
+    &:is(#light &) {
+      background-image: url("/assets/media/img/cover/where-is-she-light.jpg");
+    }
+  }
 }

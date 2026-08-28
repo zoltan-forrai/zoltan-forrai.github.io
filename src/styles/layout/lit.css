@@ -211,7 +211,7 @@ hr {
 footer {
   border-top: 2px dashed
     light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
-  margin: 10rem auto 1rem auto;
+  margin: 5rem auto 1rem auto;
   padding: 0.5rem;
   max-width: 70ch;
 }
@@ -224,6 +224,24 @@ footer p {
 
 footer a {
   text-underline-offset: 3px;
+}
+
+img {
+  width: 100%;
+  height: 55vh;
+  margin-block: -2rem 3rem;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+html:not(#light) img.dark {
+  display: block;
+}
+
+#light img.light {
+  display: block;
 }
 
 @media (max-width: 950px) {
