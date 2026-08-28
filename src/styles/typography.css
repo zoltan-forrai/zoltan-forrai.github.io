@@ -121,6 +121,6 @@ code {
   font-family: "UnifrakturCook";
 }
 
-::marker {
+ul li::marker {
   font-family: "Cochin LT Std" !important;
 }
