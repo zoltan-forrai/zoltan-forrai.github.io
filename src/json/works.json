@@ -3,10 +3,9 @@
     {
       "title": "How to Read a Book",
       "authors": ["Mortimer J. Adler", "Charles Van Doren"],
-      "tags": ["close reading", ""],
+      "tags": [""],
       "status": "reading",
-      "rating": 4,
-      "link": "https://dn710009.ca.archive.org/0/items/howto-read-abook/HowtoReadABook.pdf"
+      "rating": 4
     },
     {
       "title": "Iliad",

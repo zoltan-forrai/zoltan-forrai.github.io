@@ -1,5 +1,4 @@
 :root {
-  --c-text-n: light-dark(hsl(0, 0%, 33%), hsl(219, 20%, 70%));
   --c-text-d: light-dark(hsl(0, 0%, 50%), hsl(219, 5%, 30%));
   --c-blue: light-dark(hsl(220, 100%, 40%), hsl(210, 100%, 55%));
   --c-purple-link: light-dark(hsl(270, 80%, 50%), hsl(270, 60%, 57%));
@@ -28,7 +27,9 @@ article header ul {
   &::before,
   &::after {
     content: "---";
-    color: light-dark(hsl(6, 90%, 60%), salmon);
+    color: var(--c-text-d);
+
+    /* color: light-dark(hsl(6, 90%, 60%), salmon); */
   }
 }
 
@@ -37,7 +38,12 @@ article header li {
   user-select: none;
 
   &:before {
-    color: light-dark(hsl(213, 90%, 50%), #69a9f8);
+    color: light-dark(
+      hsl(from var(--c-text-d) h s calc(l - 15)),
+      hsl(from var(--c-text-d) h s calc(l + 15))
+    );
+
+    /* color: light-dark(hsl(213, 90%, 50%), #69a9f8); */
   }
 }
 
@@ -56,13 +62,14 @@ article header mark::after {
 article header span,
 article header mark {
   color: light-dark(
-    hsl(from var(--c-text-d) h s calc(l - 30)),
-    hsl(from var(--c-text-d) h s calc(l + 30))
+    hsl(from var(--c-text-d) h s calc(l - 35)),
+    hsl(from var(--c-text-d) h s calc(l + 35))
   );
 
   &:first-of-type::before {
     content: ": ";
-    color: light-dark(hsl(6, 90%, 60%), salmon);
+    color: var(--c-text-d);
+    /* color: light-dark(hsl(6, 90%, 60%), salmon); */
   }
 }
 
