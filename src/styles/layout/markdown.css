@@ -14,7 +14,8 @@ article {
   max-inline-size: 80ch;
   font-family: "JetBrains Mono";
 
-  :before {
+  ::before,
+  ::after {
     white-space: nowrap;
     color: var(--c-text-d);
   }
@@ -56,6 +57,10 @@ article header li:has(span):before {
 }
 
 article header mark::after {
+  color: light-dark(
+    hsl(from var(--c-text-d) h s calc(l - 35)),
+    hsl(from var(--c-text-d) h s calc(l + 35))
+  );
   content: ",";
 }
 
@@ -149,19 +154,20 @@ main footer {
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
-  margin-block: 0.5em;
   color: light-dark(var(--c-g-65), var(--c-g-60));
 }
 
 h1 {
   text-align: left;
   font-size: clamp(1.25rem, 5vw, 2.8rem);
+  margin-block: 1em 0.75em;
   &:before {
     content: "# ";
   }
 }
 h2 {
   font-size: 1.7rem;
+  margin-block: 1.5em 0.5em;
   &:before {
     content: "## ";
   }
@@ -252,6 +258,14 @@ article a:not(header a, footer a) {
     margin: 0;
     display: inline;
     font-size: inherit;
+  }
+
+  &[target="_blank"]:after {
+    content: "]]↗";
+  }
+
+  &[href*="newgrounds"] {
+    color: light-dark(orangered, orange);
   }
 }
 
@@ -349,16 +363,6 @@ ul:not(header ul) {
   }
 }
 
-p,
-li {
-  font-size: 1rem;
-  line-height: 1.7;
-
-  & + p {
-    margin-top: 1rem;
-  }
-}
-
 .c::before {
   content: "[ ] ";
 }
@@ -373,5 +377,43 @@ li {
   &::before {
     content: "[✓] ";
     font-style: normal;
+  }
+}
+
+p,
+li {
+  font-size: 1rem;
+  line-height: 1.7;
+
+  & + p {
+    margin-top: 1rem;
+  }
+}
+
+i {
+  &::before,
+  &::after {
+    content: "*";
+  }
+}
+
+b {
+  &::before,
+  &::after {
+    content: "**";
+  }
+}
+
+em {
+  &::before,
+  &::after {
+    content: "_";
+  }
+}
+
+strong {
+  &::before,
+  &::after {
+    content: "__";
   }
 }
