@@ -12,6 +12,7 @@ function applyTheme(value) {
   } else {
     document.documentElement.removeAttribute("id");
   }
+  document.dispatchEvent(new Event("themechange"));
 }
 
 function toggleTheme() {

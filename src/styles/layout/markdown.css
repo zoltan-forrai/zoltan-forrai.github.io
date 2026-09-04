@@ -177,6 +177,8 @@ h2 {
   }
 }
 h3 {
+  font-size: 1.25rem;
+  margin-block: 1.25em 0.5em;
   &:before {
     content: "### ";
   }

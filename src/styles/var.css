@@ -31,4 +31,5 @@
   --c-background: light-dark(var(--c-g-35), black);
   --c-page: light-dark(var(--c-g-30), #181818);
   --c-text: light-dark(hsl(0, 0%, 6%), var(--c-g-60));
+
 }
