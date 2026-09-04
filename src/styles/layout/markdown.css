@@ -4,6 +4,10 @@
   --c-purple-link: light-dark(hsl(270, 80%, 50%), hsl(270, 60%, 57%));
 }
 
+/* *:target {
+  text-decoration: underline;
+} */
+
 main {
   display: flex;
   flex-direction: column;
@@ -106,7 +110,7 @@ article header a:any-link {
   }
 }
 
-main footer {
+main footer:not(article footer) {
   font-family: "Departure Mono";
   margin-top: auto;
   text-align: center;
@@ -415,5 +419,89 @@ strong {
   &::before,
   &::after {
     content: "__";
+  }
+}
+
+article sup a:not(header a, footer a) {
+  &:before {
+    content: "[";
+  }
+
+  &:after {
+    content: "]";
+  }
+
+  /* &:target {
+    text-decoration: underline 1px solid var(--c-text-d);
+    text-underline-offset: 4px;
+  } */
+}
+
+article footer a {
+  &:link {
+    color: var(--c-blue);
+  }
+
+  &:link::selection {
+    color: var(--c-blue);
+  }
+
+  &:hover {
+    color: hsl(from var(--c-blue) h s calc(l + 10));
+    text-decoration: 1px underline;
+
+    &::selection {
+      color: hsl(from var(--c-blue) h s calc(l + 10));
+    }
+  }
+
+  &:visited {
+    color: var(--c-purple-link);
+
+    &::selection {
+      color: light-dark(hsl(270, 80%, 55%), hsl(270, 60%, 60%));
+    }
+
+    &:hover {
+      color: light-dark(hsl(270, 100%, 60%), hsl(270, 60%, 65%));
+
+      &::selection {
+        color: light-dark(hsl(270, 100%, 60%), hsl(270, 60%, 65%));
+      }
+    }
+  }
+
+  &:any-link:focus-visible,
+  &:any-link:focus-visible::selection {
+    outline: none;
+    color: orange;
+    text-decoration: underline 1.2px solid orange;
+  }
+
+  *,
+  *::selection {
+    color: inherit;
+  }
+}
+
+article footer {
+  border-top: 2px dashed var(--c-text-d);
+  margin-top: 3rem;
+  padding-top: 1rem;
+
+  & * {
+    font-size: 0.9rem;
+    color: light-dark(
+      hsl(from var(--c-text-d) h s calc(l - 15)),
+      hsl(from var(--c-text-d) h s calc(l + 15))
+    );
+  }
+}
+
+ol {
+  margin-left: 2rem;
+
+  li::marker {
+    font-size: 0.8rem;
   }
 }
