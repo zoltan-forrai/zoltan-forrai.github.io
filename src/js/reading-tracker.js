@@ -1,4 +1,5 @@
 const meters = document.querySelectorAll("meter");
+let total = 0;
 
 meters.forEach((meter) => {
   meter.setAttribute("low", 49);
@@ -6,7 +7,10 @@ meters.forEach((meter) => {
   meter.setAttribute("max", 50);
 
   meter.setAttribute("title", `${meter.value} / 50`);
+  total += meter.value;
 });
+
+document.getElementById("num").textContent = total;
 
 async function setReadingMeter() {
   try {

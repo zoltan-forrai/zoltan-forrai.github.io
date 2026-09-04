@@ -45,3 +45,9 @@ article {
     width: 100%;
   }
 }
+
+.copy {
+  margin-block: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+}
