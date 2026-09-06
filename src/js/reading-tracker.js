@@ -1,16 +1,22 @@
-const meters = document.querySelectorAll("meter");
-let total = 0;
+async function setReadingPage() {
+  const meters = document.querySelectorAll("meter");
+  try {
+    let total = 0;
 
-meters.forEach((meter) => {
-  meter.setAttribute("low", 49);
-  meter.setAttribute("optimum", 50);
-  meter.setAttribute("max", 50);
+    meters.forEach((meter) => {
+      meter.setAttribute("low", 49);
+      meter.setAttribute("optimum", 50);
+      meter.setAttribute("max", 50);
 
-  meter.setAttribute("title", `${meter.value} / 50`);
-  total += meter.value;
-});
+      meter.setAttribute("title", `${meter.value} / 50`);
+      total += meter.value;
+    });
 
-document.getElementById("num").textContent = total;
+    document.getElementById("num").textContent = total;
+  } catch (err) {
+    console.error("Failed to load reading page", err);
+  }
+}
 
 async function setReadingMeter() {
   try {
@@ -61,3 +67,4 @@ async function setReadingMeter() {
 
 document.addEventListener("DOMContentLoaded", setReadingMeter);
 document.addEventListener("themechange", setReadingMeter);
+document.addEventListener("DOMContentLoaded", setReadingPage);

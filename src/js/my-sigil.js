@@ -8,6 +8,7 @@ mySigil.forEach((sigil) => {
   sigil.setAttribute("stroke-width", "2");
   sigil.setAttribute("stroke-linecap", "round");
   sigil.setAttribute("stroke-linejoin", "round");
+  sigil.setAttribute("aria-hidden", "true");
 
   sigil.innerHTML = `
     <defs>

@@ -6,7 +6,7 @@ const header = `
         width="30"
         height="30"
         alt=""
-        src="/assets/media/img/brand/brand-skull.png" />
+        src="/assets/media/img/brand/brand-skull-thin.png" />
       <span class="site-title">Gildrom Qeeney</span>
     </a>
     <menu id="header-menu"></menu>
