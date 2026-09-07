@@ -25,30 +25,30 @@
               <mark id="#blog">#blog</mark>
               <mark id="#rant">#rant</mark>
             </li>
-            <li><span>23/08/26・20:24 (CET)</span></li>
+            <li><span>07/09/26・21:04 (CET)</span></li>
           </ul>
         </header>
         <h1>Welcome to My Weblog?</h1>
         <p>
           The internet is dead, and it's a gruesome crime scene. The coroner's
-          report is quite clear; the web was killed. Who done it? We all did.
+          report is clear; the web was killed.
         </p>
         <p>
           The online creator sphere is in a fragile state right now. The
-          once-working contract between platforms and creators is breaking,
-          dissolving at the seams. This contract once was simple: users only
-          visited sites if there was content to be seen, so platforms
-          <i>needed</i> creators to pull those users in, and in return the
-          creators were rewarded with some of the revenue the users generated.
-          The creator provided the content, the platform provided the
-          infrastructure. It was the deal many people built careers upon.
+          once-working contract between platform and creator is breaking. This
+          contract was simple: users only visited sites if there was content to
+          be seen, therefore platforms <b>needed</b> creators to make content to
+          pull those users in, and in return the creator was rewarded with some
+          of the revenue generated. The creator provided the content, the
+          platform provided the infrastructure. It was a deal many built careers
+          on online.
         </p>
         <p>
           This deal is no longer desirable for platforms. Creativity is
           unreliable, it's messy, it's altogether too human. And when your
           singular goal is profit, humanity becomes a liability. Just imagine
           how much revenue they could save, if only they didn't
-          <i>need</i> creatives to make content. Well, enter Ai...
+          <b>need</b> creatives to make content. <i>Well, enter Ai...</i>
         </p>
         <p>
           I'm not on social media anymore; the malefits simply outweigh the
@@ -56,9 +56,8 @@
           <a href="//about.fb.com/news/2025/09/introducing-vibes-ai-videos/"
             >replace human creativity with artificial crap</a
           >. But all Ai has done so far is pollute the web, turning the internet
-          into a reeking landfill. Human creativity is no longer welcomed, let
-          alone desired. And no matter how I look at it, social media looks like
-          a sinking ship.
+          into a reeking landfill. No matter how I look at it, to me, social
+          media looks like a sinking ship.
         </p>
         <p>
           The only platform, I believe, that escapes this criticism is
@@ -67,8 +66,8 @@
           corporatisation: an artist-focused architecture, no evil algorithm, a
           strong and committed community, and a firm stance against GenAi. While
           I don't wish NG to become mainstream (that's the worst thing that can
-          happen to a niche), I do see a future where Newgrounds becomes a big
-          player on the web.
+          happen to a niche), I do see a future where Newgrounds becomes a
+          bigger player on the web.
         </p>
         <p>
           Time moves like a pendulum; it swings, forth and back between
@@ -76,8 +75,8 @@
             ><a href="#fn1" id="ref1">1.</a></sup
           >
           If that is so, then the present's push towards the artificial will be
-          mirrored by an equal swing, back to being human. Even if the entire
-          web cannot be revived, a schism is likely to happen.
+          mirrored by an equal swing back to being human. Maybe wishful thinking
+          from my part, but I'm hopeful for what is to come.
         </p>
 
         <h2>So Why Make a Website Now?</h2>
@@ -99,8 +98,8 @@
           >
           Turns out, coding a website is rather fun. Who would have thunk? For
           me, it's exactly the right mixture of technical and creative that I
-          enjoy. Learning HTML and CSS is quite easy too; and only takes a few
-          weeks to a month, and in most cases you don't need JavaScript at all.
+          enjoy. Learning HTML and CSS is quite easy too and only takes a few
+          weeks to a month; and in most cases you don't need JavaScript at all.
         </p>
         <p>
           I do not think the IndieWeb is the panacea to all the internet's ills.
@@ -120,16 +119,23 @@
           Simply, I wish to share what I create and do it on my own terms. Not
           one of the existing writing platforms aligns with my values (see
           above), and I'm not yet good enough to publish in magazines. That
-          leaves <i>this</i>. I suppose <i>this</i> would be a form of
+          leaves <b>this</b>, and <b>this</b>, I suppose, would be a form of
           self-publishing.
         </p>
         <p>
           <i
-            >Aren't I afraid that Ai can scrape my website and train on my
-            writing?</i
+            >"Aren't you afraid that Ai can scrape your site and train on your
+            writing?"</i
           >
           <br />
-          No, it does not bother me. It probably already has.
+          No, it does not bother me at all. It probably already has.
+        </p>
+
+        <h3>Who Is This Website For?</h3>
+        <p>
+          First and foremost, I write for myself. But if you've got this far,
+          you might enjoy my other works as well. This is
+          <a href="" id="latest">my latest work</a>.
         </p>
         <p>
           Everything I write on here is free to read. The only thing I ask in
@@ -139,7 +145,7 @@
           writer, I don't get to socialise much.
         </p>
 
-        <h3>Should I Write?</h3>
+        <h3>Should I even Write?</h3>
         <p>
           I'm not a native English speaker. I don't even have a degree in
           literature, let alone one in creative writing (I have a half-finished
@@ -148,7 +154,8 @@
         </p>
         <p>
           But I do enjoy language and literature, and maybe I can write
-          something so idiosyncratic that it becomes entertaining to read.
+          something <i>SO</i> idiosyncratic that it becomes entertaining to
+          read.
         </p>
         <p class="callout">So no, probably not.</p>
 
@@ -179,5 +186,23 @@
         </p>
       </footer>
     </main>
+    <script>
+      async function getLatest() {
+        const response = await fetch("/literary/fiction.html");
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+
+        const firstEntry = doc.querySelector("article a");
+
+        const target = document.getElementById("latest");
+
+        if (firstEntry && target) {
+          target.href = firstEntry.getAttribute("href");
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", getLatest);
+    </script>
   </body>
 </html>
