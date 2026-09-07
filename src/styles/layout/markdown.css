@@ -507,3 +507,21 @@ ol {
     font-size: 0.8rem;
   }
 }
+
+abbr {
+  cursor: default;
+  text-decoration: underline dotted 1.5px
+    light-dark(
+      hsl(from var(--c-text-d) h s calc(l - 15)),
+      hsl(from var(--c-text-d) h s calc(l + 15))
+    );
+}
+
+.callout {
+  border-left: 1.5px solid var(--c-purple-link);
+  padding-left: calc(1ch - 1.5px);
+
+  &::before {
+    content: "> ";
+  }
+}
