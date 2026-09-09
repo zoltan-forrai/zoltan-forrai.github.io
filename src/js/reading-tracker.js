@@ -6,7 +6,7 @@ async function setReadingPage() {
     meters.forEach((meter) => {
       meter.setAttribute("low", 49);
       meter.setAttribute("optimum", 50);
-      meter.setAttribute("max", 50);
+      meter.setAttribute("max", 100);
 
       meter.setAttribute("title", `${meter.value} / 50`);
       total += meter.value;
@@ -37,7 +37,7 @@ async function setReadingMeter() {
       10,
     );
 
-    const max = 50;
+    const max = 100;
     const radius = 45;
     const circumference = 2 * Math.PI * radius;
     const fillRatio = Math.min(Math.max(value / max, 0), 1);
@@ -59,7 +59,7 @@ async function setReadingMeter() {
     const dataUri = `url("data:image/svg+xml,${encoded}")`;
 
     target.style.backgroundImage = dataUri;
-    target.setAttribute("title", `${value} / 50`);
+    target.setAttribute("title", `${value} / 100`);
   } catch (err) {
     console.error("Failed to build reading meter:", err);
   }
