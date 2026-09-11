@@ -184,6 +184,8 @@ h3 {
   }
 }
 h4 {
+  font-size: 1.125rem;
+  margin-block: 1.125em 0.25em;
   &:before {
     content: "#### ";
   }
@@ -297,8 +299,13 @@ article img {
 @media (min-width: 650px) {
   .float-left {
     float: left;
-    margin-block: 0.25rem;
+    margin-block: 0.2rem;
     margin-right: 1.5rem;
+  }
+  .float-right {
+    float: right;
+    margin-block: 0.2rem;
+    margin-left: 0.5rem;
   }
 }
 
@@ -525,3 +532,4 @@ abbr {
     content: "> ";
   }
 }
+

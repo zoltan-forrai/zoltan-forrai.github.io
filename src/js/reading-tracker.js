@@ -4,11 +4,11 @@ async function setReadingPage() {
     let total = 0;
 
     meters.forEach((meter) => {
-      meter.setAttribute("low", 49);
-      meter.setAttribute("optimum", 50);
+      meter.setAttribute("low", 99);
+      meter.setAttribute("optimum", 100);
       meter.setAttribute("max", 100);
 
-      meter.setAttribute("title", `${meter.value} / 50`);
+      meter.setAttribute("title", `${meter.value} / 100`);
       total += meter.value;
     });
 
