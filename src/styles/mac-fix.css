@@ -1,0 +1,17 @@
+@supports (-webkit-font-smoothing: auto) or (-moz-osx-font-smoothing: auto) {
+  .site-title {
+    transform: translateY(2px);
+  }
+}
+
+@media (min-width: 700px) {
+  @supports (-webkit-font-smoothing: auto) or (-moz-osx-font-smoothing: auto) {
+    .site-title {
+      transform: translateY(4px);
+    }
+
+    .drop-down-title span {
+      transform: translateY(2px);
+    }
+  }
+}

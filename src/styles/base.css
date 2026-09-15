@@ -1,3 +1,5 @@
+@import url("/src/styles/mac-fix.css");
+
 /* View Transition : Light-Dark switch */
 @media (min-width: 700px) {
   @media (prefers-reduced-motion: no-preference) {
@@ -32,6 +34,10 @@
 ::selection {
   background: light-dark(hsl(120, 80%, 70%), hsl(120, 80%, 10%));
   color: light-dark(hsl(120, 80%, 20%), hsl(120, 80%, 50%));
+}
+
+* {
+  /* text-box: trim-both ex alphabetic; */
 }
 
 html {
