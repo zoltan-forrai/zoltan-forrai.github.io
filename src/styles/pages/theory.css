@@ -32,6 +32,7 @@ section > details:target {
   z-index: 10;
   background-color: var(--c-page);
   box-shadow: 0 0 0 5px var(--c-page);
+  align-items: center;
 
   a {
     &:any-link,
@@ -262,5 +263,34 @@ details.connection div {
     content: "]]";
     margin-left: -1ch;
     color: light-dark(hsl(0, 0%, 50%), hsl(219, 5%, 30%));
+  }
+}
+
+@media (max-width: 770px) {
+  #jumper {
+    a {
+      &:any-link,
+      &:any-link::selection {
+        max-width: min-content;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #jumper {
+    flex-wrap: wrap;
+
+    a {
+      &:any-link,
+      &:any-link::selection {
+        max-width: max-content;
+        line-height: 2;
+      }
+    }
+  }
+
+  .tags mark {
+    text-wrap: stable;
   }
 }
