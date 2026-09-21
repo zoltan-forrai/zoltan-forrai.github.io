@@ -72,17 +72,14 @@ td:nth-of-type(1) a {
 td:nth-of-type(3) {
   text-align: center;
   padding: 0.11rem 1rem 0rem 1rem;
+  color: light-dark(
+    hsl(from var(--c-blue) h s calc(l - 0)),
+    hsl(from var(--c-blue) h s calc(l + 10))
+  );
 }
 
 td:nth-of-type(3) a {
-  border-radius: 10px;
-  padding: 0 0.5rem;
   font-family: "JetBrains Mono";
-  border: 0.5px solid hsla(0, 0%, 100%, 0.15);
-  background-color: light-dark(
-    hsl(from var(--c-blue) h s calc(l + 40)),
-    hsl(from var(--c-blue) h s calc(l - 40))
-  );
 
   &:link {
     color: light-dark(
@@ -107,10 +104,11 @@ td:nth-of-type(3) a {
   &::before {
     content: "#";
   }
-  /* &::after {
+
+  &::after {
     content: ",";
     color: light-dark(var(--c-g-65), var(--c-g-60));
-  } */
+  }
 }
 
 .read {

@@ -1,11 +1,32 @@
 {
   "works": [
     {
+      "title": "The Maltese Falcon",
+      "authors": ["Dashiell Hammett"],
+      "tags": ["detective", "hardboiled"],
+      "status": "READ",
+      "rating": 4.2,
+      "year": "1930",
+      "a": "https://standardebooks.org/ebooks/dashiell-hammett/the-maltese-falcon"
+    },
+    {
+      "title": "The Mysterious Affair at Styles",
+      "authors": ["Agatha Christie"],
+      "tags": ["detective", "Poirot"],
+      "status": "reading",
+      "rating": 0,
+      "year": "1920",
+      "a": "https://standardebooks.org/ebooks/agatha-christie/the-mysterious-affair-at-styles"
+    },
+    {
+      "READ LINE": "==========================================================="
+    },
+    {
       "title": "How to Read a Book",
       "authors": ["Mortimer J. Adler", "Charles Van Doren"],
       "tags": [""],
       "status": "reading",
-      "rating": 4
+      "rating": 0
     },
     {
       "title": "Iliad",

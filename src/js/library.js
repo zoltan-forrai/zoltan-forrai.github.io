@@ -21,11 +21,46 @@ async function init() {
     return status.trim().toLowerCase().replace(/\s+/g, "-");
   }
 
+  // Turns a work's "year" property into a single signed number so that
+  // everything can be sorted on one axis: BC years become negative (and,
+  // within BC, the larger the number the further back in time it is), AD
+  // years stay positive. Accepts either a plain number (already signed,
+  // e.g. -500 for 500 BC) or a string such as "500 BC", "500 BCE", "1922",
+  // or "1922 AD".
+  function parseYear(work) {
+    const raw = work.year;
+    if (raw === undefined || raw === null || raw === "") return null;
+
+    if (typeof raw === "number") return raw;
+
+    const text = String(raw).trim();
+    const magnitude = parseFloat(text);
+    if (Number.isNaN(magnitude)) return null;
+
+    const isBC = /\bB\.?C\.?E?\.?\b/i.test(text);
+    return isBC ? -Math.abs(magnitude) : Math.abs(magnitude);
+  }
+
   function populateTable(works) {
     const tbody = document.querySelector("#main-table tbody");
     tbody.innerHTML = "";
 
-    works.forEach((work) => {
+    // Rule 1: ignore any entry without a title.
+    const validWorks = works.filter(
+      (work) => work.title && String(work.title).trim() !== "",
+    );
+
+    // Rule 3: entries with a year come first, sorted chronologically
+    // (BC before AD, earliest first); entries without a year keep their
+    // original JSON order and are appended after.
+    const withYear = validWorks.filter((work) => parseYear(work) !== null);
+    const withoutYear = validWorks.filter((work) => parseYear(work) === null);
+
+    withYear.sort((a, b) => parseYear(a) - parseYear(b));
+
+    const orderedWorks = [...withYear, ...withoutYear];
+
+    orderedWorks.forEach((work) => {
       const row = document.createElement("tr");
 
       if (work.status) {
@@ -39,7 +74,17 @@ async function init() {
 
       const titleCell = document.createElement("td");
 
-      titleCell.textContent = work.title;
+      // Rule 2: if the work has an "a" property, wrap the title in a link
+      // using that string as the href; otherwise leave the title as plain
+      // text.
+      if (work.a) {
+        const titleLink = document.createElement("a");
+        titleLink.href = work.a;
+        titleLink.textContent = work.title;
+        titleCell.appendChild(titleLink);
+      } else {
+        titleCell.textContent = work.title;
+      }
 
       const authorsCell = document.createElement("td");
       authorsCell.textContent = work.authors.join(", ");
