@@ -78,7 +78,7 @@
 
   &:hover,
   &:focus-within {
-    text-decoration: 1.5px underline light-dark(darkorange, orange);
+    text-decoration: 2px underline light-dark(darkorange, orange);
   }
 }
 
@@ -135,7 +135,7 @@
 
 @media (min-width: 900px) {
   .flap > img {
-    max-width: none;
+    max-width: 50vh;
   }
 
   .flap:has(#music-player) {
