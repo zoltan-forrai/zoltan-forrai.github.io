@@ -2,6 +2,12 @@
   .site-title {
     transform: translateY(2px);
   }
+
+  .btn,
+  button:not(#header-menu button, [type="submit"]),
+  [type="submit"] {
+    padding: 1.1rem 1rem 0.9rem 1rem !important;
+  }
 }
 
 @media (min-width: 700px) {

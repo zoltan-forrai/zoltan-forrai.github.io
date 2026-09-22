@@ -61,7 +61,7 @@ main {
 }
 
 h1 {
-  margin-block: 2.5rem;
+  margin-block: 2.2rem;
   font-size: clamp(2.1rem, 7vw, 2.8rem);
 }
 
@@ -237,7 +237,7 @@ button[type="submit"] {
   margin: 1rem auto;
   display: block;
   font-size: 1.7rem;
-  padding: 0.9rem 1rem 0.7rem 1rem;
+  padding:  0.8rem;
 
   b {
     margin-right: 22px;
