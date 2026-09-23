@@ -8,7 +8,6 @@
   left: 0;
   z-index: 99;
   box-shadow: -2px 2px 5px 0 var(--c-background);
-
 }
 
 #site-header * {
@@ -16,7 +15,6 @@
 }
 
 .title-bar {
-
   position: relative;
   z-index: 10;
   display: flex;
@@ -446,6 +444,10 @@ body:has(#site-header nav:not(nav.closed)) {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.35);
     border: var(--border-light);
     backdrop-filter: blur(8px);
+
+    li {
+      line-height: 1;
+    }
   }
 
   .drop-down-menu li a {
