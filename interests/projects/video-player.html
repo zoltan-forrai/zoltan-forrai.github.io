@@ -23,7 +23,6 @@
     <header id="site-header"></header>
     <main>
       <iframe
-        title="Embedded video player"
         frameborder="0"
         allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
         referrerpolicy="strict-origin-when-cross-origin"
@@ -84,7 +83,7 @@
         }
 
         error.hidden = true;
-        iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?wmode=opaque`;
+        iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}`;
         iframe.hidden = false;
         overlay.hidden = true;
       });
