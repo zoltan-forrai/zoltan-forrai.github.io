@@ -7,7 +7,7 @@ button:not(#header-menu button, [type="submit"]),
   width: 90%;
   cursor: pointer;
   min-width: fit-content;
-  border-radius: 20px;
+  border-radius: 30px;
   font-family: inherit;
   font-size: 1.4rem;
 
