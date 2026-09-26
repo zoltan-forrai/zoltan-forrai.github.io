@@ -1,47 +1,55 @@
 {
   "works": [
     {
-      "title": "The Maltese Falcon",
-      "authors": ["Dashiell Hammett"],
-      "tags": ["detective", "hardboiled"],
-      "status": "READ",
-      "rating": 4.2,
-      "year": "1930",
-      "a": "https://standardebooks.org/ebooks/dashiell-hammett/the-maltese-falcon"
-    },
-    {
-      "title": "The Mysterious Affair at Styles",
-      "authors": ["Agatha Christie"],
-      "tags": ["detective", "Poirot"],
-      "status": "reading",
-      "rating": 0,
-      "year": "1920",
-      "a": "https://standardebooks.org/ebooks/agatha-christie/the-mysterious-affair-at-styles"
-    },
-    {
-      "READ LINE": "==========================================================="
-    },
-    {
       "title": "How to Read a Book",
       "authors": ["Mortimer J. Adler", "Charles Van Doren"],
       "tags": [""],
       "status": "reading",
-      "rating": 0
+      "rating": 0,
+      "year": "9999 bc",
+      "a": "/literary/theory#how-to-read-a-book"
     },
     {
       "title": "Iliad",
-      "authors": ["Homer"],
-      "tags": [""],
-      "status": "",
-      "rating": 0
+      "authors": ["Homer", "William Cullen Bryant"],
+      "tags": ["poetry"],
+      "status": "reading",
+      "rating": 0,
+      "year": "800 bc",
+      "a": "https://standardebooks.org/ebooks/homer/the-iliad/william-cullen-bryant"
     },
     {
       "title": "Odyssey",
-      "authors": ["Homer"],
-      "tags": [""],
-      "status": "",
-      "rating": 0
+      "authors": ["Homer", "William Cullen Bryant"],
+      "tags": ["poetry"],
+      "status": "reading",
+      "rating": 0,
+      "year": "800 bc",
+      "a": "https://standardebooks.org/ebooks/homer/the-odyssey/william-cullen-bryant"
     },
+    {
+      "title": "The Mysterious Affair at Styles",
+      "authors": ["Agatha Christie"],
+      "tags": ["mystery", "poirot"],
+      "status": "READ",
+      "rating": 3.8,
+      "year": "1920",
+      "a": "https://standardebooks.org/ebooks/agatha-christie/the-mysterious-affair-at-styles"
+    },
+    {
+      "title": "The Maltese Falcon",
+      "authors": ["Dashiell Hammett"],
+      "tags": ["mystery", "hardboiled"],
+      "status": "READ",
+      "rating": 3,
+      "year": "1930",
+      "a": "https://standardebooks.org/ebooks/dashiell-hammett/the-maltese-falcon"
+    },
+
+    {
+      "READ LINE": "==========================================================="
+    },
+
     {
       "title": "The Old Testament",
       "authors": [""],

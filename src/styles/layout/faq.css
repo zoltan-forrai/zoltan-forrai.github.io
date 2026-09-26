@@ -1,17 +1,3 @@
-.faq-container {
-  counter-reset: item-counter;
-
-  [open]::details-content {
-    margin: 0.5rem 1rem 0.25rem 1rem;
-  }
-
-  summary {
-    counter-increment: item-counter;
-    font-family: "Special Elite";
-    font-size: 1.2rem;
-  }
-}
-
 details {
   margin-top: 1.5rem;
   border: 1px solid
@@ -71,6 +57,7 @@ summary {
 
   &:hover {
     background-color: light-dark(hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 100%, 0.05));
+    filter: brightness(1.2);
   }
 
   &:focus-visible {
@@ -82,4 +69,31 @@ summary {
       color: light-dark(darkorange, orange);
     }
   }
+}
+
+.faq-container {
+  counter-reset: item-counter;
+
+  [open]::details-content {
+    margin: 0 0 0 2.2rem;
+  }
+
+  summary {
+    counter-increment: item-counter;
+    font-family: "Special Elite";
+    font-size: 1.2rem;
+    background-color: transparent;
+
+    &:is([open] summary) {
+      border-bottom: none;
+    }
+  }
+
+  details {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+  }
+
+ 
 }

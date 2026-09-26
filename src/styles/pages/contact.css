@@ -237,7 +237,7 @@ button[type="submit"] {
   margin: 1rem auto;
   display: block;
   font-size: 1.7rem;
-  padding:  0.8rem;
+  padding: 1rem 1rem 0.75rem 1rem !important;
 
   b {
     margin-right: 22px;

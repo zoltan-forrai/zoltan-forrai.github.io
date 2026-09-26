@@ -124,3 +124,9 @@ code {
 ul li::marker {
   font-family: "Cochin LT Std" !important;
 }
+
+.emoticon {
+  color: light-dark(orangered, orange);
+  font-family: "JetBrains Mono";
+
+}

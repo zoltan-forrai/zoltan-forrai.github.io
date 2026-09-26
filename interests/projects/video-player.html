@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="/src/styles/var.css" />
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="stylesheet" href="/src/styles/layout/site-header.css" />
+    <link rel="stylesheet" href="/src/styles/layout/main.css" />
+    <link rel="stylesheet" href="/src/styles/typography.css" />
+
+    <link rel="stylesheet" href="/src/styles/pages/video-player.css" />
+
+    <script type="module" src="/index.js"></script>
+    <title>Video Player・gildrom.com</title>
+  </head>
+  <body>
+    <header id="site-header"></header>
+    <main>
+      <iframe
+        title="Embedded video player"
+        frameborder="0"
+        allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+        referrerpolicy="strict-origin-when-cross-origin"
+        sandbox="allow-scripts allow-same-origin allow-presentation"
+        allowfullscreen
+        hidden></iframe>
+
+      <div id="prompt-overlay">
+        <form id="prompt-form">
+          <label for="video-url-input"
+            >Paste a YouTube link to play it here:
+          </label>
+          <input
+            id="video-url-input"
+            type="url"
+            placeholder="https://www.youtube.com/watch?v=..."
+            autocomplete="off"
+            required />
+          <button type="submit">Play</button>
+          <p id="prompt-error" hidden>
+            That does not look like a valid YouTube link. Please try again.
+          </p>
+        </form>
+      </div>
+
+      <noscript>
+        <p
+          style="
+            color: #fff;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 2rem;
+          ">
+          JavaScript is required to paste and play a link on this page.
+        </p>
+      </noscript>
+    </main>
+
+    <script>
+      const iframe = document.querySelector("main iframe");
+      const overlay = document.getElementById("prompt-overlay");
+      const form = document.getElementById("prompt-form");
+      const input = document.getElementById("video-url-input");
+      const error = document.getElementById("prompt-error");
+
+      function extractVideoId(url) {
+        const match = url && url.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/);
+        return match ? match[1] : null;
+      }
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const videoId = extractVideoId(input.value.trim());
+
+        if (!videoId) {
+          error.hidden = false;
+          return;
+        }
+
+        error.hidden = true;
+        iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?wmode=opaque`;
+        iframe.hidden = false;
+        overlay.hidden = true;
+      });
+    </script>
+  </body>
+</html>

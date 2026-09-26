@@ -4,8 +4,7 @@
   }
 
   .btn,
-  button:not(#header-menu button, [type="submit"]),
-  [type="submit"] {
+  button:not(#header-menu button, #btn-theme, [type="submit"], [type="url"]) {
     padding: 1.1rem 1rem 0.9rem 1rem !important;
   }
 }

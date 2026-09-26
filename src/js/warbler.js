@@ -1,4 +1,5 @@
 import { getUserPref, resolvePrefValue } from "/src/js/setting.js";
+import { playPop } from "./audio.js";
 
 const userPref = getUserPref();
 const isMute = resolvePrefValue(userPref.audioAllow) === false;
@@ -40,8 +41,10 @@ document.querySelectorAll("#timeline p").forEach((update, index) => {
     const heartStates = JSON.parse(localStorage.getItem("heartStates") || "{}");
     if (checkbox.checked) {
       heartStates[uniqueId] = true;
+      if (!isMute) playPop();
     } else {
       delete heartStates[uniqueId];
+      if (!isMute) playPop();
     }
     localStorage.setItem("heartStates", JSON.stringify(heartStates));
   });

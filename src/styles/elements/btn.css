@@ -10,7 +10,7 @@ button:not(#header-menu button, [type="submit"]),
   border-radius: 20px;
   font-family: inherit;
   font-size: 1.4rem;
-  font-weight: bold;
+
   color: hsl(220, 29%, 90%);
   transform: scale(0.92);
   transition:
