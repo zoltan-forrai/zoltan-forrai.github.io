@@ -2,6 +2,7 @@
 
 form#search-box {
   padding-inline: 0;
+  margin-top: 0;
 }
 
 h1 {
@@ -11,7 +12,7 @@ h1 {
 }
 
 * {
-  scroll-margin-top: 150px;
+  scroll-margin-top: 170px;
 }
 
 :target h2,
@@ -23,6 +24,14 @@ section > details:target {
   outline: 2px solid light-dark(orangered, orange);
 }
 
+.sticky {
+  position: sticky;
+  top: 85px;
+  padding-top: 5px;
+  background-color: var(--c-page);
+  box-shadow: 0 0 0 5px var(--c-page);
+}
+
 #jumper {
   font-family: "Courier New", Courier, monospace;
   font-size: 1.2rem;
@@ -30,14 +39,12 @@ section > details:target {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: sticky;
-  top: 81px;
+
   padding-block: 0rem 0.125rem;
   margin-bottom: 55px;
   width: 100%;
   z-index: 10;
-  background-color: var(--c-page);
-  box-shadow: 0 0 0 5px var(--c-page);
+
   align-items: center;
 
   a {
