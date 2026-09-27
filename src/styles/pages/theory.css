@@ -1,3 +1,9 @@
+@import url("/src/styles/elements/search.css");
+
+form#search-box {
+  padding-inline: 0;
+}
+
 h1 {
   font-family: "Special Elite";
   font-size: clamp(1.5rem, 4.5vw, 2.2rem);
@@ -26,7 +32,7 @@ section > details:target {
   justify-content: space-between;
   position: sticky;
   top: 81px;
-  padding-block: 1rem 0.125rem;
+  padding-block: 0rem 0.125rem;
   margin-bottom: 55px;
   width: 100%;
   z-index: 10;
