@@ -57,7 +57,7 @@ section > details:target {
     &:hover::selection {
       color: hsl(from var(--c-blue) h s calc(l + 10));
       text-decoration: underline;
-      text-decoration-thickness: 1px;
+      text-decoration-thickness:  1px;
     }
   }
 }

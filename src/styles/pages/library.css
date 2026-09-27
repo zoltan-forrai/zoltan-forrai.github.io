@@ -60,7 +60,11 @@ tbody {
 
 td:nth-of-type(1) a {
   color: inherit;
-  text-decoration: 1px underline hsl(from currentColor h s calc(l - 20));
+  text-decoration: 1px underline
+    light-dark(
+      hsl(from currentColor h s calc(l + 20)),
+      hsl(from currentColor h s calc(l - 20))
+    );
   text-underline-offset: 2px;
 
   &:hover {
@@ -70,11 +74,10 @@ td:nth-of-type(1) a {
 }
 
 td:nth-of-type(3) {
-
   padding: 0.11rem 1rem 0rem 1rem;
   color: light-dark(
     hsl(from var(--c-blue) h s calc(l - 0)),
-    hsl(from var(--c-blue) h s calc(l + 10))
+    hsl(from var(--c-blue) h s calc(l + 0))
   );
 }
 
@@ -84,14 +87,14 @@ td:nth-of-type(3) a {
   &:link {
     color: light-dark(
       hsl(from var(--c-blue) h s calc(l - 0)),
-      hsl(from var(--c-blue) h s calc(l + 10))
+      hsl(from var(--c-blue) h s calc(l + 0))
     );
   }
 
   &:hover {
     color: light-dark(
-      hsl(from var(--c-blue) h s calc(l - 5)),
-      hsl(from var(--c-blue) h s calc(l + 30))
+      hsl(from var(--c-blue) h s calc(l + 20)),
+      hsl(from var(--c-blue) h s calc(l + 10))
     );
 
     text-decoration: underline;
