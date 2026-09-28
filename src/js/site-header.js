@@ -25,16 +25,16 @@ const header = `
         <span id="icon-literary">Literary</span>
         <ul class="drop-down-menu">
           <li><a href="/literary/fiction">Fiction</a></li>
-          <li><a href="/literary/library">Library</a></li>
           <li><a href="/literary/theory">Theory</a></li>
+          <li><a href="/literary/library">Library</a></li>
         </ul>
       </li>
       <li tabindex="0" class="drop-down-title">
         <span id="icon-interests">Interests</span>
         <ul class="drop-down-menu">
           <li><a href="/interests/essays">Essays</a></li>
-          <li><a href="/interests/projects">Projects</a></li>
           <li><a href="/interests/art">Artwork</a></li>
+          <li><a href="/interests/projects">Projects</a></li>
         </ul>
       </li>
       <li tabindex="0" class="drop-down-title">
