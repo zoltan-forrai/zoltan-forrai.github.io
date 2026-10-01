@@ -164,3 +164,31 @@ p {
     border-right: 0.6rem solid light-dark(rgb(255, 255, 255), rgba(0, 0, 0, 1));
   }
 }
+
+p span {
+  white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .info-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .preview-icon {
+    display: none;
+  }
+  p {
+    display: block;
+    line-height: 1.7;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  p {
+    display: none;
+  }
+}
