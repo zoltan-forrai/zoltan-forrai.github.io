@@ -11,6 +11,9 @@ function updateImage() {
   const currentImg = images[currentIndex];
   zoomImg.src = currentImg.src;
 
+  // Keep keyboard focus on the thumbnail that matches the large view
+  currentImg.focus();
+
   if (currentImg.alt) {
     overlay.dataset.caption = currentImg.alt;
   } else {
@@ -34,13 +37,108 @@ function showPrev() {
   updateImage();
 }
 
+function openLink() {
+  const url = images[currentIndex].dataset.link;
+  if (!url) return;
+  window.open(url, "_blank", "noopener,noreferrer");
+}
+
+function moveFocus(from, key) {
+  const rects = Array.from(images).map((img) => img.getBoundingClientRect());
+  const current = rects[from];
+  const cx = current.left + current.width / 2;
+  const cy = current.top + current.height / 2;
+  const tolerance = current.width / 2;
+
+  const vertical = key === "ArrowUp" || key === "ArrowDown";
+  const forward = key === "ArrowDown" || key === "ArrowRight";
+
+  // Describe every other image relative to the current one
+  const others = rects
+    .map((r, i) => ({
+      index: i,
+      dx: r.left + r.width / 2 - cx,
+      dy: r.top + r.height / 2 - cy,
+    }))
+    .filter((o) => o.index !== from);
+
+  let target = null;
+
+  if (vertical) {
+    // Same column, in the requested direction, nearest first
+    target = others
+      .filter(
+        (o) => Math.abs(o.dx) < tolerance && (forward ? o.dy > 0 : o.dy < 0),
+      )
+      .sort((a, b) => Math.abs(a.dy) - Math.abs(b.dy))[0];
+  } else {
+    // Other columns on the requested side
+    const side = others.filter(
+      (o) => Math.abs(o.dx) >= tolerance && (forward ? o.dx > 0 : o.dx < 0),
+    );
+    if (side.length) {
+      // Find the nearest neighbouring column, then the closest image in it by height
+      const nearest = Math.min(...side.map((o) => Math.abs(o.dx)));
+      target = side
+        .filter((o) => Math.abs(o.dx) - nearest < tolerance)
+        .sort((a, b) => Math.abs(a.dy) - Math.abs(b.dy))[0];
+    }
+  }
+
+  if (target) images[target.index].focus();
+}
+
 function handleKey(e) {
-  if (e.key === "ArrowRight") {
-    showNext();
-  } else if (e.key === "ArrowLeft") {
-    showPrev();
-  } else if (e.key === "Escape") {
-    closeGallery();
+  const focusedIndex = Array.from(images).indexOf(document.activeElement);
+  const imageFocused = focusedIndex !== -1;
+
+  // Stop the page scrolling when Space is used on a focused image or in the overlay
+  if (e.key === " " && (imageFocused || overlay)) {
+    e.preventDefault();
+  }
+
+  // Move focus around the grid while the large view is closed
+  if (
+    !overlay &&
+    imageFocused &&
+    ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.key)
+  ) {
+    e.preventDefault();
+    moveFocus(focusedIndex, e.key);
+    return;
+  }
+
+  // With nothing focused, any arrow key lands on the first image
+  if (
+    !overlay &&
+    !imageFocused &&
+    (document.activeElement === document.body || !document.activeElement) &&
+    ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.key)
+  ) {
+    e.preventDefault();
+    images[0].focus();
+    return;
+  }
+
+  // Ignore keys held down
+  if (e.repeat) return;
+
+  if (overlay) {
+    if (e.key === "ArrowRight") {
+      showNext();
+    } else if (e.key === "ArrowLeft") {
+      showPrev();
+    } else if (e.key === "Escape" || e.key === " ") {
+      closeGallery();
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      openLink();
+    }
+    return;
+  }
+
+  if (e.key === " " && imageFocused) {
+    openGallery(focusedIndex);
   }
 }
 
@@ -53,8 +151,6 @@ function openGallery(index) {
 
     zoomImg = document.createElement("img");
     overlay.appendChild(zoomImg);
-
-    document.addEventListener("keydown", handleKey);
 
     overlay.addEventListener("touchstart", (e) => {
       isSwiping = false;
@@ -89,7 +185,6 @@ function openGallery(index) {
 
 function closeGallery() {
   if (!overlay) return;
-  document.removeEventListener("keydown", handleKey);
   overlay.remove();
   overlay = null;
   zoomImg = null;
@@ -97,19 +192,10 @@ function closeGallery() {
   history.replaceState(null, "", location.pathname + location.search);
 }
 
+document.addEventListener("keydown", handleKey);
+
 images.forEach((img, index) => {
   img.setAttribute("tabindex", "0");
-
-  img.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      if (overlay) {
-        closeGallery();
-        return;
-      }
-      openGallery(index);
-    }
-  });
 
   img.addEventListener("click", () => {
     if (overlay) {

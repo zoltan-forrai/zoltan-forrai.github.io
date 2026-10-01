@@ -20,6 +20,22 @@ table {
   border-collapse: collapse;
   font-family: "Palatino";
   user-select: text;
+
+  a {
+    user-select: text !important;
+
+    &::selection {
+      background: light-dark(
+        hsl(from currentColor h s calc(l + 30)),
+        hsl(from currentColor h s calc(l - 50))
+      );
+
+      color: light-dark(
+        hsl(from currentColor h s calc(l - 0)),
+        hsl(from currentColor h s calc(l + 20))
+      );
+    }
+  }
 }
 
 thead {

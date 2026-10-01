@@ -57,7 +57,7 @@ section > details:target {
     &:hover::selection {
       color: hsl(from var(--c-blue) h s calc(l + 10));
       text-decoration: underline;
-      text-decoration-thickness:  1px;
+      text-decoration-thickness: 1px;
     }
   }
 }
@@ -124,7 +124,11 @@ section > details {
   line-height: normal;
 }
 .year {
-  color: BlueViolet;
+  color: light-dark(BlueViolet, slateblue);
+
+  &::selection {
+    color: currentColor !important;
+  }
 }
 .title {
   font-family: "Libre Baskerville", Georgia, serif;
@@ -159,6 +163,18 @@ section > details {
   letter-spacing: 0.02em;
   white-space: nowrap;
   line-height: normal;
+
+  &::selection {
+    background: light-dark(
+      hsl(from currentColor h calc(s - 10) calc(l + 30)),
+      hsl(from currentColor h calc(s / 2) calc(l / 2))
+    );
+
+    color: light-dark(
+      hsl(from currentColor h s calc(l - 10)),
+      hsl(from currentColor h s calc(l + 30))
+    );
+  }
 }
 
 .lang {

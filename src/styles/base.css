@@ -36,9 +36,7 @@
   color: light-dark(hsl(120, 80%, 20%), hsl(120, 80%, 50%));
 }
 
-* {
-  /* text-box: trim-both ex alphabetic; */
-}
+
 
 html {
   color-scheme: dark;
