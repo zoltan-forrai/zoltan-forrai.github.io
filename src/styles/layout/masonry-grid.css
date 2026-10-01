@@ -134,13 +134,13 @@ h1 {
 
 p {
   font-family: "JetBrains Mono";
-  word-spacing: -5px;
+  word-spacing: -7px;
   font-size: 1.1rem;
 
   background-color: light-dark(rgb(254, 254, 254), rgba(0, 0, 0, 1));
 
   border-radius: 6px;
-  padding: 0.15rem 0.175rem 0.125rem 0.5rem;
+  padding: 0.15rem 0.2rem 0.125rem 0.5rem;
   display: none;
   position: relative;
   border-radius: 7.5px;
@@ -167,9 +167,13 @@ p {
 
 p span {
   white-space: nowrap;
+
+  &:not(:first-of-type) {
+    padding-left: 0.25rem;
+  }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .info-row {
     flex-direction: column;
     gap: 1rem;

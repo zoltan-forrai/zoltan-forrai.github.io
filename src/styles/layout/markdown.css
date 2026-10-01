@@ -96,7 +96,7 @@ article header a:any-link {
     text-decoration-thickness: 1px;
   }
 
-  &:link::selection {
+  &:any-link::selection {
     color: var(--c-blue);
   }
 
@@ -274,6 +274,10 @@ article a:not(header a, footer a) {
 
   &[href*="newgrounds"] {
     color: light-dark(orangered, orange);
+
+    &::selection {
+      color: currentColor;
+    }
   }
 }
 
@@ -532,4 +536,3 @@ abbr {
     content: "> ";
   }
 }
-

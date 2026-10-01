@@ -37,8 +37,8 @@ function showPrev() {
   updateImage();
 }
 
-function openLink() {
-  const url = images[currentIndex].dataset.link;
+function openLink(index) {
+  const url = images[index].dataset.link;
   if (!url) return;
   window.open(url, "_blank", "noopener,noreferrer");
 }
@@ -91,6 +91,9 @@ function moveFocus(from, key) {
 function handleKey(e) {
   const focusedIndex = Array.from(images).indexOf(document.activeElement);
   const imageFocused = focusedIndex !== -1;
+  const isArrow = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(
+    e.key,
+  );
 
   // Stop the page scrolling when Space is used on a focused image or in the overlay
   if (e.key === " " && (imageFocused || overlay)) {
@@ -98,11 +101,7 @@ function handleKey(e) {
   }
 
   // Move focus around the grid while the large view is closed
-  if (
-    !overlay &&
-    imageFocused &&
-    ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.key)
-  ) {
+  if (!overlay && imageFocused && isArrow) {
     e.preventDefault();
     moveFocus(focusedIndex, e.key);
     return;
@@ -113,7 +112,7 @@ function handleKey(e) {
     !overlay &&
     !imageFocused &&
     (document.activeElement === document.body || !document.activeElement) &&
-    ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.key)
+    isArrow
   ) {
     e.preventDefault();
     images[0].focus();
@@ -132,13 +131,16 @@ function handleKey(e) {
       closeGallery();
     } else if (e.key === "Enter") {
       e.preventDefault();
-      openLink();
+      openLink(currentIndex);
     }
     return;
   }
 
   if (e.key === " " && imageFocused) {
     openGallery(focusedIndex);
+  } else if (e.key === "Enter" && imageFocused) {
+    e.preventDefault();
+    openLink(focusedIndex);
   }
 }
 

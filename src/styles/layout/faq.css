@@ -29,7 +29,7 @@ details {
 
 summary {
   border-radius: 10px 10px 10px 10px;
-  padding: 0.5rem 1rem;
+  padding: 0.35rem 1rem;
   font-size: 1.4rem;
   color: light-dark(var(--c-g-65), var(--c-g-55));
   background-color: light-dark(hsla(0, 0%, 0%, 0.05), hsla(0, 0%, 100%, 0.03));
