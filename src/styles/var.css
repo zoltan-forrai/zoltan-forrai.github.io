@@ -29,7 +29,6 @@
   --c-blue: light-dark(hsl(220, 100%, 40%), hsl(210, 100%, 55%));
 
   --c-background: light-dark(var(--c-g-35), black);
-  --c-page: light-dark(var(--c-g-30), #181818);
+  --c-page: light-dark(var(--c-g-30), hsl(0, 0%, 9%));
   --c-text: light-dark(hsl(0, 0%, 6%), var(--c-g-60));
-
 }

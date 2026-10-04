@@ -137,5 +137,5 @@ kbd {
   border-radius: 5px;
   padding: 0 0.25rem;
   background-color: light-dark(hsla(0, 0%, 0%, 0.1), hsla(0, 0%, 100%, 0.1));
-  color: light-dark(BlueViolet, slateblue);
+  color: light-dark(hsl(271, 76%, 53%), hsl(248, 53%, 58%));
 }

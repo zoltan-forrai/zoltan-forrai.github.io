@@ -436,6 +436,8 @@ strong {
 }
 
 article sup a:not(header a, footer a) {
+font-size: 1rem;
+
   &:before {
     content: "[";
   }
