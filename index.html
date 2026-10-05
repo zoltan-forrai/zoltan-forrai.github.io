@@ -43,11 +43,6 @@
         </p>
         <svg class="my-sigil"></svg>
       </article>
-      <img
-        src="/assets/media/img/decor/october.png"
-        alt="Two pumpkins, one smiling, the other is frowning."
-        width="300"
-        style="position: absolute; bottom: 0; filter: saturate(0.7)" />
     </main>
     <aside class="flap right">
       <img
@@ -84,5 +79,19 @@
         </nav>
       </div>
     </aside>
+    <script>
+      const now = new Date();
+
+      if (now.getMonth() + 1 === 10) {
+        // For Spooky Month
+        const img = document.createElement("img");
+        img.src = "/assets/media/img/decor/october.png";
+        img.alt = "Two pumpkins, one smiling, the other is frowning.";
+        img.width = 300;
+        img.style.cssText =
+          "position: absolute; bottom: 0; filter: saturate(0.7)";
+        document.querySelector("main").append(img);
+      }
+    </script>
   </body>
 </html>
