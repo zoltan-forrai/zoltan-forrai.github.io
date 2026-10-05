@@ -58,14 +58,14 @@ applyAudio(getUserPref().audioAllow);
 
 const btnAudio = {
   id: "btn-audio",
-  keyPref: "key_mute",
+  key: "m",
   html: `<button id="btn-audio" title="Press: 'M'" aria-label="toggle audio"></button>`,
   onClick: toggleAudio,
 };
 
 const btnTheme = {
   id: "btn-theme",
-  keyPref: "key_theme",
+  key: "t",
   html: `<button id="btn-theme" title="Press: 'T'"><span id="theme-track"></span><span id="theme-thumb"></span></button>`,
   onClick: toggleTheme,
 };
@@ -87,6 +87,9 @@ buttons.forEach((btn) => {
 });
 
 document.addEventListener("keydown", (e) => {
+  // Leave browser and OS shortcuts alone.
+  if (e.ctrlKey || e.metaKey) return;
+
   const target = e.target;
   const isTyping =
     target.tagName === "INPUT" ||
@@ -95,13 +98,8 @@ document.addEventListener("keydown", (e) => {
 
   if (isTyping) return;
 
-  const userPref = getUserPref();
   const pressedKey = e.key.toLowerCase();
-
-  const match = buttons.find((btn) => {
-    const boundKey = resolvePrefValue(userPref.keyboard[btn.keyPref]);
-    return boundKey.toLowerCase() === pressedKey;
-  });
+  const match = buttons.find((btn) => btn.key === pressedKey);
 
   if (match) match.onClick();
 });

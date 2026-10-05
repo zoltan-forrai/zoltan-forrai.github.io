@@ -79,9 +79,9 @@
   width: 0px;
 
   position: absolute;
-  border-radius: 2.5px;
+  border-radius: 5px;
   border: var(--border-light);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
   filter: brightness(0.9);
   cursor: zoom-in;
 
