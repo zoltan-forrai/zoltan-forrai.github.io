@@ -3,6 +3,7 @@
   --c-purple-link: light-dark(hsl(270, 80%, 50%), hsl(270, 60%, 57%));
 }
 
+#trivium a,
 article a,
 .literature a:not(mark a) {
   &:link {
