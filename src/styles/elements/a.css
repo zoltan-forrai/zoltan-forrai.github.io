@@ -4,7 +4,7 @@
 }
 
 #trivium a,
-article a,
+article a:not(#deck a),
 .literature a:not(mark a) {
   &:link {
     color: var(--c-blue);
