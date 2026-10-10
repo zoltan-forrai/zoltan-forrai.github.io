@@ -109,7 +109,7 @@ dd {
   text-align: justify;
   word-break: normal;
   font-size: 1.25rem;
-  line-height: 1.25;
+  line-height: 1.5;
 
   & + p {
     text-indent: 1.5em;
@@ -195,4 +195,8 @@ dd {
       margin-top: 1rem;
     }
   }
+}
+
+i {
+  font-style: oblique;
 }
