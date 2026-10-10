@@ -30,6 +30,7 @@ section > details:target {
   padding-top: 5px;
   background-color: var(--c-page);
   box-shadow: 0 0 0 5px var(--c-page);
+  z-index: 20;
 }
 
 #jumper {
@@ -43,7 +44,8 @@ section > details:target {
   padding-block: 0rem 0.125rem;
   margin-bottom: 55px;
   width: 100%;
-  z-index: 10;
+  z-index: 20;
+  position: relative;
 
   align-items: center;
 

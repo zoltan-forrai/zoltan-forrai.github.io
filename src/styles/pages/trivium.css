@@ -185,15 +185,22 @@ dd {
   padding-left: 1rem;
 }
 
-#bibliography {
-  li {
-    list-style: none;
-    padding-left: 2em;
-    text-indent: -2em;
+ul li::marker {
+  content: "◈ ";
+  color: light-dark(var(--c-g-65), var(--c-g-55));
+}
 
-    & + li {
-      margin-top: 1rem;
-    }
+#bibliography li {
+  list-style: none;
+  padding-left: 2em;
+  text-indent: -2em;
+
+  &::marker {
+    content: "";
+  }
+
+  & + li {
+    margin-top: 1rem;
   }
 }
 
