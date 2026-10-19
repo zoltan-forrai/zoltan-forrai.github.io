@@ -1,7 +1,17 @@
 @import url("/src/styles/elements/a.css");
 
-* {
-  scroll-margin-top: 80px;
+*:has(> h2) {
+  scroll-margin-top: 30px;
+}
+*:has(> h3) {
+  scroll-margin-top: 120px;
+}
+*:has(> h4) {
+  scroll-margin-top: 160px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 main {
@@ -43,30 +53,55 @@ main header {
   padding-top: 10vh;
 }
 
-h1 {
-  margin-block: 1rem;
-  font-variant-caps: small-caps;
-  font-size: clamp(3rem, 10vw, 4rem);
-  text-transform: capitalize;
-  letter-spacing: 0.025em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: light-dark(var(--c-g-65), var(--c-g-60));
 }
 
-h2 {
-  color: light-dark(var(--c-g-65), var(--c-g-60));
-  font-size: clamp(2rem, 7vw, 2.8rem);
-  line-height: 0.8;
-  font-variant-caps: small-caps;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-transform: capitalize;
+  font-variant-caps: small-caps;
+}
+
+h2,
+h3,
+h4 {
+  position: sticky;
+  background-color: var(--c-page);
+  box-shadow: 0 0 2px 2px var(--c-page);
+}
+
+h3,
+h4,
+h6 {
+  padding-left: 1rem;
+}
+
+h1 {
+  margin-block: 1rem;
+  font-size: clamp(3rem, 10vw, 4rem);
+  letter-spacing: 0.025em;
+}
+
+h2 {
+  font-size: clamp(2rem, 7vw, 3rem);
+  line-height: 0.8;
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-block: 2rem 0;
-  position: sticky;
   top: 82px;
   padding-top: 15px;
-  background-color: var(--c-page);
-  box-shadow: 0 0 5px 5px var(--c-page);
+  z-index: 10;
 
   &::after {
     content: "";
@@ -76,9 +111,45 @@ h2 {
     opacity: 0.75;
   }
 
+  & + *:not(section) {
+    margin-top: 3rem;
+  }
+}
+
+h3 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  line-height: 1;
+  top: 120px;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  z-index: 5;
+
   & + * {
     margin-top: 1.5rem;
   }
+}
+
+h4 {
+  font-size: clamp(1.25rem, 5vw, 1.5rem);
+  line-height: 1;
+  top: 160px;
+  padding-top: 1rem;
+  margin-top: 2rem;
+
+  & + * {
+    margin-top: 1rem;
+  }
+}
+
+h5,
+h6 {
+  font-size: clamp(1.25rem, 5vw, 1rem);
+  line-height: 1;
+  margin-top: 2rem;
+}
+
+h6 {
+  font-style: italic;
 }
 
 #subtitle {
@@ -156,7 +227,7 @@ hr {
   }
 }
 
-#contents ol:nth-of-type(1) {
+#contents > ol:nth-of-type(1) {
   list-style-type: lower-roman;
 
   ::marker {
@@ -165,8 +236,36 @@ hr {
   }
 }
 
-#contents ol:nth-of-type(2) {
-  list-style-type: decimal;
+#contents > ol:nth-of-type(2) {
+  list-style-type: none;
+  counter-reset: item;
+
+  ol {
+    list-style-type: none;
+    counter-reset: item;
+  }
+
+  ol ol li {
+    font-style: italic;
+
+    &::before {
+      font-style: normal;
+    }
+  }
+
+  li {
+    position: relative;
+    counter-increment: item;
+  }
+
+  li::before {
+    content: counters(item, ".") ".";
+    position: absolute;
+    right: 100%;
+    padding-right: 0.5rem;
+    white-space: nowrap;
+    color: light-dark(var(--c-g-65), var(--c-g-55));
+  }
 }
 
 #contents ol:nth-of-type(3) {
@@ -190,7 +289,7 @@ ul li::marker {
   color: light-dark(var(--c-g-65), var(--c-g-55));
 }
 
-#bibliography li {
+.bibliography li {
   list-style: none;
   padding-left: 2em;
   text-indent: -2em;
@@ -206,4 +305,10 @@ ul li::marker {
 
 i {
   font-style: oblique;
+}
+
+.lig {
+  font-style: normal;
+  font-family: "JetBrains Mono";
+  font-size: 0.8rem;
 }
