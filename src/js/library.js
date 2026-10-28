@@ -81,6 +81,8 @@ async function init() {
         const titleLink = document.createElement("a");
         titleLink.href = work.a;
         titleLink.textContent = work.title;
+        titleLink.target = "_blank";
+        titleLink.rel = "noopener noreferrer";
         titleCell.appendChild(titleLink);
       } else {
         titleCell.textContent = work.title;

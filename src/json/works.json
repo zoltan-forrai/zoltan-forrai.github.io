@@ -1,31 +1,40 @@
 {
   "works": [
     {
-      "title": "How to Read a Book",
-      "authors": ["Mortimer J. Adler", "Charles Van Doren"],
-      "tags": [""],
-      "status": "reading",
-      "rating": 0,
-      "year": "9999 bc",
-      "a": "/literary/theory#how-to-read-a-book"
-    },
-    {
       "title": "Iliad",
-      "authors": ["Homer", "William Cullen Bryant"],
-      "tags": ["poetry"],
+      "authors": ["Homer", "Robert Fitzgerald"],
+      "tags": ["epic poetry"],
       "status": "reading",
-      "rating": 0,
-      "year": "800 bc",
-      "a": "https://standardebooks.org/ebooks/homer/the-iliad/william-cullen-bryant"
+      "rating": 4,
+      "year": "750 bc",
+      "a": "https://www.youtube.com/playlist?list=PLLLiEya-Q4RQA30xrrRGUFV5Ja0dvVPIx"
     },
     {
       "title": "Odyssey",
-      "authors": ["Homer", "William Cullen Bryant"],
-      "tags": ["poetry"],
+      "authors": ["Homer", "Robert Fitzgerald"],
+      "tags": ["epic poetry"],
       "status": "reading",
       "rating": 0,
-      "year": "800 bc",
-      "a": "https://standardebooks.org/ebooks/homer/the-odyssey/william-cullen-bryant"
+      "year": "750 bc",
+      "a": "https://www.youtube.com/playlist?list=PLLLiEya-Q4RQNzXFxxRXvN4rFMAWBSXQO"
+    },
+    {
+      "title": "The Old & New Testament (Oxford Annotated, 5th ed.)",
+      "authors": ["Michael D. Coogan"],
+      "tags": ["religion"],
+      "status": "",
+      "rating": 0,
+      "year": "1",
+      "a": ""
+    },
+    {
+      "title": "The Vampire",
+      "authors": ["John William Polidori"],
+      "tags": ["vampire", "horror"],
+      "status": "READ",
+      "rating": 3,
+      "year": "1819",
+      "a": "https://standardebooks.org/ebooks/john-william-polidori/the-vampire"
     },
     {
       "title": "The Mysterious Affair at Styles",
@@ -46,17 +55,12 @@
       "a": "https://standardebooks.org/ebooks/dashiell-hammett/the-maltese-falcon"
     },
 
+
     {
       "READ LINE": "==========================================================="
     },
 
-    {
-      "title": "The Old Testament",
-      "authors": [""],
-      "tags": [""],
-      "status": "",
-      "rating": 0
-    },
+    
     {
       "title": "Tragedies",
       "authors": ["Aeschylus"],
@@ -246,13 +250,7 @@
       "status": "",
       "rating": 0
     },
-    {
-      "title": "The New Testament",
-      "authors": [""],
-      "tags": [""],
-      "status": "",
-      "rating": 0
-    },
+   
     {
       "title": "The Enneads",
       "authors": ["Plotinus"],

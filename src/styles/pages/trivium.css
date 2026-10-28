@@ -243,6 +243,8 @@ hr {
   ol {
     list-style-type: none;
     counter-reset: item;
+
+    
   }
 
   ol ol li {
